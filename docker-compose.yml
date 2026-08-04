@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: kull-postgres
+    restart: unless-stopped
+    environment: 
+      POSTGRES_USER: kull
+      POSTGRES_PASSWORD: kull
+      POSTGRES_DB: kull
+    ports: 
+      - "5432:5432"
+    volumes:
+      - kull_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kull -d kull"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+volumes:
+  kull_postgres_data:

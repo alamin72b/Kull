@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan Git Branches"
+  short_description: "Suggest dev branches and PR commands"
+  default_prompt: "Use $plan-git-branches to plan branches and generate push and PR commands for this work."
+
+policy:
+  allow_implicit_invocation: true

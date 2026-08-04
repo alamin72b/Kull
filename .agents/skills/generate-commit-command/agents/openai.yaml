@@ -1,0 +1,7 @@
+interface:
+  display_name: "Generate Commit Command"
+  short_description: "Stage all work and draft clear commits"
+  default_prompt: "Use $generate-commit-command to inspect my Git changes and draft a brief Conventional Commit command."
+
+policy:
+  allow_implicit_invocation: true
