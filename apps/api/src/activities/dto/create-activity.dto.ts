@@ -4,7 +4,7 @@ import {
   IsString,
   Matches,
   MaxLength,
-} from 'class-validator';
+} from "class-validator";
 
 export class CreateActivityDto {
   @IsString()
@@ -12,7 +12,7 @@ export class CreateActivityDto {
   name!: string;
 
   @Matches(/^\d{4}-\d{2}-\d{2}$/, {
-    message: 'activityDate must use YYYY-MM-DD formate',
+    message: "activityDate must use YYYY-MM-DD formate",
   })
   activityDate!: string;
 
