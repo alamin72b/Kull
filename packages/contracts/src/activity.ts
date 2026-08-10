@@ -10,7 +10,7 @@ export interface Activity {
 }
 
 export interface ActivityInput {
-    id : string;
+    id?: string;
     name : string;
     activityDate: string;
     startAt: string;
