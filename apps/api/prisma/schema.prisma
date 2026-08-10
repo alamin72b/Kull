@@ -8,13 +8,19 @@ datasource db {
   provider = "postgresql"
 }
 
+enum DebugNoteStatus {
+  UNSOLVED
+  IN_PROGRESS
+  SOLVED
+}
+
 model Activity {
-  id           String   @id @default(uuid()) @db.Uuid // Must be String and @db.Uuid
-  name         String   @db.VarChar(120) // Must be @db, not @DB
+  id           String   @id @default(uuid()) @db.Uuid
+  name         String   @db.VarChar(120)
   activityDate DateTime @db.Date
   startAt      DateTime @db.Timestamptz(3)
   endAt        DateTime @db.Timestamptz(3)
-  note         String?   @db.VarChar(1200) 
+  note         String?  @db.VarChar(1000)
   createdAt    DateTime @default(now()) @db.Timestamptz(3)
   updatedAt    DateTime @updatedAt @db.Timestamptz(3)
 
@@ -22,3 +28,66 @@ model Activity {
   @@map("activities")
 }
 
+model DebugNote {
+  id               String            @id @default(uuid()) @db.Uuid
+  title            String            @db.VarChar(160)
+  summary          String?           @db.VarChar(280)
+  errorMessage     String            @db.Text
+  context          String?           @db.Text
+  stepsToReproduce String?           @db.Text
+  environment      String?           @db.Text
+  rootCause        String?           @db.Text
+  solution         String?           @db.Text
+  verification     String?           @db.Text
+  findings         String?           @db.Text
+  learnings        String?           @db.Text
+  status           DebugNoteStatus   @default(UNSOLVED)
+  isPinned         Boolean           @default(false)
+  occurredAt       DateTime?         @db.Timestamptz(3)
+  createdAt        DateTime          @default(now()) @db.Timestamptz(3)
+  updatedAt        DateTime          @updatedAt @db.Timestamptz(3)
+  tags             DebugNoteTag[]
+  screenshots      DebugScreenshot[]
+
+  @@index([status, updatedAt])
+  @@index([isPinned, updatedAt])
+  @@map("debug_notes")
+}
+
+model DebugTag {
+  id    String         @id @default(uuid()) @db.Uuid
+  name  String         @unique @db.VarChar(50)
+  notes DebugNoteTag[]
+
+  @@map("debug_tags")
+}
+
+model DebugNoteTag {
+  debugNoteId String    @db.Uuid
+  tagId       String    @db.Uuid
+  
+  // FIXED: Moved to single lines
+  debugNote   DebugNote @relation(fields: [debugNoteId], references: [id], onDelete: Cascade)
+  tag         DebugTag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([debugNoteId, tagId])
+  @@index([tagId])
+  @@map("debug_note_tags")
+}
+
+model DebugScreenshot {
+  id           String    @id @default(uuid()) @db.Uuid
+  fileName     String    @db.VarChar(255)
+  originalName String    @db.VarChar(255)
+  mimeType     String    @db.VarChar(100)
+  size         Int
+  debugNoteId  String    @db.Uuid
+  
+  // FIXED: Moved to single line
+  debugNote    DebugNote @relation(fields: [debugNoteId], references: [id], onDelete: Cascade)
+  
+  createdAt    DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@index([debugNoteId])
+  @@map("debug_screenshots")
+}
