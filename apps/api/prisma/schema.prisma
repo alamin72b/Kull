@@ -21,3 +21,4 @@ model Activity {
   @@index([activityDate, startAt])
   @@map("activities")
 }
+
