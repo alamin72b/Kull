@@ -68,7 +68,17 @@ Inspect the repository's complete non-ignored working state and suggest one conc
 
    `git add -A` stages all non-ignored tracked, modified, deleted, and untracked files. Ignored files remain excluded. The first `-m` contains the short Conventional Commit subject; the second contains a clear one-sentence description.
 
-   Keep the entire generated command on one physical line inside one code block. Never insert line breaks inside either quoted message. Keep the brief imperative and lowercase, normally under 50 characters after the type/scope. Keep the description specific and easy to understand. Do not repeat the brief without adding useful context.
+   Chat interfaces may insert hard line breaks when users copy long commands. Generate the command with explicit shell continuations so it remains copy-safe:
+
+   ```bash
+   git add -A && git commit \
+     -m "<type>[optional scope]: <brief subject>" \
+     -m "<clear description of what changed and why>"
+   ```
+
+   Put a backslash as the final character on every continued line. Never insert line breaks inside either quoted message. Keep the brief imperative and lowercase, normally under 50 characters after the type/scope. Keep the description specific and easy to understand. Do not repeat the brief without adding useful context.
+
+   Add this warning immediately before the command: `Copy all lines exactly, including the trailing backslashes. Do not remove the backslashes; they tell the shell that the command continues on the next line.` Never output a standalone `git commit -m` line.
 
 7. Return the result using this format:
 
@@ -101,7 +111,7 @@ Inspect the repository's complete non-ignored working state and suggest one conc
    - Second `-m`: contains the longer description.
 
    ## Commit command
-   <one uninterrupted line: git add -A && git commit -m "..." -m "...">
+   <copy-safe shell command using trailing backslashes for continuation>
    ```
 
    If changes have unrelated purposes, explain that this command intentionally includes all current work in one commit, then optionally provide separate staging/commit commands for recommended split commits. The all-in-one command must remain available because it is the default requested workflow.
