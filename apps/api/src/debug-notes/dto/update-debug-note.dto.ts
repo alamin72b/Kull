@@ -1,32 +1,24 @@
-import { PartialType } from "@nestjs/mapped-types";
-import { Transform } from "class-transformer";
-import {
-  ArrayMaxSize,
-  IsArray,
-  IsOptional,
-  IsUUID,
-} from "class-validator";
-import { CreateDebugNoteDto } from "./create-debug-note.dto";
+import { PartialType } from '@nestjs/mapped-types';
+import { IsOptional, IsString, MaxLength } from 'class-validator';
+import { CreateDebugNoteDto } from './create-debug-note.dto';
 
-function toArray({
-  value,
-}: {
-  value: unknown;
-}): unknown[] | undefined {
-  if (value === undefined) {
-    return undefined;
-  }
-
-  return Array.isArray(value) ? value : [value];
-}
-
-export class UpdateDebugNoteDto extends PartialType(
-  CreateDebugNoteDto,
-) {
+export class UpdateDebugNoteDto extends PartialType(CreateDebugNoteDto) {
+  /**
+   * JSON array of screenshot IDs that should be removed.
+   */
   @IsOptional()
-  @Transform(toArray)
-  @IsArray()
-  @ArrayMaxSize(5)
-  @IsUUID("4", { each: true })
-  removeScreenshotIds?: string[];
+  @IsString()
+  @MaxLength(2000)
+  removedScreenshotIds?: string;
+
+  /**
+   * JSON object:
+   * {
+   *   "screenshot-id": "Updated caption"
+   * }
+   */
+  @IsOptional()
+  @IsString()
+  @MaxLength(5000)
+  existingScreenshotCaptions?: string;
 }

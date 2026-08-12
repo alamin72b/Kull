@@ -1,103 +1,136 @@
+import {
+  DebugNoteSeverity,
+  DebugNoteStatus,
+} from '../../generated/prisma/client';
 import { Transform } from 'class-transformer';
 import {
-  ArrayMaxSize,
-  IsArray,
-  IsBoolean,
   IsDateString,
+  IsEnum,
   IsIn,
   IsOptional,
   IsString,
   MaxLength,
+  MinLength,
 } from 'class-validator';
 
-function toArray(value: unknown): unknown[] | undefined {
-  if (value === undefined) {
-    return undefined;
-  }
+type TransformValue = { value: unknown };
 
-  // Add the 'as unknown[]' assertion to the true branch
-  return Array.isArray(value) ? (value as unknown[]) : [value];
+function trimString({ value }: TransformValue): unknown {
+  return typeof value === 'string' ? value.trim() : value;
 }
-function toBoolean({ value }: { value: unknown }): boolean | undefined {
-  if (value === undefined) {
-    return undefined;
-  }
 
-  return value === true || value === 'true';
+function emptyStringToNull({ value }: TransformValue): unknown {
+  return value === '' ? null : value;
 }
 
 export class CreateDebugNoteDto {
+  @Transform(trimString)
   @IsString()
+  @MinLength(3)
   @MaxLength(160)
   title!: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(280)
-  summary?: string | null;
+  @MaxLength(5000)
+  summary?: string;
+
+  @IsOptional()
+  @IsEnum(DebugNoteStatus)
+  status?: DebugNoteStatus;
+
+  @IsOptional()
+  @IsEnum(DebugNoteSeverity)
+  severity?: DebugNoteSeverity;
 
   @IsString()
-  @MaxLength(50000)
+  @MinLength(1)
+  @MaxLength(30000)
   errorMessage!: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(50000)
-  context?: string | null;
+  @MaxLength(20000)
+  context?: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(50000)
-  stepsToReproduce?: string | null;
+  @MaxLength(20000)
+  stepsToReproduce?: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(50000)
-  environment?: string | null;
+  @MaxLength(10000)
+  environment?: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(50000)
-  rootCause?: string | null;
+  @MaxLength(20000)
+  attemptedSolutions?: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(50000)
-  solution?: string | null;
+  @MaxLength(20000)
+  rootCause?: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(50000)
-  verification?: string | null;
+  @MaxLength(30000)
+  solution?: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(50000)
-  findings?: string | null;
+  @MaxLength(30000)
+  codeSnippet?: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(50000)
-  learnings?: string | null;
+  @MaxLength(20000)
+  verification?: string;
 
   @IsOptional()
-  @IsIn(['UNSOLVED', 'IN_PROGRESS', 'SOLVED'])
-  status?: 'UNSOLVED' | 'IN_PROGRESS' | 'SOLVED';
+  @IsString()
+  @MaxLength(20000)
+  findings?: string;
 
   @IsOptional()
-  @Transform(toBoolean)
-  @IsBoolean()
-  isPinned?: boolean;
+  @IsString()
+  @MaxLength(20000)
+  learnings?: string;
 
+  @IsOptional()
+  @IsString()
+  @MaxLength(20000)
+  thoughts?: string;
+
+  @IsOptional()
+  @IsString()
+  @MaxLength(10000)
+  references?: string;
+
+  @Transform(emptyStringToNull)
   @IsOptional()
   @IsDateString()
   occurredAt?: string | null;
 
   @IsOptional()
-  @Transform(toArray)
-  @IsArray()
-  @ArrayMaxSize(12)
-  @IsString({ each: true })
-  @MaxLength(50, { each: true })
-  tags?: string[];
+  @IsIn(['true', 'false'])
+  isPinned?: 'true' | 'false';
+
+  /**
+   * JSON string:
+   * ["nextjs", "prisma", "postgresql"]
+   */
+  @IsOptional()
+  @IsString()
+  @MaxLength(2000)
+  tags?: string;
+
+  /**
+   * JSON string containing one caption for each new screenshot.
+   */
+  @IsOptional()
+  @IsString()
+  @MaxLength(2000)
+  screenshotCaptions?: string;
 }

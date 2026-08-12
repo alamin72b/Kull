@@ -8,12 +8,6 @@ datasource db {
   provider = "postgresql"
 }
 
-enum DebugNoteStatus {
-  UNSOLVED
-  IN_PROGRESS
-  SOLVED
-}
-
 model Activity {
   id           String   @id @default(uuid()) @db.Uuid
   name         String   @db.VarChar(120)
@@ -28,66 +22,81 @@ model Activity {
   @@map("activities")
 }
 
-model DebugNote {
-  id               String            @id @default(uuid()) @db.Uuid
-  title            String            @db.VarChar(160)
-  summary          String?           @db.VarChar(280)
-  errorMessage     String            @db.Text
-  context          String?           @db.Text
-  stepsToReproduce String?           @db.Text
-  environment      String?           @db.Text
-  rootCause        String?           @db.Text
-  solution         String?           @db.Text
-  verification     String?           @db.Text
-  findings         String?           @db.Text
-  learnings        String?           @db.Text
-  status           DebugNoteStatus   @default(UNSOLVED)
-  isPinned         Boolean           @default(false)
-  occurredAt       DateTime?         @db.Timestamptz(3)
-  createdAt        DateTime          @default(now()) @db.Timestamptz(3)
-  updatedAt        DateTime          @updatedAt @db.Timestamptz(3)
-  tags             DebugNoteTag[]
-  screenshots      DebugScreenshot[]
+enum DebugNoteStatus {
+  UNSOLVED
+  IN_PROGRESS
+  SOLVED
+}
 
-  @@index([status, updatedAt])
+enum DebugNoteSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+model DebugNote {
+  id                 String            @id @default(uuid())
+  title              String            @db.VarChar(160)
+  summary            String?           @db.Text
+  status             DebugNoteStatus   @default(UNSOLVED)
+  severity           DebugNoteSeverity @default(MEDIUM)
+  errorMessage       String            @db.Text
+  context            String?           @db.Text
+  stepsToReproduce   String?           @db.Text
+  environment        String?           @db.Text
+  attemptedSolutions String?           @db.Text
+  rootCause          String?           @db.Text
+  solution           String?           @db.Text
+  codeSnippet        String?           @db.Text
+  verification       String?           @db.Text
+  findings           String?           @db.Text
+  learnings          String?           @db.Text
+  thoughts           String?           @db.Text
+  references         String?           @db.Text
+  occurredAt         DateTime?
+  isPinned           Boolean           @default(false)
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  tags               DebugNoteTag[]
+  screenshots        DebugScreenshot[]
+
+  @@index([status])
+  @@index([severity])
+  @@index([occurredAt])
   @@index([isPinned, updatedAt])
-  @@map("debug_notes")
 }
 
 model DebugTag {
-  id    String         @id @default(uuid()) @db.Uuid
-  name  String         @unique @db.VarChar(50)
-  notes DebugNoteTag[]
-
-  @@map("debug_tags")
+  id             String         @id @default(uuid())
+  name           String         @db.VarChar(50)
+  normalizedName String         @unique @db.VarChar(50)
+  createdAt      DateTime       @default(now())
+  notes          DebugNoteTag[]
 }
 
 model DebugNoteTag {
-  debugNoteId String    @db.Uuid
-  tagId       String    @db.Uuid
-  
-  // FIXED: Moved to single lines
+  debugNoteId String
+  tagId       String
+  createdAt   DateTime  @default(now())
   debugNote   DebugNote @relation(fields: [debugNoteId], references: [id], onDelete: Cascade)
   tag         DebugTag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
 
   @@id([debugNoteId, tagId])
   @@index([tagId])
-  @@map("debug_note_tags")
 }
 
 model DebugScreenshot {
-  id           String    @id @default(uuid()) @db.Uuid
-  fileName     String    @db.VarChar(255)
+  id           String    @id @default(uuid())
   originalName String    @db.VarChar(255)
+  fileName     String    @unique @db.VarChar(255)
   mimeType     String    @db.VarChar(100)
   size         Int
-  debugNoteId  String    @db.Uuid
-  
-  // FIXED: Moved to single line
+  caption      String?   @db.VarChar(200)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  debugNoteId  String
   debugNote    DebugNote @relation(fields: [debugNoteId], references: [id], onDelete: Cascade)
-  
-  createdAt    DateTime  @default(now()) @db.Timestamptz(3)
 
   @@index([debugNoteId])
-  @@map("debug_screenshots")
 }
