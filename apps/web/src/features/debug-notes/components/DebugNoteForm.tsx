@@ -404,7 +404,10 @@ export function DebugNoteForm({
         <div className={styles.formError}>{error}</div>
       )}
 
-      <section className={styles.formSection}>
+      <section
+        className={styles.formSection}
+        id="identification"
+      >
         <div className={styles.sectionHeading}>
           <span>01</span>
           <div>
@@ -509,7 +512,10 @@ export function DebugNoteForm({
         </label>
       </section>
 
-      <section className={styles.formSection}>
+      <section
+        className={styles.formSection}
+        id="error-context"
+      >
         <div className={styles.sectionHeading}>
           <span>02</span>
           <div>
@@ -562,7 +568,10 @@ export function DebugNoteForm({
         />
       </section>
 
-      <section className={styles.formSection}>
+      <section
+        className={styles.formSection}
+        id="investigation"
+      >
         <div className={styles.sectionHeading}>
           <span>03</span>
           <div>
@@ -603,7 +612,7 @@ export function DebugNoteForm({
         />
       </section>
 
-      <section className={styles.formSection}>
+      <section className={styles.formSection} id="solution">
         <div className={styles.sectionHeading}>
           <span>04</span>
           <div>
@@ -648,7 +657,7 @@ export function DebugNoteForm({
         />
       </section>
 
-      <section className={styles.formSection}>
+      <section className={styles.formSection} id="knowledge">
         <div className={styles.sectionHeading}>
           <span>05</span>
           <div>
@@ -706,7 +715,7 @@ export function DebugNoteForm({
         </label>
       </section>
 
-      <section className={styles.formSection}>
+      <section className={styles.formSection} id="screenshots">
         <div className={styles.sectionHeading}>
           <span>06</span>
           <div>

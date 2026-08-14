@@ -1,22 +1,22 @@
 # Graph Report - Kull  (2026-08-14)
 
 ## Corpus Check
-- 76 files · ~20,890 words
+- 76 files · ~21,051 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 581 nodes · 820 edges · 35 communities (27 shown, 8 thin omitted)
+- 583 nodes · 831 edges · 34 communities (27 shown, 7 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fd58a751`
+- Built from commit: `eaf870a9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- ActivitiesService
 - Activity
+- activity-dashboard.tsx
 - devDependencies
 - dependencies
 - contracts/package.json
@@ -46,7 +46,6 @@
 - AGENTS.md
 - extraction-spec.md
 - README.md
-- app/page.tsx
 
 ## God Nodes (most connected - your core abstractions)
 1. `DebugNotesService` - 24 edges
@@ -75,15 +74,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (35 total, 8 thin omitted)
+## Communities (34 total, 7 thin omitted)
 
-### Community 0 - "ActivitiesService"
-Cohesion: 0.09
-Nodes (21): ActivitiesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+13 more)
+### Community 0 - "Activity"
+Cohesion: 0.10
+Nodes (22): ActivitiesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+14 more)
 
-### Community 1 - "Activity"
-Cohesion: 0.12
-Nodes (29): AppHeader(), ApiErrorBody, createActivity(), deleteActivity(), getActivities(), request(), updateActivity(), ActivityCard() (+21 more)
+### Community 1 - "activity-dashboard.tsx"
+Cohesion: 0.10
+Nodes (30): Tool, tools, AppHeader(), ApiErrorBody, createActivity(), deleteActivity(), getActivities(), request() (+22 more)
 
 ### Community 2 - "devDependencies"
 Cohesion: 0.04
@@ -94,8 +93,8 @@ Cohesion: 0.06
 Nodes (31): dependencies, class-transformer, class-validator, dotenv, @kull/contracts, multer, @nestjs/common, @nestjs/config (+23 more)
 
 ### Community 4 - "contracts/package.json"
-Cohesion: 0.18
-Nodes (10): devDependencies, typescript, exports, typescript, name, private, scripts, typecheck (+2 more)
+Cohesion: 0.17
+Nodes (11): devDependencies, typescript, exports, ./debug-note, typescript, name, private, scripts (+3 more)
 
 ### Community 5 - "PrismaService"
 Cohesion: 0.11
@@ -176,22 +175,22 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 ## Knowledge Gaps
 - **227 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+222 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PrismaService` connect `PrismaService` to `ActivitiesService`, `debug-notes.service.ts`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
-- **Why does `Activity` connect `Activity` to `ActivitiesService`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `PrismaService` connect `PrismaService` to `Activity`, `debug-notes.service.ts`?**
+  _High betweenness centrality (0.044) - this node is a cross-community bridge._
+- **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `DebugNoteForm.tsx`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **Why does `DebugNotesService` connect `DebugNotesService` to `debug-notes.service.ts`, `PrismaService`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
   _227 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `ActivitiesService` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
 - **Should `Activity` be split into smaller, more focused modules?**
-  _Cohesion score 0.12311265969802555 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09758454106280193 - nodes in this community are weakly interconnected._
+- **Should `activity-dashboard.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.09725158562367865 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._

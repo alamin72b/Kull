@@ -82,6 +82,19 @@
       "norm_label": "activity"
     },
     {
+      "label": "Tool",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_app_page_tool",
+      "community": 1,
+      "community_name": "activity-dashboard.tsx",
+      "norm_label": "tool"
+    },
+    {
       "label": "ApiErrorBody",
       "file_type": "code",
       "source_file": "apps/web/src/features/activities/api/activity-api.ts",
@@ -726,6 +739,18 @@
       "norm_label": "activitiespage()"
     },
     {
+      "label": "HomePage()",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_web_src_app_page_homepage",
+      "community": 1,
+      "community_name": "activity-dashboard.tsx",
+      "norm_label": "homepage()"
+    },
+    {
       "label": "AppHeader()",
       "file_type": "code",
       "source_file": "apps/web/src/components/layout/app-header.tsx",
@@ -1029,7 +1054,7 @@
       "label": "EditDebugNotePage()",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
-      "source_location": "L10",
+      "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_edit_page_editdebugnotepage",
@@ -1041,7 +1066,7 @@
       "label": "DebugNotePage()",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/[id]/page.tsx",
-      "source_location": "L67",
+      "source_location": "L69",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_page_debugnotepage",
@@ -1077,7 +1102,7 @@
       "label": "TextBlock()",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/[id]/page.tsx",
-      "source_location": "L48",
+      "source_location": "L50",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_page_textblock",
@@ -1650,18 +1675,6 @@
       "norm_label": ".update()"
     },
     {
-      "label": "HomePage()",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L21",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_web_src_app_page_homepage",
-      "community": 33,
-      "community_name": "app/page.tsx",
-      "norm_label": "homepage()"
-    },
-    {
       "label": "DebugNotesLoading()",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/loading.tsx",
@@ -2009,6 +2022,28 @@
       "community": 1,
       "community_name": "activity-dashboard.tsx",
       "norm_label": "activities/page.tsx"
+    },
+    {
+      "label": "app/page.tsx",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_web_src_app_page",
+      "community": 1,
+      "community_name": "activity-dashboard.tsx",
+      "norm_label": "app/page.tsx"
+    },
+    {
+      "label": "tools",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "apps_web_src_app_page_tools",
+      "community": 1,
+      "community_name": "activity-dashboard.tsx",
+      "norm_label": "tools"
     },
     {
       "label": "app-header.tsx",
@@ -5190,28 +5225,6 @@
       "norm_label": "kull"
     },
     {
-      "label": "app/page.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_app_page",
-      "community": 33,
-      "community_name": "app/page.tsx",
-      "norm_label": "app/page.tsx"
-    },
-    {
-      "label": "tools",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "apps_web_src_app_page_tools",
-      "community": 33,
-      "community_name": "app/page.tsx",
-      "norm_label": "tools"
-    },
-    {
       "label": "loading.tsx",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/loading.tsx",
@@ -7134,7 +7147,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
-      "source_location": "L20",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_edit_page_editdebugnotepage",
@@ -7145,7 +7158,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/debug-notes/[id]/page.tsx",
-      "source_location": "L137",
+      "source_location": "L153",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_page_debugnotepage",
@@ -7158,7 +7171,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/app/debug-notes/[id]/page.tsx",
-      "source_location": "L304",
+      "source_location": "L369",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_page_debugnotepage",
@@ -7170,7 +7183,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/app/debug-notes/[id]/page.tsx",
-      "source_location": "L77",
+      "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_page_debugnotepage",
@@ -7542,7 +7555,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/features/debug-notes/components/DebugNoteForm.tsx",
-      "source_location": "L739",
+      "source_location": "L748",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_features_debug_notes_components_debugnoteform_debugnoteform",
@@ -9813,6 +9826,30 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_edit_page",
+      "target": "apps_web_src_features_debug_notes_components_debugnotebadges_severitybadge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_debug_notes_id_edit_page",
+      "target": "apps_web_src_features_debug_notes_components_debugnotebadges_statusbadge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_debug_notes_id_edit_page",
       "target": "apps_web_src_features_debug_notes_components_debugnoteform_debugnoteform",
       "confidence_score": 1.0
     },
@@ -9821,7 +9858,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
-      "source_location": "L4",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_edit_page",
@@ -9833,7 +9870,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
-      "source_location": "L4",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_edit_page",
@@ -10030,6 +10067,18 @@
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_page",
       "target": "apps_web_src_features_debug_notes_debug_notes_api_getdebugtags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_page",
+      "target": "apps_web_src_components_layout_app_header_appheader",
       "confidence_score": 1.0
     },
     {
@@ -11049,6 +11098,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_edit_page",
+      "target": "apps_web_src_features_debug_notes_components_debugnotebadges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_debug_notes_id_edit_page",
       "target": "apps_web_src_features_debug_notes_components_debugnoteform",
       "confidence_score": 1.0
     },
@@ -11057,7 +11118,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
-      "source_location": "L4",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_edit_page",
@@ -11158,6 +11219,18 @@
       "_origin": "ast",
       "source": "apps_web_src_app_layout",
       "target": "ref_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_page",
+      "target": "apps_web_src_components_layout_app_header",
       "confidence_score": 1.0
     },
     {
@@ -13281,7 +13354,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
-      "source_location": "L10",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_edit_page",
@@ -13314,7 +13387,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/debug-notes/[id]/page.tsx",
-      "source_location": "L48",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_page",
@@ -13325,7 +13398,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/debug-notes/[id]/page.tsx",
-      "source_location": "L67",
+      "source_location": "L69",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_debug_notes_id_page",
@@ -13424,22 +13497,33 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L21",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_page",
-      "target": "apps_web_src_app_page_homepage",
+      "target": "apps_web_src_app_page_tool",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L4",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_page",
       "target": "apps_web_src_app_page_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_page",
+      "target": "apps_web_src_app_page_homepage",
       "confidence_score": 1.0
     },
     {
@@ -16140,5 +16224,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fd58a7515f7ee8749b0a5aed338651ec28bc88b7"
+  "built_at_commit": "eaf870a9c266dd5002a71d651bda51eb9273c5d5"
 }

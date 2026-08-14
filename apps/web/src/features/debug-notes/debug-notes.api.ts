@@ -6,7 +6,7 @@ import type {
 } from "@kull/contracts/debug-note";
 
 export const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3001";
+  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api";
 
 export class DebugNotesApiError extends Error {
   constructor(
@@ -117,5 +117,9 @@ export function getScreenshotUrl(path: string): string {
     return path;
   }
 
-  return `${API_URL}${path}`;
+  try {
+    return new URL(path, `${API_URL}/`).toString();
+  } catch {
+    return path;
+  }
 }

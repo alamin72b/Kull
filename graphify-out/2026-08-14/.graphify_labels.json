@@ -1,6 +1,6 @@
 {
-  "0": "ActivitiesService",
-  "1": "Activity",
+  "0": "Activity",
+  "1": "activity-dashboard.tsx",
   "2": "devDependencies",
   "3": "dependencies",
   "4": "contracts/package.json",
@@ -32,6 +32,5 @@
   "30": "AGENTS.md",
   "31": "extraction-spec.md",
   "32": "README.md",
-  "33": "app/page.tsx",
   "34": "loading.tsx"
 }

@@ -23,16 +23,18 @@ function formatDate(value: string): string {
 }
 
 function DocumentSection({
+  id,
   number,
   title,
   children,
 }: {
+  id: string;
   number: string;
   title: string;
   children: ReactNode;
 }) {
   return (
-    <section className={styles.documentSection}>
+    <section className={styles.documentSection} id={id}>
       <div className={styles.documentSectionHeading}>
         <span>{number}</span>
         <h2>{title}</h2>
@@ -94,89 +96,137 @@ export default async function DebugNotePage({
 
   return (
     <main className={styles.documentPage}>
-      <aside className={styles.documentSidebar}>
+      <div className={styles.documentToolbar}>
         <Link className={styles.backLink} href="/debug-notes">
-          ← Debug Notes
+          ← Back to Debug Notes
         </Link>
 
-        <nav>
-          <a href="#overview">Overview</a>
-          <a href="#error">Error</a>
-          <a href="#investigation">Investigation</a>
-          <a href="#solution">Solution</a>
-          <a href="#knowledge">Knowledge</a>
+        <div className={styles.documentActions}>
+          <Link
+            className={styles.primaryButton}
+            href={`/debug-notes/${note.id}/edit`}
+          >
+            Edit note
+          </Link>
 
-          {note.screenshots.length > 0 && (
-            <a href="#screenshots">Screenshots</a>
-          )}
-        </nav>
-      </aside>
+          <DeleteDebugNoteButton noteId={note.id} />
+        </div>
+      </div>
 
-      <article className={styles.document}>
-        <header className={styles.documentHeader}>
-          <div className={styles.badgeRow}>
-            <StatusBadge status={note.status} />
-            <SeverityBadge severity={note.severity} />
+      <div className={styles.documentLayout}>
+        <aside className={styles.documentSidebar}>
+          <p className={styles.documentSidebarLabel}>On this page</p>
 
-            {note.isPinned && (
-              <span className={styles.pinnedLabel}>Pinned</span>
+          <nav aria-label="On this page">
+            <a href="#overview">
+              <span>01</span>
+              Overview
+            </a>
+            <a href="#error">
+              <span>02</span>
+              Error
+            </a>
+            <a href="#investigation">
+              <span>03</span>
+              Investigation
+            </a>
+            <a href="#solution">
+              <span>04</span>
+              Solution
+            </a>
+            <a href="#knowledge">
+              <span>05</span>
+              Knowledge
+            </a>
+
+            {note.screenshots.length > 0 && (
+              <a href="#screenshots">
+                <span>06</span>
+                Screenshots
+              </a>
             )}
+          </nav>
+
+          <div className={styles.documentSidebarMeta}>
+            <span>Last updated</span>
+            <time dateTime={note.updatedAt}>
+              {formatDate(note.updatedAt)}
+            </time>
           </div>
+        </aside>
 
-          <h1>{note.title}</h1>
-
-          {note.summary && (
-            <p className={styles.documentLead}>
-              {note.summary}
+        <article className={styles.document}>
+          <header className={styles.documentHeader}>
+            <p className={styles.documentEyebrow}>
+              Debug note / Technical documentation
             </p>
-          )}
 
-          <div className={styles.documentMetadata}>
-            {note.occurredAt && (
-              <span>
-                Occurred: {formatDate(note.occurredAt)}
-              </span>
+            <div className={styles.badgeRow}>
+              <StatusBadge status={note.status} />
+              <SeverityBadge severity={note.severity} />
+
+              {note.isPinned && (
+                <span className={styles.pinnedLabel}>Pinned</span>
+              )}
+            </div>
+
+            <h1 className={styles.documentTitle}>{note.title}</h1>
+
+            {note.summary && (
+              <p className={styles.documentLead}>
+                {note.summary}
+              </p>
             )}
 
-            <span>
-              Created: {formatDate(note.createdAt)}
-            </span>
+            {note.tags.length > 0 && (
+              <div className={styles.tagList}>
+                {note.tags.map((tag) => (
+                  <Link
+                    className={styles.tag}
+                    href={`/debug-notes?tag=${encodeURIComponent(
+                      tag.normalizedName,
+                    )}`}
+                    key={tag.id}
+                  >
+                    #{tag.name}
+                  </Link>
+                ))}
+              </div>
+            )}
 
-            <span>
-              Updated: {formatDate(note.updatedAt)}
-            </span>
-          </div>
+            <dl className={styles.documentMetadata}>
+              {note.occurredAt && (
+                <div>
+                  <dt>Occurred</dt>
+                  <dd>
+                    <time dateTime={note.occurredAt}>
+                      {formatDate(note.occurredAt)}
+                    </time>
+                  </dd>
+                </div>
+              )}
 
-          {note.tags.length > 0 && (
-            <div className={styles.tagList}>
-              {note.tags.map((tag) => (
-                <Link
-                  className={styles.tag}
-                  href={`/debug-notes?tag=${encodeURIComponent(
-                    tag.normalizedName,
-                  )}`}
-                  key={tag.id}
-                >
-                  #{tag.name}
-                </Link>
-              ))}
-            </div>
-          )}
+              <div>
+                <dt>Created</dt>
+                <dd>
+                  <time dateTime={note.createdAt}>
+                    {formatDate(note.createdAt)}
+                  </time>
+                </dd>
+              </div>
 
-          <div className={styles.documentActions}>
-            <Link
-              className={styles.primaryButton}
-              href={`/debug-notes/${note.id}/edit`}
-            >
-              Edit note
-            </Link>
+              <div>
+                <dt>Updated</dt>
+                <dd>
+                  <time dateTime={note.updatedAt}>
+                    {formatDate(note.updatedAt)}
+                  </time>
+                </dd>
+              </div>
+            </dl>
+          </header>
 
-            <DeleteDebugNoteButton noteId={note.id} />
-          </div>
-        </header>
-
-        <div id="overview">
-          <DocumentSection number="01" title="Overview">
+          <DocumentSection id="overview" number="01" title="Overview">
             <TextBlock title="Context" value={note.context} />
 
             <TextBlock
@@ -184,15 +234,21 @@ export default async function DebugNotePage({
               value={note.environment}
             />
           </DocumentSection>
-        </div>
 
-        <div id="error">
-          <DocumentSection number="02" title="Error">
+          <DocumentSection id="error" number="02" title="Error">
             <div className={styles.textBlock}>
               <h3>Error message</h3>
-              <pre className={styles.errorCode}>
-                {note.errorMessage}
-              </pre>
+
+              <div
+                className={`${styles.codeFrame} ${styles.errorFrame}`}
+              >
+                <div className={styles.codeFrameLabel}>
+                  Error output
+                </div>
+                <pre className={styles.errorCode}>
+                  {note.errorMessage}
+                </pre>
+              </div>
             </div>
 
             <TextBlock
@@ -200,10 +256,12 @@ export default async function DebugNotePage({
               value={note.stepsToReproduce}
             />
           </DocumentSection>
-        </div>
 
-        <div id="investigation">
-          <DocumentSection number="03" title="Investigation">
+          <DocumentSection
+            id="investigation"
+            number="03"
+            title="Investigation"
+          >
             <TextBlock
               title="Attempted solutions"
               value={note.attemptedSolutions}
@@ -219,10 +277,8 @@ export default async function DebugNotePage({
               value={note.findings}
             />
           </DocumentSection>
-        </div>
 
-        <div id="solution">
-          <DocumentSection number="04" title="Solution">
+          <DocumentSection id="solution" number="04" title="Solution">
             <TextBlock
               title="Final solution"
               value={note.solution}
@@ -231,9 +287,17 @@ export default async function DebugNotePage({
             {note.codeSnippet && (
               <div className={styles.textBlock}>
                 <h3>Code or commands</h3>
-                <pre className={styles.solutionCode}>
-                  {note.codeSnippet}
-                </pre>
+
+                <div
+                  className={`${styles.codeFrame} ${styles.solutionFrame}`}
+                >
+                  <div className={styles.codeFrameLabel}>
+                    Code / command
+                  </div>
+                  <pre className={styles.solutionCode}>
+                    {note.codeSnippet}
+                  </pre>
+                </div>
               </div>
             )}
 
@@ -242,10 +306,12 @@ export default async function DebugNotePage({
               value={note.verification}
             />
           </DocumentSection>
-        </div>
 
-        <div id="knowledge">
-          <DocumentSection number="05" title="Knowledge">
+          <DocumentSection
+            id="knowledge"
+            number="05"
+            title="Knowledge"
+          >
             <TextBlock
               title="What I learned"
               value={note.learnings}
@@ -286,11 +352,10 @@ export default async function DebugNotePage({
               </div>
             )}
           </DocumentSection>
-        </div>
 
-        {note.screenshots.length > 0 && (
-          <div id="screenshots">
+          {note.screenshots.length > 0 && (
             <DocumentSection
+              id="screenshots"
               number="06"
               title="Screenshots"
             >
@@ -324,9 +389,9 @@ export default async function DebugNotePage({
                 ))}
               </div>
             </DocumentSection>
-          </div>
-        )}
-      </article>
+          )}
+        </article>
+      </div>
     </main>
   );
 }

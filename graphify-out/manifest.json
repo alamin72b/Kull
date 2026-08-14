@@ -100,8 +100,8 @@
     "semantic_hash": "7d97c6af5044553e32b929360e21b2a0"
   },
   "apps/api/src/main.ts": {
-    "mtime": 1786546359.8946786,
-    "ast_hash": "6d84b242da87a7491508259581636fe4",
+    "mtime": 1786708711.8111858,
+    "ast_hash": "acaf055fef5fb80dd5001fd865ce8564",
     "semantic_hash": ""
   },
   "apps/api/test/app.e2e-spec.ts": {
@@ -125,8 +125,8 @@
     "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
   "apps/web/next-env.d.ts": {
-    "mtime": 1786707820.3727522,
-    "ast_hash": "2a74d3909800ca5467fa83b0ab4a4890",
+    "mtime": 1786713316.4490705,
+    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
     "semantic_hash": ""
   },
   "apps/web/next.config.ts": {
@@ -150,8 +150,8 @@
     "semantic_hash": "5647f771f1ea3a0d9a2a80813312195b"
   },
   "apps/web/src/app/page.tsx": {
-    "mtime": 1786706644.1055377,
-    "ast_hash": "51b3c1ef5eebc2300008c3f3a90ae866",
+    "mtime": 1786708711.5381896,
+    "ast_hash": "1226f34bc8c78cfd40704f5340afbb1f",
     "semantic_hash": ""
   },
   "apps/web/src/components/layout/app-header.tsx": {
@@ -305,18 +305,18 @@
     "semantic_hash": ""
   },
   "apps/web/src/features/debug-notes/debug-notes.api.ts": {
-    "mtime": 1786707766.845305,
-    "ast_hash": "ce555cbe7809a79c614f204b5fd7049e",
+    "mtime": 1786708712.100182,
+    "ast_hash": "38fd59ff9c22db9a5235613c27a07ef1",
     "semantic_hash": ""
   },
   "apps/web/src/app/debug-notes/[id]/edit/page.tsx": {
-    "mtime": 1786706285.7103355,
-    "ast_hash": "4737d3fb1e69b29d0e938108f82e38fe",
+    "mtime": 1786712340.3615444,
+    "ast_hash": "c4b069c94ed67164a7c06c8c5d350682",
     "semantic_hash": ""
   },
   "apps/web/src/app/debug-notes/[id]/page.tsx": {
-    "mtime": 1786706285.4183393,
-    "ast_hash": "99324519f44fb939075b08196971531e",
+    "mtime": 1786712417.0813584,
+    "ast_hash": "d636a1de466decf816980a4ead31897a",
     "semantic_hash": ""
   },
   "apps/web/src/app/debug-notes/loading.tsx": {
@@ -345,8 +345,8 @@
     "semantic_hash": ""
   },
   "apps/web/src/features/debug-notes/components/DebugNoteForm.tsx": {
-    "mtime": 1786707767.1013083,
-    "ast_hash": "14e44659adb194089237d280d1883f7c",
+    "mtime": 1786712428.6860042,
+    "ast_hash": "6dc60609e5d39fef2fb9159ffa822696",
     "semantic_hash": ""
   },
   "apps/web/src/features/debug-notes/components/DeleteDebugNoteButton.tsx": {
