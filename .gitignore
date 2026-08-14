@@ -20,3 +20,8 @@ apps/api/src/generated/prisma/
 .windsurf/
 
 /src/generated/prisma
+
+
+# Uploaded Debug Notes screenshots
+apps/api/uploads/*
+!apps/api/uploads/.gitkeep

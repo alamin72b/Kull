@@ -9,15 +9,94 @@ datasource db {
 }
 
 model Activity {
-  id           String   @id @default(uuid()) @db.Uuid // Must be String and @db.Uuid
-  name         String   @db.VarChar(120) // Must be @db, not @DB
+  id           String   @id @default(uuid()) @db.Uuid
+  name         String   @db.VarChar(120)
   activityDate DateTime @db.Date
   startAt      DateTime @db.Timestamptz(3)
   endAt        DateTime @db.Timestamptz(3)
-  note         String?   @db.VarChar(1200) 
+  note         String?  @db.VarChar(1000)
   createdAt    DateTime @default(now()) @db.Timestamptz(3)
   updatedAt    DateTime @updatedAt @db.Timestamptz(3)
 
   @@index([activityDate, startAt])
   @@map("activities")
+}
+
+enum DebugNoteStatus {
+  UNSOLVED
+  IN_PROGRESS
+  SOLVED
+}
+
+enum DebugNoteSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+model DebugNote {
+  id                 String            @id @default(uuid())
+  title              String            @db.VarChar(160)
+  summary            String?           @db.Text
+  status             DebugNoteStatus   @default(UNSOLVED)
+  severity           DebugNoteSeverity @default(MEDIUM)
+  errorMessage       String            @db.Text
+  context            String?           @db.Text
+  stepsToReproduce   String?           @db.Text
+  environment        String?           @db.Text
+  attemptedSolutions String?           @db.Text
+  rootCause          String?           @db.Text
+  solution           String?           @db.Text
+  codeSnippet        String?           @db.Text
+  verification       String?           @db.Text
+  findings           String?           @db.Text
+  learnings          String?           @db.Text
+  thoughts           String?           @db.Text
+  references         String?           @db.Text
+  occurredAt         DateTime?
+  isPinned           Boolean           @default(false)
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  tags               DebugNoteTag[]
+  screenshots        DebugScreenshot[]
+
+  @@index([status])
+  @@index([severity])
+  @@index([occurredAt])
+  @@index([isPinned, updatedAt])
+}
+
+model DebugTag {
+  id             String         @id @default(uuid())
+  name           String         @db.VarChar(50)
+  normalizedName String         @unique @db.VarChar(50)
+  createdAt      DateTime       @default(now())
+  notes          DebugNoteTag[]
+}
+
+model DebugNoteTag {
+  debugNoteId String
+  tagId       String
+  createdAt   DateTime  @default(now())
+  debugNote   DebugNote @relation(fields: [debugNoteId], references: [id], onDelete: Cascade)
+  tag         DebugTag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([debugNoteId, tagId])
+  @@index([tagId])
+}
+
+model DebugScreenshot {
+  id           String    @id @default(uuid())
+  originalName String    @db.VarChar(255)
+  fileName     String    @unique @db.VarChar(255)
+  mimeType     String    @db.VarChar(100)
+  size         Int
+  caption      String?   @db.VarChar(200)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  debugNoteId  String
+  debugNote    DebugNote @relation(fields: [debugNoteId], references: [id], onDelete: Cascade)
+
+  @@index([debugNoteId])
 }

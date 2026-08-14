@@ -1,54 +1,142 @@
-import { ArrowRight, ClipboardList } from "lucide-react";
+import {
+  ArrowUpRight,
+  BookOpenText,
+  Clock3,
+  type LucideIcon,
+} from "lucide-react";
 import Link from "next/link";
 import { AppHeader } from "@/components/layout/app-header";
 import styles from "./home.module.css";
 
-export default function Home() {
+interface Tool {
+  name: string;
+  description: string;
+  href: string;
+  label: string;
+  icon: LucideIcon;
+  tone: "sage" | "violet";
+}
+
+const tools: Tool[] = [
+  {
+    name: "Activity",
+    description:
+      "Record your daily activities with their start time, end time, date, and notes.",
+    href: "/activities",
+    label: "Daily log",
+    icon: Clock3,
+    tone: "sage",
+  },
+  {
+    name: "Debug Notes",
+    description:
+      "Store errors, screenshots, investigations, solutions, learnings, and searchable tags.",
+    href: "/debug-notes",
+    label: "Knowledge base",
+    icon: BookOpenText,
+    tone: "violet",
+  },
+];
+
+export default function HomePage() {
   return (
     <>
       <AppHeader />
 
       <main className={styles.main}>
-        <section className={styles.hero}>
-          <p className={styles.eyebrow}>YOUR PERSONAL WORKSPACE</p>
+        <section
+          aria-labelledby="home-heading"
+          className={styles.hero}
+        >
+          <div className={styles.heroCopy}>
+            <p className={styles.eyebrow}>Personal workspace</p>
+            <h1 id="home-heading">
+              Small tools.
+              <span>One clear place.</span>
+            </h1>
+            <p className={styles.intro}>
+              Keep everyday work organized without turning your
+              workspace into another complicated system.
+            </p>
+          </div>
 
-          <h1>Small tools for a more organized day.</h1>
+          <aside
+            aria-label={`${tools.length} tools available in Kull`}
+            className={styles.workspacePanel}
+          >
+            <div className={styles.panelHeader}>
+              <span>Workspace</span>
+              <span className={styles.panelBadge}>Personal</span>
+            </div>
 
-          <p className={styles.intro}>
-            Kull starts simple. Choose a tool below and keep the things
-            that matter to you in one place.
-          </p>
+            <div className={styles.panelCount}>
+              <strong>{String(tools.length).padStart(2, "0")}</strong>
+              <span>tools ready</span>
+            </div>
+
+            <p>
+              A growing library where every tool stays focused,
+              easy to find, and quick to open.
+            </p>
+          </aside>
         </section>
 
         <section
           aria-labelledby="tools-heading"
-          className={styles.tools}
+          className={styles.toolSection}
         >
           <div className={styles.sectionHeading}>
             <div>
-              <p className={styles.sectionLabel}>TOOLS</p>
-              <h2 id="tools-heading">What do you want to open?</h2>
+              <p className={styles.sectionLabel}>Tool library</p>
+              <h2 id="tools-heading">Choose what you need</h2>
             </div>
 
-            <span>1 available</span>
+            <p className={styles.sectionDescription}>
+              Focused spaces for the work worth keeping.
+            </p>
           </div>
 
-          <Link className={styles.toolCard} href="/activities">
-            <span className={styles.toolIcon} aria-hidden="true">
-              <ClipboardList size={28} strokeWidth={1.8} />
-            </span>
+          <div className={styles.toolGrid}>
+            {tools.map((tool, index) => {
+              const Icon = tool.icon;
 
-            <span className={styles.toolContent}>
-              <strong>Activity</strong>
-              <span>Record what you did during the day.</span>
-            </span>
+              return (
+                <Link
+                  className={`${styles.toolCard} ${styles[tool.tone]}`}
+                  href={tool.href}
+                  key={tool.name}
+                >
+                  <div className={styles.cardTop}>
+                    <span className={styles.toolNumber}>
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
 
-            <ArrowRight
-              className={styles.arrow}
-              size={22}
-              aria-hidden="true"
-            />
-          </Link>
+                    <span className={styles.toolIcon} aria-hidden="true">
+                      <Icon size={23} strokeWidth={1.8} />
+                    </span>
+                  </div>
+
+                  <div className={styles.cardCopy}>
+                    <span className={styles.toolLabel}>
+                      {tool.label}
+                    </span>
+
+                    <h3>{tool.name}</h3>
+                    <p>{tool.description}</p>
+                  </div>
+
+                  <div className={styles.cardFooter}>
+                    <span>Open tool</span>
+                    <ArrowUpRight
+                      aria-hidden="true"
+                      size={19}
+                      strokeWidth={1.9}
+                    />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </section>
       </main>
     </>
