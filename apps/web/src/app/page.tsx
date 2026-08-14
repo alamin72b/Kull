@@ -1,56 +1,66 @@
-import { ArrowRight, ClipboardList } from "lucide-react";
 import Link from "next/link";
-import { AppHeader } from "@/components/layout/app-header";
 import styles from "./home.module.css";
 
-export default function Home() {
+const tools = [
+  {
+    name: "Activity",
+    description:
+      "Record your daily activities with their start time, end time, date, and notes.",
+    href: "/activities",
+    label: "Daily log",
+  },
+  {
+    name: "Debug Notes",
+    description:
+      "Store errors, screenshots, investigations, solutions, learnings, and searchable tags.",
+    href: "/debug-notes",
+    label: "Knowledge base",
+  },
+];
+
+export default function HomePage() {
   return (
-    <>
-      <AppHeader />
+    <main className={styles.page}>
+      <header className={styles.hero}>
+        <p className={styles.eyebrow}>Personal workspace</p>
+        <h1>Kull</h1>
+        <p>
+          A growing collection of small, focused tools for recording
+          your work and building your personal knowledge base.
+        </p>
+      </header>
 
-      <main className={styles.main}>
-        <section className={styles.hero}>
-          <p className={styles.eyebrow}>YOUR PERSONAL WORKSPACE</p>
+      <section className={styles.toolSection}>
+        <div className={styles.sectionHeading}>
+          <h2>Tools</h2>
+          <span>{tools.length} available</span>
+        </div>
 
-          <h1>Small tools for a more organized day.</h1>
+        <div className={styles.toolGrid}>
+          {tools.map((tool, index) => (
+            <Link
+              className={styles.toolCard}
+              href={tool.href}
+              key={tool.name}
+            >
+              <div className={styles.toolNumber}>
+                {String(index + 1).padStart(2, "0")}
+              </div>
 
-          <p className={styles.intro}>
-            Kull starts simple. Choose a tool below and keep the things
-            that matter to you in one place.
-          </p>
-        </section>
+              <span className={styles.toolLabel}>
+                {tool.label}
+              </span>
 
-        <section
-          aria-labelledby="tools-heading"
-          className={styles.tools}
-        >
-          <div className={styles.sectionHeading}>
-            <div>
-              <p className={styles.sectionLabel}>TOOLS</p>
-              <h2 id="tools-heading">What do you want to open?</h2>
-            </div>
+              <h3>{tool.name}</h3>
+              <p>{tool.description}</p>
 
-            <span>1 available</span>
-          </div>
-
-          <Link className={styles.toolCard} href="/activities">
-            <span className={styles.toolIcon} aria-hidden="true">
-              <ClipboardList size={28} strokeWidth={1.8} />
-            </span>
-
-            <span className={styles.toolContent}>
-              <strong>Activity</strong>
-              <span>Record what you did during the day.</span>
-            </span>
-
-            <ArrowRight
-              className={styles.arrow}
-              size={22}
-              aria-hidden="true"
-            />
-          </Link>
-        </section>
-      </main>
-    </>
+              <span className={styles.openTool}>
+                Open tool →
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }

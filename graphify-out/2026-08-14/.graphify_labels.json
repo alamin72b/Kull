@@ -1,6 +1,6 @@
 {
-  "0": "Activity",
-  "1": "activity-dashboard.tsx",
+  "0": "ActivitiesService",
+  "1": "Activity",
   "2": "devDependencies",
   "3": "dependencies",
   "4": "contracts/package.json",
