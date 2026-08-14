@@ -1,9 +1,9 @@
-import { Module } from '@nestjs/common';
-import { DebugNotesController } from './debug-notes.controller';
-import { DebugNotesService } from './debug-notes.service';
+import { Module } from "@nestjs/common";
+import { DebugNotesController } from "./debug-notes.controller";
+import { DebugNotesService } from "./debug-notes.service";
 
 @Module({
   controllers: [DebugNotesController],
-  providers: [DebugNotesService]
+  providers: [DebugNotesService],
 })
 export class DebugNotesModule {}

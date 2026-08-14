@@ -13,7 +13,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller_activitiescontroller",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "activitiescontroller"
     },
     {
@@ -26,7 +26,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "activitiesservice"
     },
     {
@@ -39,7 +39,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_create_activity_dto_createactivitydto",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "createactivitydto"
     },
     {
@@ -52,7 +52,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_find_activities_query_dto_findactivitiesquerydto",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "findactivitiesquerydto"
     },
     {
@@ -65,21 +65,8 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_update_activity_dto_updateactivitydto",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "updateactivitydto"
-    },
-    {
-      "label": "Activity",
-      "file_type": "code",
-      "source_file": "packages/contracts/src/activity.ts",
-      "source_location": "L1",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "packages_contracts_src_activity_activity",
-      "community": 0,
-      "community_name": "Activity",
-      "norm_label": "activity"
     },
     {
       "label": "ApiErrorBody",
@@ -91,7 +78,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_api_activity_api_apierrorbody",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "apierrorbody"
     },
     {
@@ -104,7 +91,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_card_activitycardprops",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activitycardprops"
     },
     {
@@ -117,7 +104,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_date_navigation_activitydatenavigationprops",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activitydatenavigationprops"
     },
     {
@@ -130,7 +117,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_form_activityformprops",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activityformprops"
     },
     {
@@ -143,8 +130,21 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_list_activitylistprops",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activitylistprops"
+    },
+    {
+      "label": "Activity",
+      "file_type": "code",
+      "source_file": "packages/contracts/src/activity.ts",
+      "source_location": "L1",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "packages_contracts_src_activity_activity",
+      "community": 1,
+      "community_name": "Activity",
+      "norm_label": "activity"
     },
     {
       "label": "ActivityInput",
@@ -156,34 +156,8 @@
       "_origin": "ast",
       "id": "packages_contracts_src_activity_activityinput",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activityinput"
-    },
-    {
-      "label": "DebugNoteWithRelations",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L32",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotewithrelations",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "debugnotewithrelations"
-    },
-    {
-      "label": "ParsedTag",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L36",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_parsedtag",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "parsedtag"
     },
     {
       "label": "CreateDebugNoteDto",
@@ -195,7 +169,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_createdebugnotedto",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "createdebugnotedto"
     },
     {
@@ -208,33 +182,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_transformvalue",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "transformvalue"
-    },
-    {
-      "label": "QueryDebugNotesDto",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/dto/query-debug-notes.dto.ts",
-      "source_location": "L22",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_querydebugnotesdto",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "querydebugnotesdto"
-    },
-    {
-      "label": "TransformValue",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/dto/query-debug-notes.dto.ts",
-      "source_location": "L16",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_transformvalue",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "transformvalue"
     },
     {
@@ -247,7 +195,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_update_debug_note_dto_updatedebugnotedto",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "updatedebugnotedto"
     },
     {
@@ -342,17 +290,30 @@
       "norm_label": "debugtag"
     },
     {
-      "label": "DebugNotesService",
+      "label": "QueryDebugNotesDto",
       "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L42",
+      "source_file": "apps/api/src/debug-notes/dto/query-debug-notes.dto.ts",
+      "source_location": "L22",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
+      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_querydebugnotesdto",
       "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": "debugnotesservice"
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "querydebugnotesdto"
+    },
+    {
+      "label": "TransformValue",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/dto/query-debug-notes.dto.ts",
+      "source_location": "L16",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_transformvalue",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "transformvalue"
     },
     {
       "label": "ActivitiesModule",
@@ -364,7 +325,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_module_activitiesmodule",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "activitiesmodule"
     },
     {
@@ -377,7 +338,7 @@
       "_origin": "ast",
       "id": "apps_api_src_app_module_appmodule",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "appmodule"
     },
     {
@@ -390,7 +351,7 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_module_prismamodule",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "prismamodule"
     },
     {
@@ -403,7 +364,7 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_service_prismaservice",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "prismaservice"
     },
     {
@@ -416,7 +377,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_debug_notes_controller_debugnotescontroller",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "debugnotescontroller"
     },
     {
@@ -429,8 +390,47 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_debug_notes_module_debugnotesmodule",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "debugnotesmodule"
+    },
+    {
+      "label": "DebugNotesService",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L39",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "debugnotesservice"
+    },
+    {
+      "label": "DebugNoteWithRelations",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L25",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotewithrelations",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "debugnotewithrelations"
+    },
+    {
+      "label": "ParsedTag",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L29",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_parsedtag",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "parsedtag"
     },
     {
       "label": ".constructor()",
@@ -441,7 +441,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller_activitiescontroller_constructor",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".constructor()"
     },
     {
@@ -453,7 +453,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller_activitiescontroller_create",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".create()"
     },
     {
@@ -465,7 +465,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller_activitiescontroller_findbydate",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".findbydate()"
     },
     {
@@ -477,7 +477,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller_activitiescontroller_findone",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".findone()"
     },
     {
@@ -489,7 +489,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller_activitiescontroller_remove",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".remove()"
     },
     {
@@ -501,7 +501,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller_activitiescontroller_update",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".update()"
     },
     {
@@ -513,7 +513,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_cleanname",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".cleanname()"
     },
     {
@@ -525,7 +525,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_cleannote",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".cleannote()"
     },
     {
@@ -537,7 +537,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_create",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".create()"
     },
     {
@@ -549,7 +549,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_findbydate",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".findbydate()"
     },
     {
@@ -561,7 +561,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_findentity",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".findentity()"
     },
     {
@@ -573,7 +573,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_findone",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".findone()"
     },
     {
@@ -585,7 +585,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_remove",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".remove()"
     },
     {
@@ -597,7 +597,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_tocontract",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".tocontract()"
     },
     {
@@ -609,7 +609,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_todateonly",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".todateonly()"
     },
     {
@@ -621,7 +621,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_todatetime",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".todatetime()"
     },
     {
@@ -633,7 +633,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_update",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".update()"
     },
     {
@@ -645,7 +645,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_validateinterval",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": ".validateinterval()"
     },
     {
@@ -657,7 +657,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_activities_page_activitiespage",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activitiespage()"
     },
     {
@@ -669,7 +669,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_page_home",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "home()"
     },
     {
@@ -681,7 +681,7 @@
       "_origin": "ast",
       "id": "apps_web_src_components_layout_app_header_appheader",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "appheader()"
     },
     {
@@ -693,7 +693,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_api_activity_api_createactivity",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "createactivity()"
     },
     {
@@ -705,7 +705,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_api_activity_api_deleteactivity",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "deleteactivity()"
     },
     {
@@ -717,7 +717,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_api_activity_api_getactivities",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "getactivities()"
     },
     {
@@ -729,7 +729,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_api_activity_api_request",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "request()"
     },
     {
@@ -741,7 +741,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_api_activity_api_updateactivity",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "updateactivity()"
     },
     {
@@ -753,7 +753,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_card_activitycard",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activitycard()"
     },
     {
@@ -765,7 +765,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_dashboard_activitydashboard",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activitydashboard()"
     },
     {
@@ -777,7 +777,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_date_navigation_activitydatenavigation",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activitydatenavigation()"
     },
     {
@@ -789,7 +789,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_form_activityform",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activityform()"
     },
     {
@@ -801,7 +801,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_list_activitylist",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activitylist()"
     },
     {
@@ -813,7 +813,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_hooks_use_activities_sortbystarttime",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "sortbystarttime()"
     },
     {
@@ -825,7 +825,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_hooks_use_activities_useactivities",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "useactivities()"
     },
     {
@@ -837,7 +837,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_combinelocaldatetime",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "combinelocaldatetime()"
     },
     {
@@ -849,7 +849,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_formatduration",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "formatduration()"
     },
     {
@@ -861,7 +861,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_formatlongdate",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "formatlongdate()"
     },
     {
@@ -873,7 +873,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_formattime",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "formattime()"
     },
     {
@@ -885,7 +885,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_gettoday",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "gettoday()"
     },
     {
@@ -897,7 +897,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_pad",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "pad()"
     },
     {
@@ -909,7 +909,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_parselocaldate",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "parselocaldate()"
     },
     {
@@ -921,7 +921,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_shiftdate",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "shiftdate()"
     },
     {
@@ -933,7 +933,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date_totimeinput",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "totimeinput()"
     },
     {
@@ -945,7 +945,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_emptystringtonull",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "emptystringtonull()"
     },
     {
@@ -957,7 +957,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_trimstring",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "trimstring()"
     },
     {
@@ -968,225 +968,9 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_trimstring",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
       "norm_label": "trimstring()"
-    },
-    {
-      "label": ".create()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L186",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".create()"
-    },
-    {
-      "label": ".createTagLinks()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L654",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_createtaglinks",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".createtaglinks()"
-    },
-    {
-      "label": ".deletePaths()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L696",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deletepaths",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".deletepaths()"
-    },
-    {
-      "label": ".deleteStoredScreenshots()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L686",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deletestoredscreenshots",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".deletestoredscreenshots()"
-    },
-    {
-      "label": ".deleteUploadedFiles()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L680",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deleteuploadedfiles",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".deleteuploadedfiles()"
-    },
-    {
-      "label": ".findAll()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L45",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findall",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".findall()"
-    },
-    {
-      "label": ".findOne()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L180",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findone",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".findone()"
-    },
-    {
-      "label": ".findRawNote()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L495",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findrawnote",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".findrawnote()"
-    },
-    {
-      "label": ".findTags()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L167",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findtags",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".findtags()"
-    },
-    {
-      "label": ".nullableText()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L670",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_nullabletext",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".nullabletext()"
-    },
-    {
-      "label": ".parseCaptionArray()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L594",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsecaptionarray",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".parsecaptionarray()"
-    },
-    {
-      "label": ".parseCaptionMap()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L614",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsecaptionmap",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".parsecaptionmap()"
-    },
-    {
-      "label": ".parseStringArray()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L557",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsestringarray",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".parsestringarray()"
-    },
-    {
-      "label": ".parseTags()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L527",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsetags",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".parsetags()"
-    },
-    {
-      "label": ".presentNote()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L510",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_presentnote",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".presentnote()"
-    },
-    {
-      "label": ".remove()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L482",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_remove",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".remove()"
-    },
-    {
-      "label": ".removeUnusedTags()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L700",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_removeunusedtags",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".removeunusedtags()"
-    },
-    {
-      "label": ".update()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L254",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": ".update()"
     },
     {
       "label": ".constructor()",
@@ -1197,7 +981,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_activitiesservice_constructor",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": ".constructor()"
     },
     {
@@ -1209,7 +993,7 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_service_prismaservice_constructor",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": ".constructor()"
     },
     {
@@ -1221,7 +1005,7 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_service_prismaservice_onmoduledestroy",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": ".onmoduledestroy()"
     },
     {
@@ -1233,20 +1017,176 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_service_prismaservice_onmoduleinit",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": ".onmoduleinit()"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L43",
+      "source_location": "L40",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_constructor",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": ".constructor()"
+    },
+    {
+      "label": ".createTagLinks()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L212",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_createtaglinks",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".createtaglinks()"
+    },
+    {
+      "label": ".deletePaths()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L258",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deletepaths",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".deletepaths()"
+    },
+    {
+      "label": ".deleteStoredScreenshots()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L248",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deletestoredscreenshots",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".deletestoredscreenshots()"
+    },
+    {
+      "label": ".deleteUploadedFiles()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L238",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deleteuploadedfiles",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".deleteuploadedfiles()"
+    },
+    {
+      "label": ".findRawNote()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findrawnote",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".findrawnote()"
+    },
+    {
+      "label": ".nullableText()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L228",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_nullabletext",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".nullabletext()"
+    },
+    {
+      "label": ".parseCaptionArray()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L142",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsecaptionarray",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".parsecaptionarray()"
+    },
+    {
+      "label": ".parseCaptionMap()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L166",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsecaptionmap",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".parsecaptionmap()"
+    },
+    {
+      "label": ".parseStringArray()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L108",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsestringarray",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".parsestringarray()"
+    },
+    {
+      "label": ".parseTags()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L78",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsetags",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".parsetags()"
+    },
+    {
+      "label": ".presentNote()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L59",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_presentnote",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".presentnote()"
+    },
+    {
+      "label": ".removeUnusedTags()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L264",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_removeunusedtags",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": ".removeunusedtags()"
+    },
+    {
+      "label": "isStringArray()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L34",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_isstringarray",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "isstringarray()"
     },
     {
       "label": "bootstrap()",
@@ -1257,7 +1197,7 @@
       "_origin": "ast",
       "id": "apps_api_src_main_bootstrap",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "bootstrap()"
     },
     {
@@ -1280,7 +1220,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "activities.controller.ts"
     },
     {
@@ -1291,7 +1231,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_controller_ts_controller",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "controller"
     },
     {
@@ -1302,7 +1242,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_module",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "activities.module.ts"
     },
     {
@@ -1313,7 +1253,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "activities.service.ts"
     },
     {
@@ -1324,7 +1264,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_service_ts_injectable",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "injectable"
     },
     {
@@ -1335,7 +1275,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_create_activity_dto",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "create-activity.dto.ts"
     },
     {
@@ -1346,7 +1286,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_create_activity_dto_ts_isoptional",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "isoptional"
     },
     {
@@ -1357,7 +1297,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_create_activity_dto_ts_isstring",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "isstring"
     },
     {
@@ -1368,7 +1308,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_create_activity_dto_ts_matches",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "matches"
     },
     {
@@ -1379,7 +1319,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_create_activity_dto_ts_maxlength",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "maxlength"
     },
     {
@@ -1390,7 +1330,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_find_activities_query_dto",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "find-activities-query.dto.ts"
     },
     {
@@ -1401,7 +1341,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_find_activities_query_dto_ts_matches",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "matches"
     },
     {
@@ -1412,7 +1352,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_dto_update_activity_dto",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "update-activity.dto.ts"
     },
     {
@@ -1423,7 +1363,7 @@
       "_origin": "ast",
       "id": "body",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "body"
     },
     {
@@ -1434,7 +1374,7 @@
       "_origin": "ast",
       "id": "delete",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "delete"
     },
     {
@@ -1445,7 +1385,7 @@
       "_origin": "ast",
       "id": "get",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "get"
     },
     {
@@ -1456,7 +1396,7 @@
       "_origin": "ast",
       "id": "httpcode",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "httpcode"
     },
     {
@@ -1467,7 +1407,7 @@
       "_origin": "ast",
       "id": "isiso8601",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "isiso8601"
     },
     {
@@ -1478,7 +1418,7 @@
       "_origin": "ast",
       "id": "param",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "param"
     },
     {
@@ -1489,7 +1429,7 @@
       "_origin": "ast",
       "id": "patch",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "patch"
     },
     {
@@ -1500,7 +1440,7 @@
       "_origin": "ast",
       "id": "post",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "post"
     },
     {
@@ -1511,7 +1451,7 @@
       "_origin": "ast",
       "id": "query",
       "community": 0,
-      "community_name": "Activity",
+      "community_name": "ActivitiesService",
       "norm_label": "query"
     },
     {
@@ -1522,7 +1462,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_activities_page",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activities/page.tsx"
     },
     {
@@ -1533,7 +1473,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_page",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "app/page.tsx"
     },
     {
@@ -1544,7 +1484,7 @@
       "_origin": "ast",
       "id": "apps_web_src_components_layout_app_header",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "app-header.tsx"
     },
     {
@@ -1555,7 +1495,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_api_activity_api",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activity-api.ts"
     },
     {
@@ -1566,7 +1506,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_card",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activity-card.tsx"
     },
     {
@@ -1577,7 +1517,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_dashboard",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activity-dashboard.tsx"
     },
     {
@@ -1588,7 +1528,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_date_navigation",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activity-date-navigation.tsx"
     },
     {
@@ -1599,7 +1539,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_form",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activity-form.tsx"
     },
     {
@@ -1610,7 +1550,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_components_activity_list",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activity-list.tsx"
     },
     {
@@ -1621,7 +1561,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_hooks_use_activities",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "use-activities.ts"
     },
     {
@@ -1632,7 +1572,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_activities_utils_date",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "date.ts"
     },
     {
@@ -1643,7 +1583,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_activity",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "activity.ts"
     },
     {
@@ -1654,7 +1594,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_index",
       "community": 1,
-      "community_name": "activity-dashboard.tsx",
+      "community_name": "Activity",
       "norm_label": "index.ts"
     },
     {
@@ -2175,72 +2115,6 @@
       "norm_label": "version"
     },
     {
-      "label": "debug-note-upload.config.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-note-upload.config.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_note_upload_config",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "debug-note-upload.config.ts"
-    },
-    {
-      "label": "DEBUG_NOTE_UPLOAD_DIRECTORY",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-note-upload.config.ts",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_note_upload_config_debug_note_upload_directory",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "debug_note_upload_directory"
-    },
-    {
-      "label": "debugNoteUploadOptions",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-note-upload.config.ts",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_note_upload_config_debugnoteuploadoptions",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "debugnoteuploadoptions"
-    },
-    {
-      "label": "extensionByMimeType",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-note-upload.config.ts",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_note_upload_config_extensionbymimetype",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "extensionbymimetype"
-    },
-    {
-      "label": "debug-notes.service.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "debug-notes.service.ts"
-    },
-    {
-      "label": "debugNoteInclude",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnoteinclude",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "debugnoteinclude"
-    },
-    {
       "label": "create-debug-note.dto.ts",
       "file_type": "code",
       "source_file": "apps/api/src/debug-notes/dto/create-debug-note.dto.ts",
@@ -2248,7 +2122,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "create-debug-note.dto.ts"
     },
     {
@@ -2259,7 +2133,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_ts_isenum",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "isenum"
     },
     {
@@ -2270,7 +2144,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_ts_isoptional",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "isoptional"
     },
     {
@@ -2281,7 +2155,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_ts_isstring",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "isstring"
     },
     {
@@ -2292,7 +2166,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_ts_maxlength",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "maxlength"
     },
     {
@@ -2303,73 +2177,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_create_debug_note_dto_ts_transform",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "transform"
-    },
-    {
-      "label": "query-debug-notes.dto.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/dto/query-debug-notes.dto.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "query-debug-notes.dto.ts"
-    },
-    {
-      "label": "IsEnum",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_isenum",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "isenum"
-    },
-    {
-      "label": "IsOptional",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_isoptional",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "isoptional"
-    },
-    {
-      "label": "IsString",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_isstring",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "isstring"
-    },
-    {
-      "label": "MaxLength",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_maxlength",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "maxlength"
-    },
-    {
-      "label": "Transform",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_transform",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "transform"
     },
     {
@@ -2380,7 +2188,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_update_debug_note_dto",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "update-debug-note.dto.ts"
     },
     {
@@ -2391,7 +2199,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_update_debug_note_dto_ts_isoptional",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "isoptional"
     },
     {
@@ -2402,7 +2210,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_update_debug_note_dto_ts_isstring",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "isstring"
     },
     {
@@ -2413,7 +2221,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_dto_update_debug_note_dto_ts_maxlength",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "maxlength"
     },
     {
@@ -2424,7 +2232,7 @@
       "_origin": "ast",
       "id": "isdatestring",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "isdatestring"
     },
     {
@@ -2435,41 +2243,8 @@
       "_origin": "ast",
       "id": "isin",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "isin"
-    },
-    {
-      "label": "IsInt",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "isint",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "isint"
-    },
-    {
-      "label": "Max",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "max",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "max"
-    },
-    {
-      "label": "Min",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "min",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "min"
     },
     {
       "label": "MinLength",
@@ -2479,19 +2254,8 @@
       "_origin": "ast",
       "id": "minlength",
       "community": 12,
-      "community_name": "debug-notes.service.ts",
+      "community_name": "CreateDebugNoteDto",
       "norm_label": "minlength"
-    },
-    {
-      "label": "Type",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "type",
-      "community": 12,
-      "community_name": "debug-notes.service.ts",
-      "norm_label": "type"
     },
     {
       "label": "tsconfig.build.json",
@@ -3088,15 +2852,114 @@
       "norm_label": "sourceroot"
     },
     {
-      "label": "Injectable",
+      "label": "query-debug-notes.dto.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/dto/query-debug-notes.dto.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "query-debug-notes.dto.ts"
+    },
+    {
+      "label": "IsEnum",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_ts_injectable",
+      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_isenum",
       "community": 18,
-      "community_name": "DebugNotesService",
-      "norm_label": "injectable"
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "isenum"
+    },
+    {
+      "label": "IsOptional",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_isoptional",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "isoptional"
+    },
+    {
+      "label": "IsString",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_isstring",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "isstring"
+    },
+    {
+      "label": "MaxLength",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_maxlength",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "maxlength"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_dto_query_debug_notes_dto_ts_transform",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "transform"
+    },
+    {
+      "label": "IsInt",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "isint",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "isint"
+    },
+    {
+      "label": "Max",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "max",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "max"
+    },
+    {
+      "label": "Min",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "min",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "min"
+    },
+    {
+      "label": "Type",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "type",
+      "community": 18,
+      "community_name": "QueryDebugNotesDto",
+      "norm_label": "type"
     },
     {
       "label": "web/eslint.config.mjs",
@@ -4580,7 +4443,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_module_ts_module",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "module"
     },
     {
@@ -4591,7 +4454,7 @@
       "_origin": "ast",
       "id": "apps_api_src_app_module",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "app.module.ts"
     },
     {
@@ -4602,7 +4465,7 @@
       "_origin": "ast",
       "id": "apps_api_src_app_module_ts_module",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "module"
     },
     {
@@ -4613,7 +4476,7 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_module",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "prisma.module.ts"
     },
     {
@@ -4624,7 +4487,7 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_module_ts_module",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "module"
     },
     {
@@ -4635,7 +4498,7 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_service",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "prisma.service.ts"
     },
     {
@@ -4646,8 +4509,52 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_service_ts_injectable",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "injectable"
+    },
+    {
+      "label": "debug-note-upload.config.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-note-upload.config.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_note_upload_config",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "debug-note-upload.config.ts"
+    },
+    {
+      "label": "DEBUG_NOTE_UPLOAD_DIRECTORY",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-note-upload.config.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_note_upload_config_debug_note_upload_directory",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "debug_note_upload_directory"
+    },
+    {
+      "label": "debugNoteUploadOptions",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-note-upload.config.ts",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_note_upload_config_debugnoteuploadoptions",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "debugnoteuploadoptions"
+    },
+    {
+      "label": "extensionByMimeType",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-note-upload.config.ts",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_note_upload_config_extensionbymimetype",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "extensionbymimetype"
     },
     {
       "label": "debug-notes.controller.ts",
@@ -4657,7 +4564,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_debug_notes_controller",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "debug-notes.controller.ts"
     },
     {
@@ -4668,7 +4575,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_debug_notes_controller_ts_controller",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "controller"
     },
     {
@@ -4679,7 +4586,7 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_debug_notes_module",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "debug-notes.module.ts"
     },
     {
@@ -4690,8 +4597,41 @@
       "_origin": "ast",
       "id": "apps_api_src_debug_notes_debug_notes_module_ts_module",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "module"
+    },
+    {
+      "label": "debug-notes.service.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "debug-notes.service.ts"
+    },
+    {
+      "label": "debugNoteInclude",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnoteinclude",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "debugnoteinclude"
+    },
+    {
+      "label": "Injectable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_ts_injectable",
+      "community": 5,
+      "community_name": "DebugNotesService",
+      "norm_label": "injectable"
     },
     {
       "label": "main.ts",
@@ -4701,7 +4641,7 @@
       "_origin": "ast",
       "id": "apps_api_src_main",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "main.ts"
     },
     {
@@ -4712,7 +4652,7 @@
       "_origin": "ast",
       "id": "apps_api_test_app_e2e_spec",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "app.e2e-spec.ts"
     },
     {
@@ -4723,7 +4663,7 @@
       "_origin": "ast",
       "id": "global",
       "community": 5,
-      "community_name": "PrismaService",
+      "community_name": "DebugNotesService",
       "norm_label": "global"
     },
     {
@@ -6049,79 +5989,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L190",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deleteuploadedfiles",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L197",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsetags",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L198",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsecaptionarray",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L207",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_nullabletext",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L228",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_createtaglinks",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L247",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_presentnote",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L689",
+      "source_location": "L251",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deletestoredscreenshots",
@@ -6133,7 +6001,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L681",
+      "source_location": "L241",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deleteuploadedfiles",
@@ -6145,43 +6013,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L159",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findall",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_presentnote",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L181",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findone",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findrawnote",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L183",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findone",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_presentnote",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L598",
+      "source_location": "L146",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsecaptionarray",
@@ -6193,179 +6025,23 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L528",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsestringarray",
+      "target": "apps_api_src_debug_notes_debug_notes_service_isstringarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsetags",
       "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsestringarray",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L483",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_remove",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findrawnote",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L491",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_remove",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deletestoredscreenshots",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L492",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_remove",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_removeunusedtags",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L259",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findrawnote",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L264",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_nullabletext",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L268",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deleteuploadedfiles",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L275",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsestringarray",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L281",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsecaptionmap",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L324",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsecaptionarray",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L408",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsetags",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L412",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_createtaglinks",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L469",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_deletestoredscreenshots",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L472",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_removeunusedtags",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L475",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_presentnote",
       "confidence_score": 1.0
     },
     {
@@ -6948,7 +6624,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L41",
+      "source_location": "L38",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -8305,59 +7981,23 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service",
-      "target": "apps_api_src_common_prisma_prisma_service_prismaservice",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service",
-      "target": "apps_api_src_debug_notes_dto_create_debug_note_dto_createdebugnotedto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service",
-      "target": "apps_api_src_debug_notes_dto_query_debug_notes_dto_querydebugnotesdto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service",
-      "target": "apps_api_src_debug_notes_dto_update_debug_note_dto_updatedebugnotedto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L17",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service",
       "target": "apps_api_src_debug_notes_debug_note_upload_config_debug_note_upload_directory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_debug_notes_debug_notes_service",
+      "target": "apps_api_src_common_prisma_prisma_service_prismaservice",
       "confidence_score": 1.0
     },
     {
@@ -9133,59 +8773,23 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service",
-      "target": "apps_api_src_common_prisma_prisma_service",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service",
-      "target": "apps_api_src_debug_notes_dto_create_debug_note_dto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service",
-      "target": "apps_api_src_debug_notes_dto_query_debug_notes_dto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service",
-      "target": "apps_api_src_debug_notes_dto_update_debug_note_dto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L17",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service",
       "target": "apps_api_src_debug_notes_debug_note_upload_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_debug_notes_debug_notes_service",
+      "target": "apps_api_src_common_prisma_prisma_service",
       "confidence_score": 1.0
     },
     {
@@ -9565,47 +9169,11 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L43",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_constructor",
       "target": "apps_api_src_common_prisma_prisma_service_prismaservice",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L186",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "target": "apps_api_src_debug_notes_dto_create_debug_note_dto_createdebugnotedto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findall",
-      "target": "apps_api_src_debug_notes_dto_query_debug_notes_dto_querydebugnotesdto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L254",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "target": "apps_api_src_debug_notes_dto_update_debug_note_dto_updatedebugnotedto",
       "confidence_score": 1.0
     },
     {
@@ -10495,7 +10063,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L19",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service",
@@ -10506,7 +10074,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L32",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service",
@@ -10517,7 +10085,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L36",
+      "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service",
@@ -10528,7 +10096,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L42",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_debug_notes_debug_notes_service",
+      "target": "apps_api_src_debug_notes_debug_notes_service_isstringarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service",
@@ -13179,117 +12758,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L167",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findtags",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L180",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findone",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L186",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_create",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L254",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_update",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L43",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_constructor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findall",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L482",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_remove",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L495",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findrawnote",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L510",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_presentnote",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L527",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
-      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsetags",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L557",
+      "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
@@ -13300,7 +12769,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L594",
+      "source_location": "L142",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
@@ -13311,7 +12780,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L614",
+      "source_location": "L166",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
@@ -13322,7 +12791,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L654",
+      "source_location": "L212",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
@@ -13333,7 +12802,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L670",
+      "source_location": "L228",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
@@ -13344,7 +12813,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L680",
+      "source_location": "L238",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
@@ -13355,7 +12824,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L686",
+      "source_location": "L248",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
@@ -13366,7 +12835,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L696",
+      "source_location": "L258",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
@@ -13377,11 +12846,55 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L700",
+      "source_location": "L264",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
       "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_removeunusedtags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
+      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
+      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_findrawnote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
+      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_presentnote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice",
+      "target": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_parsetags",
       "confidence_score": 1.0
     },
     {
