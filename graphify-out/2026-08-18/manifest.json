@@ -170,8 +170,8 @@
     "semantic_hash": "c79215a1d20087327dfb962bb17457ec"
   },
   "apps/web/src/features/activities/components/activity-dashboard.tsx": {
-    "mtime": 1787050166.6554542,
-    "ast_hash": "7cc3e3cecedebcc5312bcb9e3baaf489",
+    "mtime": 1787044807.5503309,
+    "ast_hash": "b20c9f3717f05be1f5c6e47829ca100b",
     "semantic_hash": ""
   },
   "apps/web/src/features/activities/components/activity-date-navigation.tsx": {

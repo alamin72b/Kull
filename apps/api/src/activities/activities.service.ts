@@ -13,13 +13,14 @@ import { UpdateActivityDto } from "./dto/update-activity.dto";
 export class ActivitiesService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async create(dto: CreateActivityDto): Promise<Activity> {
+  async create(userId: string, dto: CreateActivityDto): Promise<Activity> {
     const startAt = this.toDateTime(dto.startAt);
     const endAt = this.toDateTime(dto.endAt);
     this.validateInterval(startAt, endAt);
 
     const activity = await this.prisma.activity.create({
       data: {
+        userId,
         name: this.cleanName(dto.name),
         activityDate: this.toDateOnly(dto.activityDate),
         startAt,
@@ -31,9 +32,10 @@ export class ActivitiesService {
     return this.toContract(activity);
   }
 
-  async findByDate(date: string): Promise<Activity[]> {
+  async findByDate(userId: string, date: string): Promise<Activity[]> {
     const activities = await this.prisma.activity.findMany({
       where: {
+        userId,
         activityDate: this.toDateOnly(date),
       },
       orderBy: [{ startAt: "asc" }, { createdAt: "asc" }],
@@ -42,13 +44,17 @@ export class ActivitiesService {
     return activities.map((activity) => this.toContract(activity));
   }
 
-  async findOne(id: string): Promise<Activity> {
-    const activity = await this.findEntity(id);
+  async findOne(userId: string, id: string): Promise<Activity> {
+    const activity = await this.findEntity(userId, id);
     return this.toContract(activity);
   }
 
-  async update(id: string, dto: UpdateActivityDto): Promise<Activity> {
-    const current = await this.findEntity(id);
+  async update(
+    userId: string,
+    id: string,
+    dto: UpdateActivityDto,
+  ): Promise<Activity> {
+    const current = await this.findEntity(userId, id);
 
     const startAt = dto.startAt
       ? this.toDateTime(dto.startAt)
@@ -75,14 +81,17 @@ export class ActivitiesService {
     return this.toContract(activity);
   }
 
-  async remove(id: string): Promise<void> {
-    await this.findEntity(id);
+  async remove(userId: string, id: string): Promise<void> {
+    await this.findEntity(userId, id);
     await this.prisma.activity.delete({ where: { id } });
   }
 
-  private async findEntity(id: string): Promise<ActivityEntity> {
-    const activity = await this.prisma.activity.findUnique({
-      where: { id },
+  private async findEntity(
+    userId: string,
+    id: string,
+  ): Promise<ActivityEntity> {
+    const activity = await this.prisma.activity.findFirst({
+      where: { id, userId },
     });
 
     if (!activity) {

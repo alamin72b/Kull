@@ -1,12 +1,12 @@
-# Graph Report - Kull  (2026-08-18)
+# Graph Report - Kull  (2026-08-15)
 
 ## Corpus Check
-- 87 files · ~22,648 words
+- 77 files · ~21,249 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 640 nodes · 962 edges · 38 communities (30 shown, 8 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.8)
+- 584 nodes · 834 edges · 35 communities (28 shown, 7 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
@@ -46,10 +46,6 @@
 - AGENTS.md
 - extraction-spec.md
 - README.md
-- activity-api.ts
-- DebugNotesController
-- QueryDebugNotesDto
-- .update
 
 ## God Nodes (most connected - your core abstractions)
 1. `DebugNotesService` - 24 edges
@@ -57,11 +53,11 @@
 3. `Activity` - 22 edges
 4. `ActivitiesService` - 18 edges
 5. `compilerOptions` - 16 edges
-6. `PrismaService` - 14 edges
-7. `CreateDebugNoteDto` - 14 edges
-8. `QueryDebugNotesDto` - 14 edges
-9. `scripts` - 12 edges
-10. `What You Must Do When Invoked` - 12 edges
+6. `CreateDebugNoteDto` - 14 edges
+7. `QueryDebugNotesDto` - 14 edges
+8. `scripts` - 12 edges
+9. `What You Must Do When Invoked` - 12 edges
+10. `CreateActivityDto` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `ActivityCardProps` --references--> `Activity`  [EXTRACTED]
@@ -78,31 +74,31 @@
 ## Import Cycles
 - None detected.
 
-## Communities (38 total, 8 thin omitted)
+## Communities (35 total, 7 thin omitted)
 
 ### Community 0 - "Activity"
 Cohesion: 0.10
-Nodes (24): ActivitiesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+16 more)
+Nodes (22): ActivitiesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+14 more)
 
 ### Community 1 - "activity-dashboard.tsx"
 Cohesion: 0.10
-Nodes (29): ActivityLoginPage(), Tool, tools, AppHeader(), ActivityCard(), ActivityCardProps, ActivityDashboard(), ActivityDateNavigation() (+21 more)
+Nodes (30): Tool, tools, AppHeader(), ApiErrorBody, createActivity(), deleteActivity(), getActivities(), request() (+22 more)
 
 ### Community 2 - "devDependencies"
 Cohesion: 0.04
-Nodes (49): devDependencies, eslint, eslint-config-prettier, @eslint/eslintrc, @eslint/js, eslint-plugin-prettier, globals, @nestjs/cli (+41 more)
+Nodes (47): devDependencies, eslint, eslint-config-prettier, @eslint/eslintrc, @eslint/js, eslint-plugin-prettier, globals, @nestjs/cli (+39 more)
 
 ### Community 3 - "dependencies"
 Cohesion: 0.06
-Nodes (35): dependencies, bcryptjs, class-transformer, class-validator, cookie-parser, dotenv, @kull/contracts, multer (+27 more)
+Nodes (31): dependencies, class-transformer, class-validator, dotenv, @kull/contracts, multer, @nestjs/common, @nestjs/config (+23 more)
 
 ### Community 4 - "contracts/package.json"
 Cohesion: 0.17
 Nodes (11): devDependencies, typescript, exports, ./debug-note, typescript, name, private, scripts (+3 more)
 
 ### Community 5 - "PrismaService"
-Cohesion: 0.06
-Nodes (32): ActivitiesModule, Module, AppModule, Module, ActivityAuthGuard, Injectable, ACTIVITY_SESSION_COOKIE, isProductionEnvironment() (+24 more)
+Cohesion: 0.11
+Nodes (11): ActivitiesModule, Module, AppModule, Module, PrismaModule, Module, PrismaService, Injectable (+3 more)
 
 ### Community 6 - "tasks"
 Cohesion: 0.08
@@ -129,8 +125,8 @@ Cohesion: 0.11
 Nodes (17): description, license, name, private, scripts, build, dev, lint (+9 more)
 
 ### Community 12 - "debug-notes.service.ts"
-Cohesion: 0.12
-Nodes (16): DEBUG_NOTE_UPLOAD_DIRECTORY, debugNoteUploadOptions, extensionByMimeType, debugNoteInclude, DebugNoteWithRelations, ParsedTag, CreateDebugNoteDto, TransformValue (+8 more)
+Cohesion: 0.07
+Nodes (31): DEBUG_NOTE_UPLOAD_DIRECTORY, debugNoteUploadOptions, extensionByMimeType, debugNoteInclude, DebugNoteWithRelations, ParsedTag, CreateDebugNoteDto, TransformValue (+23 more)
 
 ### Community 13 - "exclude"
 Cohesion: 0.25
@@ -152,6 +148,10 @@ Nodes (9): compilerOptions, module, moduleResolution, noEmit, skipLibCheck, stri
 Cohesion: 0.33
 Nodes (5): collection, compilerOptions, deleteOutDir, $schema, sourceRoot
 
+### Community 18 - "DebugNotesService"
+Cohesion: 0.11
+Nodes (14): DebugNotesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+6 more)
+
 ### Community 23 - "graphify reference: extra exports and benchmark"
 Cohesion: 0.22
 Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
@@ -172,41 +172,25 @@ Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify refer
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
-### Community 33 - "activity-api.ts"
-Cohesion: 0.44
-Nodes (9): ApiErrorBody, createActivity(), deleteActivity(), getActivities(), getApiUrl(), request(), updateActivity(), sortByStartTime() (+1 more)
-
-### Community 35 - "DebugNotesController"
-Cohesion: 0.19
-Nodes (7): DebugNotesController, Controller, Delete, Get, HttpCode, Param, Query
-
-### Community 36 - "QueryDebugNotesDto"
-Cohesion: 0.15
-Nodes (11): QueryDebugNotesDto, TransformValue, IsEnum, IsOptional, IsString, MaxLength, Transform, IsInt (+3 more)
-
-### Community 37 - ".update"
-Cohesion: 0.22
-Nodes (9): Body, Patch, Post, IsOptional, IsString, MaxLength, UpdateDebugNoteDto, UploadedFiles (+1 more)
-
 ## Knowledge Gaps
-- **231 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+226 more)
+- **227 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+222 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PrismaService` connect `PrismaService` to `Activity`, `debug-notes.service.ts`?**
-  _High betweenness centrality (0.053) - this node is a cross-community bridge._
-- **Why does `Activity` connect `Activity` to `activity-api.ts`, `activity-dashboard.tsx`, `DebugNoteForm.tsx`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
-- **Why does `DebugNotesService` connect `DebugNotesService` to `DebugNotesController`, `debug-notes.service.ts`, `PrismaService`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.044) - this node is a cross-community bridge._
+- **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `DebugNoteForm.tsx`?**
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+- **Why does `DebugNotesService` connect `DebugNotesService` to `debug-notes.service.ts`, `PrismaService`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
-  _231 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _227 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Activity` be split into smaller, more focused modules?**
-  _Cohesion score 0.09620721554116558 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09758454106280193 - nodes in this community are weakly interconnected._
 - **Should `activity-dashboard.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09725158562367865 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._

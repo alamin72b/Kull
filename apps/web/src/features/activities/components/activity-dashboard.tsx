@@ -5,6 +5,7 @@ import { ArrowLeft, Plus } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { AppHeader } from "@/components/layout/app-header";
+import { logout } from "@/features/auth/activity-auth.api";
 import { useActivities } from "../hooks/use-activities";
 import { getToday } from "../utils/date";
 import { ActivityDateNavigation } from "./activity-date-navigation";
@@ -16,6 +17,7 @@ export function ActivityDashboard() {
   const [selectedDate, setSelectedDate] = useState(getToday);
   const [isCreating, setIsCreating] = useState(false);
   const [editingActivity, setEditingActivity] = useState<Activity | null>(null);
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
   const { activities, isLoading, error, add, edit, remove } =
     useActivities(selectedDate);
   const isFormOpen = isCreating || editingActivity !== null;
@@ -57,6 +59,12 @@ export function ActivityDashboard() {
     }
   }
 
+  async function handleLogout(): Promise<void> {
+    setIsLoggingOut(true);
+    await logout();
+    window.location.assign("/activities/login");
+  }
+
   return (
     <>
       <AppHeader />
@@ -83,6 +91,16 @@ export function ActivityDashboard() {
             <Plus size={18} aria-hidden="true" />
             Add activity
           </button>
+          {!isLoading && !error && (
+            <button
+              className={styles.secondaryButton}
+              disabled={isLoggingOut}
+              onClick={() => void handleLogout()}
+              type="button"
+            >
+              {isLoggingOut ? "Logging out…" : "Log out"}
+            </button>
+          )}
         </header>
 
         <ActivityDateNavigation date={selectedDate} onChange={changeDate} />

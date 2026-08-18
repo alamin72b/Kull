@@ -5,7 +5,7 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 640 nodes · 962 edges · 38 communities (30 shown, 8 thin omitted)
+- 640 nodes · 959 edges · 38 communities (30 shown, 8 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
@@ -46,7 +46,7 @@
 - AGENTS.md
 - extraction-spec.md
 - README.md
-- activity-api.ts
+- activity-auth.api.ts
 - DebugNotesController
 - QueryDebugNotesDto
 - .update
@@ -85,8 +85,8 @@ Cohesion: 0.10
 Nodes (24): ActivitiesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+16 more)
 
 ### Community 1 - "activity-dashboard.tsx"
-Cohesion: 0.10
-Nodes (29): ActivityLoginPage(), Tool, tools, AppHeader(), ActivityCard(), ActivityCardProps, ActivityDashboard(), ActivityDateNavigation() (+21 more)
+Cohesion: 0.12
+Nodes (28): ApiErrorBody, createActivity(), deleteActivity(), getActivities(), getApiUrl(), request(), updateActivity(), ActivityCard() (+20 more)
 
 ### Community 2 - "devDependencies"
 Cohesion: 0.04
@@ -172,9 +172,9 @@ Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify refer
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
-### Community 33 - "activity-api.ts"
-Cohesion: 0.44
-Nodes (9): ApiErrorBody, createActivity(), deleteActivity(), getActivities(), getApiUrl(), request(), updateActivity(), sortByStartTime() (+1 more)
+### Community 33 - "activity-auth.api.ts"
+Cohesion: 0.23
+Nodes (10): ActivityLoginPage(), Tool, tools, AppHeader(), Credentials, getApiUrl(), login(), logout() (+2 more)
 
 ### Community 35 - "DebugNotesController"
 Cohesion: 0.19
@@ -198,7 +198,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PrismaService` connect `PrismaService` to `Activity`, `debug-notes.service.ts`?**
   _High betweenness centrality (0.053) - this node is a cross-community bridge._
-- **Why does `Activity` connect `Activity` to `activity-api.ts`, `activity-dashboard.tsx`, `DebugNoteForm.tsx`?**
+- **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `DebugNoteForm.tsx`?**
   _High betweenness centrality (0.040) - this node is a cross-community bridge._
 - **Why does `DebugNotesService` connect `DebugNotesService` to `DebugNotesController`, `debug-notes.service.ts`, `PrismaService`?**
   _High betweenness centrality (0.026) - this node is a cross-community bridge._
@@ -207,6 +207,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Activity` be split into smaller, more focused modules?**
   _Cohesion score 0.09620721554116558 - nodes in this community are weakly interconnected._
 - **Should `activity-dashboard.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11605937921727395 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._

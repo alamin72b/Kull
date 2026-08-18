@@ -18,7 +18,11 @@ model Activity {
   createdAt    DateTime @default(now()) @db.Timestamptz(3)
   updatedAt    DateTime @updatedAt @db.Timestamptz(3)
 
+  userId String? @db.Uuid
+  user   User?   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
   @@index([activityDate, startAt])
+  @@index([userId, activityDate, startAt])
   @@map("activities")
 }
 
@@ -99,4 +103,13 @@ model DebugScreenshot {
   debugNote    DebugNote @relation(fields: [debugNoteId], references: [id], onDelete: Cascade)
 
   @@index([debugNoteId])
+}
+
+model User {
+  id           String     @id @default(uuid()) @db.Uuid
+  username     String     @unique @db.VarChar(30)
+  passwordHash String     @db.VarChar(100)
+  activities   Activity[]
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
 }
