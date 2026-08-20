@@ -112,4 +112,33 @@ model User {
   activities   Activity[]
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
+
+  medicineTransactions MedicineTransaction[]
+}
+
+
+model MedicineTransaction {
+  id        String                    @id @default(uuid())
+  userId    String
+  user      User                      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  medicines MedicineTransactionItem[]
+  createdAt DateTime                  @default(now())
+  updatedAt DateTime                  @updatedAt
+
+  @@index([userId, createdAt])
+}
+
+model MedicineTransactionItem {
+  id                    String              @id @default(uuid())
+  transactionId         String
+  transaction           MedicineTransaction @relation(fields: [transactionId], references: [id], onDelete: Cascade)
+  position               Int
+  actualMedicineName    String              @db.VarChar(160)
+  genericName           String              @db.VarChar(160)
+  normalizedGenericName String              @db.VarChar(160)
+  mrpPerTablet          Decimal             @db.Decimal(10, 2)
+  boughtPricePerTablet  Decimal             @db.Decimal(10, 2)
+
+  @@unique([transactionId, position])
+  @@index([normalizedGenericName, transactionId])
 }

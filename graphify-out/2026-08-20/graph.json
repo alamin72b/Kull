@@ -3566,7 +3566,7 @@
       "norm_label": "what you must do when invoked"
     },
     {
-      "label": "debug-notes/[id]/edit/page.tsx",
+      "label": "edit/page.tsx",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/[id]/edit/page.tsx",
       "source_location": "L1",
@@ -3574,10 +3574,10 @@
       "id": "apps_web_src_app_debug_notes_id_edit_page",
       "community": 15,
       "community_name": "DebugNoteForm.tsx",
-      "norm_label": "debug-notes/[id]/edit/page.tsx"
+      "norm_label": "edit/page.tsx"
     },
     {
-      "label": "debug-notes/[id]/page.tsx",
+      "label": "[id]/page.tsx",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/[id]/page.tsx",
       "source_location": "L1",
@@ -3585,10 +3585,10 @@
       "id": "apps_web_src_app_debug_notes_id_page",
       "community": 15,
       "community_name": "DebugNoteForm.tsx",
-      "norm_label": "debug-notes/[id]/page.tsx"
+      "norm_label": "[id]/page.tsx"
     },
     {
-      "label": "debug-notes/new/page.tsx",
+      "label": "new/page.tsx",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/new/page.tsx",
       "source_location": "L1",
@@ -3596,7 +3596,7 @@
       "id": "apps_web_src_app_debug_notes_new_page",
       "community": 15,
       "community_name": "DebugNoteForm.tsx",
-      "norm_label": "debug-notes/new/page.tsx"
+      "norm_label": "new/page.tsx"
     },
     {
       "label": "debug-notes/page.tsx",
@@ -5667,28 +5667,6 @@
       "norm_label": "useinterceptors"
     },
     {
-      "label": "create-medicine-transaction.dto.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/medicine-transactions/dto/create-medicine-transaction.dto.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_medicine_transactions_dto_create_medicine_transaction_dto",
-      "community": 38,
-      "community_name": "create-medicine-transaction.dto.ts",
-      "norm_label": "create-medicine-transaction.dto.ts"
-    },
-    {
-      "label": "update-medicine-transaction.dto.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/medicine-transactions/dto/update-medicine-transaction.dto.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_medicine_transactions_dto_update_medicine_transaction_dto",
-      "community": 39,
-      "community_name": "update-medicine-transaction.dto.ts",
-      "norm_label": "update-medicine-transaction.dto.ts"
-    },
-    {
       "label": "contracts/package.json",
       "file_type": "code",
       "source_file": "packages/contracts/package.json",
@@ -5819,116 +5797,6 @@
       "community": 4,
       "community_name": "contracts/package.json",
       "norm_label": "typescript"
-    },
-    {
-      "label": "medicine-transactions.controller.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/medicine-transactions/medicine-transactions.controller.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_medicine_transactions_medicine_transactions_controller",
-      "community": 40,
-      "community_name": "medicine-transactions.controller.ts",
-      "norm_label": "medicine-transactions.controller.ts"
-    },
-    {
-      "label": "medicine-transactions.module.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/medicine-transactions/medicine-transactions.module.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_medicine_transactions_medicine_transactions_module",
-      "community": 41,
-      "community_name": "medicine-transactions.module.ts",
-      "norm_label": "medicine-transactions.module.ts"
-    },
-    {
-      "label": "medicine-transactions.service.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/medicine-transactions/medicine-transactions.service.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_medicine_transactions_medicine_transactions_service",
-      "community": 42,
-      "community_name": "medicine-transactions.service.ts",
-      "norm_label": "medicine-transactions.service.ts"
-    },
-    {
-      "label": "medicine-transactions/[id]/edit/page.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/[id]/edit/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_id_edit_page",
-      "community": 43,
-      "community_name": "medicine-transactions/[id]/edit/page.tsx",
-      "norm_label": "medicine-transactions/[id]/edit/page.tsx"
-    },
-    {
-      "label": "medicine-transactions/[id]/page.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/[id]/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_id_page",
-      "community": 44,
-      "community_name": "medicine-transactions/[id]/page.tsx",
-      "norm_label": "medicine-transactions/[id]/page.tsx"
-    },
-    {
-      "label": "medicine-transactions/new/page.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_new_page",
-      "community": 45,
-      "community_name": "medicine-transactions/new/page.tsx",
-      "norm_label": "medicine-transactions/new/page.tsx"
-    },
-    {
-      "label": "medicine-transactions/page.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_page",
-      "community": 46,
-      "community_name": "medicine-transactions/page.tsx",
-      "norm_label": "medicine-transactions/page.tsx"
-    },
-    {
-      "label": "medicine-transaction-form.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/features/medicine-transactions/medicine-transaction-form.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_features_medicine_transactions_medicine_transaction_form",
-      "community": 47,
-      "community_name": "medicine-transaction-form.tsx",
-      "norm_label": "medicine-transaction-form.tsx"
-    },
-    {
-      "label": "medicine-transactions.api.ts",
-      "file_type": "code",
-      "source_file": "apps/web/src/features/medicine-transactions/medicine-transactions.api.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api",
-      "community": 48,
-      "community_name": "medicine-transactions.api.ts",
-      "norm_label": "medicine-transactions.api.ts"
-    },
-    {
-      "label": "medicine-transactions.ts",
-      "file_type": "code",
-      "source_file": "packages/contracts/src/medicine-transactions.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "packages_contracts_src_medicine_transactions",
-      "community": 49,
-      "community_name": "medicine-transactions.ts",
-      "norm_label": "medicine-transactions.ts"
     },
     {
       "label": "activities.module.ts",
@@ -18522,5 +18390,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "bc5d25a604f279558d106e7a0f7d9ec4af6c6904"
+  "built_at_commit": "218aca0971471e5afc5af2a55b72d62d9c0a55f9"
 }

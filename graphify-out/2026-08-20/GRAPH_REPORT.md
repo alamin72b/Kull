@@ -1,16 +1,16 @@
-# Graph Report - Kull  (2026-08-20)
+# Graph Report - Kull  (2026-08-18)
 
 ## Corpus Check
-- 99 files · ~22,661 words
+- 87 files · ~22,648 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 652 nodes · 962 edges · 50 communities (42 shown, 8 thin omitted)
+- 640 nodes · 962 edges · 38 communities (30 shown, 8 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bc5d25a6`
+- Built from commit: `218aca09`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -78,7 +78,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (50 total, 8 thin omitted)
+## Communities (38 total, 8 thin omitted)
 
 ### Community 0 - "Activity"
 Cohesion: 0.10
@@ -197,11 +197,11 @@ Nodes (9): Body, Patch, Post, IsOptional, IsString, MaxLength, UpdateDebugNoteDt
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PrismaService` connect `PrismaService` to `Activity`, `debug-notes.service.ts`?**
-  _High betweenness centrality (0.051) - this node is a cross-community bridge._
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **Why does `Activity` connect `Activity` to `activity-api.ts`, `activity-dashboard.tsx`, `DebugNoteForm.tsx`?**
-  _High betweenness centrality (0.039) - this node is a cross-community bridge._
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
 - **Why does `DebugNotesService` connect `DebugNotesService` to `DebugNotesController`, `debug-notes.service.ts`, `PrismaService`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
   _231 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Activity` be split into smaller, more focused modules?**

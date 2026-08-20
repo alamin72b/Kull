@@ -36,17 +36,5 @@
   "34": "loading.tsx",
   "35": "DebugNotesController",
   "36": "QueryDebugNotesDto",
-  "37": ".update",
-  "38": "create-medicine-transaction.dto.ts",
-  "39": "update-medicine-transaction.dto.ts",
-  "40": "medicine-transactions.controller.ts",
-  "41": "medicine-transactions.module.ts",
-  "42": "medicine-transactions.service.ts",
-  "43": "medicine-transactions/[id]/edit/page.tsx",
-  "44": "medicine-transactions/[id]/page.tsx",
-  "45": "medicine-transactions/new/page.tsx",
-  "46": "medicine-transactions/page.tsx",
-  "47": "medicine-transaction-form.tsx",
-  "48": "medicine-transactions.api.ts",
-  "49": "medicine-transactions.ts"
+  "37": ".update"
 }

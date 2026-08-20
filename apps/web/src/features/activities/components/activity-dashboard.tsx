@@ -91,7 +91,11 @@ export function ActivityDashboard() {
             <Plus size={18} aria-hidden="true" />
             Add activity
           </button>
-          {!isLoading && !error && (
+          {error ? (
+            <Link className={styles.secondaryButton} href="/activities/login">
+              Log in / Register
+            </Link>
+          ) : !isLoading ? (
             <button
               className={styles.secondaryButton}
               disabled={isLoggingOut}
@@ -100,7 +104,7 @@ export function ActivityDashboard() {
             >
               {isLoggingOut ? "Logging out…" : "Log out"}
             </button>
-          )}
+          ) : null}
         </header>
 
         <ActivityDateNavigation date={selectedDate} onChange={changeDate} />
