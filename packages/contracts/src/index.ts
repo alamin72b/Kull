@@ -9,3 +9,5 @@ export type {
   DebugScreenshot,
   DebugTag,
 } from './debug-note.js';
+
+export * from './medicine-transactions.js';

@@ -116,10 +116,9 @@ model User {
   medicineTransactions MedicineTransaction[]
 }
 
-
 model MedicineTransaction {
-  id        String                    @id @default(uuid())
-  userId    String
+  id        String                    @id @default(uuid()) @db.Uuid
+  userId    String                    @db.Uuid
   user      User                      @relation(fields: [userId], references: [id], onDelete: Cascade)
   medicines MedicineTransactionItem[]
   createdAt DateTime                  @default(now())
@@ -129,10 +128,10 @@ model MedicineTransaction {
 }
 
 model MedicineTransactionItem {
-  id                    String              @id @default(uuid())
-  transactionId         String
+  id                    String              @id @default(uuid()) @db.Uuid
+  transactionId         String              @db.Uuid
   transaction           MedicineTransaction @relation(fields: [transactionId], references: [id], onDelete: Cascade)
-  position               Int
+  position              Int
   actualMedicineName    String              @db.VarChar(160)
   genericName           String              @db.VarChar(160)
   normalizedGenericName String              @db.VarChar(160)
