@@ -21,6 +21,28 @@ interface Credentials {
   password: string;
 }
 
+async function getErrorMessage(response: Response): Promise<string> {
+  const body = (await response.json().catch(() => null)) as {
+    message?: string | string[];
+  } | null;
+
+  if (Array.isArray(body?.message)) {
+    return body.message.join(' ');
+  }
+
+  if (typeof body?.message === 'string') {
+    return body.message;
+  }
+
+  return 'Authentication failed.';
+}
+
+async function checkResponse(response: Response): Promise<void> {
+  if (!response.ok) {
+    throw new Error(await getErrorMessage(response));
+  }
+}
+
 export async function login(credentials: Credentials): Promise<void> {
   await sendAuthRequest('/auth/login', credentials);
 }
@@ -60,14 +82,5 @@ async function sendAuthRequest(
     throw new Error('Could not connect to the API. Check the API address and CORS settings.');
   }
 
-  if (!response.ok) {
-    const body = (await response.json().catch(() => null)) as {
-      message?: string | string[];
-    } | null;
-    const message = Array.isArray(body?.message)
-      ? body.message.join(' ')
-      : body?.message;
-
-    throw new Error(message ?? 'Authentication failed.');
-  }
+  await checkResponse(response);
 }
