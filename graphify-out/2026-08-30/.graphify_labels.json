@@ -36,14 +36,7 @@
   "34": "loading.tsx",
   "35": "DebugNotesController",
   "36": "QueryDebugNotesDto",
-  "37": "drive.controller.ts",
   "38": "MedicineTransactionsService",
   "39": ".update",
-  "40": "drive.module.ts",
-  "41": "drive.service.ts",
-  "42": "check-drive-path.dto.ts",
-  "43": "upload-to-drive.dto.ts",
-  "44": "drive-upload/page.tsx",
-  "45": "drive-upload.api.ts",
   "48": "medicine-transactions.api.ts"
 }
