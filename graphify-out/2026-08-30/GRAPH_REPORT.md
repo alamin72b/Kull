@@ -1,16 +1,16 @@
-# Graph Report - Kull  (2026-08-29)
+# Graph Report - Kull  (2026-08-30)
 
 ## Corpus Check
-- 100 files · ~26,185 words
+- 107 files · ~26,185 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 730 nodes · 1166 edges · 40 communities (32 shown, 8 thin omitted)
+- 737 nodes · 1166 edges · 47 communities (39 shown, 8 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `18369c22`
+- Built from commit: `bd1a8c1b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -80,7 +80,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (40 total, 8 thin omitted)
+## Communities (47 total, 8 thin omitted)
 
 ### Community 0 - "activity-auth.api.ts"
 Cohesion: 0.21
@@ -207,11 +207,11 @@ Nodes (29): EditMedicineTransactionPage(), formatDate(), formatDifference(), for
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PrismaService` connect `PrismaService` to `debug-notes.service.ts`, `Activity`, `MedicineTransactionsService`?**
-  _High betweenness centrality (0.060) - this node is a cross-community bridge._
+  _High betweenness centrality (0.059) - this node is a cross-community bridge._
 - **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `index.ts`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **Why does `DebugNotesService` connect `DebugNotesService` to `PrismaService`, `DebugNotesController`, `debug-notes.service.ts`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
   _233 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `activity-dashboard.tsx` be split into smaller, more focused modules?**
