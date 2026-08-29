@@ -1,0 +1,371 @@
+.page {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+
+.pageHeader,
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.pageHeader h1,
+.detailHeader h1,
+.editorHeader h1 {
+  margin: 10px 0;
+  color: #101828;
+  font-size: 2.5rem;
+}
+
+.pageHeader p,
+.detailHeader p,
+.editorHeader p {
+  color: #667085;
+  line-height: 1.6;
+}
+
+.editorHeader {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  margin-top: 20px;
+  color: #6941c6 !important;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.backLink {
+  color: #475467;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  color: #6941c6;
+}
+
+.primaryButton,
+.secondaryButton,
+.dangerButton,
+.addButton,
+.removeButton {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background: #6941c6;
+  color: white;
+}
+
+.secondaryButton {
+  border-color: #d0d5dd;
+  background: white;
+  color: #344054;
+}
+
+.dangerButton,
+.removeButton {
+  border-color: #fecdca;
+  background: white;
+  color: #b42318;
+}
+
+.addButton {
+  width: fit-content;
+  border-color: #d6bbfb;
+  background: #f9f5ff;
+  color: #6941c6;
+}
+
+.primaryButton:disabled,
+.dangerButton:disabled,
+.removeButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.headerActions,
+.formActions {
+  display: flex;
+  gap: 10px;
+}
+
+.statePanel,
+.emptyState,
+.errorPanel {
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.errorPanel {
+  border-color: #fecdca;
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.emptyState h2 {
+  margin-top: 0;
+}
+
+.transactionList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.transactionCard {
+  display: flex;
+  min-height: 230px;
+  flex-direction: column;
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+  padding: 20px;
+  background: white;
+  color: inherit;
+  text-decoration: none;
+}
+
+.transactionCard:hover {
+  border-color: #9e77ed;
+}
+
+.cardTopLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #667085;
+  font-size: 0.8rem;
+}
+
+.transactionCard h2 {
+  color: #101828;
+}
+
+.medicineNames {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.medicineNames span {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #f4ebff;
+  color: #53389e;
+}
+
+.medicineNames small {
+  margin-top: 3px;
+  color: #7f56d9;
+}
+
+.openLabel {
+  margin-top: auto;
+  padding-top: 20px;
+  color: #6941c6;
+}
+
+.transactionForm,
+.rowList {
+  display: grid;
+  gap: 20px;
+}
+
+.medicineRow {
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+  padding: 22px;
+  background: white;
+}
+
+.rowHeading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.rowHeading h2 {
+  margin: 0;
+  color: #101828;
+  font-size: 1.1rem;
+}
+
+.removeButton {
+  min-height: 36px;
+  padding: 8px 12px;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #344054;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.field input {
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #101828;
+  font: inherit;
+}
+
+.field input:focus {
+  border-color: #9e77ed;
+  outline: none;
+}
+
+.formError {
+  margin: 0;
+  border: 1px solid #fecdca;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.comparisonList {
+  display: grid;
+  gap: 20px;
+}
+
+.comparisonCard {
+  overflow: hidden;
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+  background: white;
+}
+
+.comparisonHeading {
+  display: flex;
+  gap: 18px;
+  padding: 20px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.comparisonHeading > span {
+  color: #6941c6;
+  font-weight: 700;
+}
+
+.comparisonHeading h2 {
+  margin: 0;
+  color: #101828;
+}
+
+.comparisonHeading p {
+  margin: 5px 0 0;
+  color: #667085;
+}
+
+.storedPrices,
+.comparisonResult {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.storedPrices > div,
+.comparisonResult > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  border-right: 1px solid #eaecf0;
+}
+
+.storedPrices span,
+.comparisonResult span {
+  color: #667085;
+  font-size: 0.8rem;
+}
+
+.storedPrices strong,
+.comparisonResult strong {
+  color: #101828;
+}
+
+.comparisonResult {
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #eaecf0;
+  background: #f9fafb;
+}
+
+.noComparison {
+  border-top: 1px solid #eaecf0;
+  padding: 20px;
+  background: #f9fafb;
+  color: #667085;
+}
+
+.priceIncreased {
+  color: #b42318 !important;
+}
+
+.priceDecreased {
+  color: #027a48 !important;
+}
+
+.priceUnchanged {
+  color: #475467 !important;
+}
+
+@media (max-width: 750px) {
+  .pageHeader,
+  .detailHeader {
+    display: block;
+  }
+
+  .headerActions {
+    margin-top: 20px;
+  }
+
+  .transactionList,
+  .fieldGrid,
+  .storedPrices,
+  .comparisonResult {
+    grid-template-columns: 1fr;
+  }
+
+  .formActions,
+  .headerActions {
+    flex-direction: column;
+  }
+
+  .addButton {
+    width: 100%;
+  }
+}

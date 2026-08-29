@@ -2442,42 +2442,6 @@
       "norm_label": "medicinetransactionpage()"
     },
     {
-      "label": "NewMedicineTransactionPage()",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L10",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_new_page_newmedicinetransactionpage",
-      "community": 48,
-      "community_name": "medicine-transactions.api.ts",
-      "norm_label": "newmedicinetransactionpage()"
-    },
-    {
-      "label": "formatDate()",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L11",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_page_formatdate",
-      "community": 48,
-      "community_name": "medicine-transactions.api.ts",
-      "norm_label": "formatdate()"
-    },
-    {
-      "label": "MedicineTransactionsPage()",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L18",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_page_medicinetransactionspage",
-      "community": 48,
-      "community_name": "medicine-transactions.api.ts",
-      "norm_label": "medicinetransactionspage()"
-    },
-    {
       "label": "createEmptyMedicine()",
       "file_type": "code",
       "source_file": "apps/web/src/features/medicine-transactions/medicine-transaction-form.tsx",
@@ -6895,6 +6859,28 @@
       "norm_label": "typescript"
     },
     {
+      "label": "medicine-transactions/new/page.tsx",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_web_src_app_medicine_transactions_new_page",
+      "community": 45,
+      "community_name": "medicine-transactions/new/page.tsx",
+      "norm_label": "medicine-transactions/new/page.tsx"
+    },
+    {
+      "label": "medicine-transactions/page.tsx",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_web_src_app_medicine_transactions_page",
+      "community": 46,
+      "community_name": "medicine-transactions/page.tsx",
+      "norm_label": "medicine-transactions/page.tsx"
+    },
+    {
       "label": "medicine-transactions/[id]/edit/page.tsx",
       "file_type": "code",
       "source_file": "apps/web/src/app/medicine-transactions/[id]/edit/page.tsx",
@@ -6915,28 +6901,6 @@
       "community": 48,
       "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicine-transactions/[id]/page.tsx"
-    },
-    {
-      "label": "medicine-transactions/new/page.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_new_page",
-      "community": 48,
-      "community_name": "medicine-transactions.api.ts",
-      "norm_label": "medicine-transactions/new/page.tsx"
-    },
-    {
-      "label": "medicine-transactions/page.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_app_medicine_transactions_page",
-      "community": 48,
-      "community_name": "medicine-transactions.api.ts",
-      "norm_label": "medicine-transactions/page.tsx"
     },
     {
       "label": "medicine-transaction-form.tsx",
@@ -9309,42 +9273,6 @@
       "_origin": "ast",
       "source": "apps_web_src_app_medicine_transactions_id_page_medicinetransactionpage",
       "target": "apps_web_src_features_medicine_transactions_medicine_transactions_api_getmedicinetransaction"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_new_page_newmedicinetransactionpage",
-      "target": "apps_web_src_features_medicine_transactions_medicine_transactions_api_createmedicinetransaction"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L28",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_page_medicinetransactionspage",
-      "target": "apps_web_src_features_medicine_transactions_medicine_transactions_api_getmedicinetransactions"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L81",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_page_medicinetransactionspage",
-      "target": "apps_web_src_app_medicine_transactions_page_formatdate",
-      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -13694,66 +13622,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_new_page",
-      "target": "packages_contracts_src_medicine_transactions_createmedicinetransactioninput",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_new_page",
-      "target": "apps_web_src_features_medicine_transactions_medicine_transaction_form_medicinetransactionform",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_new_page",
-      "target": "apps_web_src_features_medicine_transactions_medicine_transactions_api_createmedicinetransaction",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_page",
-      "target": "apps_web_src_features_medicine_transactions_medicine_transactions_api_getmedicinetransactions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_page",
-      "target": "packages_contracts_src_medicine_transactions_medicinetransactionsummary",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/page.tsx",
       "source_location": "L9",
       "weight": 1.0,
@@ -15463,66 +15331,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_medicine_transactions_id_page",
-      "target": "packages_contracts_src_index",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_new_page",
-      "target": "packages_contracts_src_index",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_new_page",
-      "target": "apps_web_src_features_medicine_transactions_medicine_transaction_form",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_new_page",
-      "target": "apps_web_src_features_medicine_transactions_medicine_transactions_api",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_page",
-      "target": "apps_web_src_features_medicine_transactions_medicine_transactions_api",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_page",
       "target": "packages_contracts_src_index",
       "confidence_score": 1.0
     },
@@ -18344,39 +18152,6 @@
       "_origin": "ast",
       "source": "apps_web_src_app_medicine_transactions_id_page",
       "target": "apps_web_src_app_medicine_transactions_id_page_medicinetransactionpage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/new/page.tsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_new_page",
-      "target": "apps_web_src_app_medicine_transactions_new_page_newmedicinetransactionpage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_page",
-      "target": "apps_web_src_app_medicine_transactions_page_formatdate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/medicine-transactions/page.tsx",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_medicine_transactions_page",
-      "target": "apps_web_src_app_medicine_transactions_page_medicinetransactionspage",
       "confidence_score": 1.0
     },
     {

@@ -2,6 +2,7 @@ import {
   ArrowUpRight,
   BookOpenText,
   Clock3,
+  Pill,
   type LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
@@ -34,6 +35,15 @@ const tools: Tool[] = [
     href: "/debug-notes",
     label: "Knowledge base",
     icon: BookOpenText,
+    tone: "violet",
+  },
+  {
+    name: "Medicine Tracker",
+    description:
+      "Store medicine purchases and compare the previous bought price for each generic medicine.",
+    href: "/medicine-transactions",
+    label: "Price history",
+    icon: Pill,
     tone: "violet",
   },
 ];
