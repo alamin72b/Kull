@@ -18,24 +18,29 @@ export class DebugNotesApiError extends Error {
   }
 }
 
-function extractErrorMessage(payload: unknown): string {
-  if (
-    payload &&
-    typeof payload === "object" &&
-    "message" in payload
-  ) {
-    const message = (payload as { message: unknown }).message;
+async function getErrorMessage(response: Response): Promise<string> {
+  const payload = (await response.json().catch(() => null)) as {
+    message?: string | string[];
+  } | null;
 
-    if (Array.isArray(message)) {
-      return message.join(", ");
-    }
+  if (Array.isArray(payload?.message)) {
+    return payload.message.join(", ");
+  }
 
-    if (typeof message === "string") {
-      return message;
-    }
+  if (typeof payload?.message === "string") {
+    return payload.message;
   }
 
   return "Something went wrong while communicating with the API.";
+}
+
+async function checkResponse(response: Response): Promise<void> {
+  if (!response.ok) {
+    throw new DebugNotesApiError(
+      await getErrorMessage(response),
+      response.status,
+    );
+  }
 }
 
 export async function debugNotesRequest<T>(
@@ -47,6 +52,8 @@ export async function debugNotesRequest<T>(
     cache: "no-store",
   });
 
+  await checkResponse(response);
+
   const text = await response.text();
   let payload: unknown;
 
@@ -56,13 +63,6 @@ export async function debugNotesRequest<T>(
     } catch {
       payload = text;
     }
-  }
-
-  if (!response.ok) {
-    throw new DebugNotesApiError(
-      extractErrorMessage(payload),
-      response.status,
-    );
   }
 
   return payload as T;

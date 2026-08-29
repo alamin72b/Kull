@@ -4,6 +4,7 @@ import { ActivitiesModule } from "./activities/activities.module";
 import { AuthModule } from "./auth/auth.module";
 import { PrismaModule } from "./common/prisma/prisma.module";
 import { DebugNotesModule } from './debug-notes/debug-notes.module';
+import { MedicineTransactionsModule } from "./medicine-transactions/medicine-transactions.module";
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { DebugNotesModule } from './debug-notes/debug-notes.module';
     AuthModule,
     ActivitiesModule,
     DebugNotesModule,
+    MedicineTransactionsModule,
   ],
 })
 export class AppModule {}

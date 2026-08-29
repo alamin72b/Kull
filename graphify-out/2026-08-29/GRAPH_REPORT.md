@@ -1,11 +1,11 @@
 # Graph Report - Kull  (2026-08-29)
 
 ## Corpus Check
-- 100 files · ~26,185 words
+- 100 files · ~25,868 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 730 nodes · 1166 edges · 40 communities (32 shown, 8 thin omitted)
+- 727 nodes · 1150 edges · 42 communities (34 shown, 8 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
@@ -80,7 +80,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (40 total, 8 thin omitted)
+## Communities (42 total, 8 thin omitted)
 
 ### Community 0 - "activity-auth.api.ts"
 Cohesion: 0.21
@@ -195,8 +195,8 @@ Cohesion: 0.22
 Nodes (9): Body, Patch, Post, IsOptional, IsString, MaxLength, UpdateDebugNoteDto, UploadedFiles (+1 more)
 
 ### Community 48 - "medicine-transactions.api.ts"
-Cohesion: 0.12
-Nodes (29): EditMedicineTransactionPage(), formatDate(), formatDifference(), formatMoney(), getResultClass(), getResultText(), MedicineTransactionPage(), NewMedicineTransactionPage() (+21 more)
+Cohesion: 0.14
+Nodes (26): EditMedicineTransactionPage(), formatDate(), formatDifference(), formatMoney(), getResultClass(), getResultText(), MedicineTransactionPage(), createEmptyMedicine() (+18 more)
 
 ## Knowledge Gaps
 - **233 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+228 more)
@@ -207,7 +207,7 @@ Nodes (29): EditMedicineTransactionPage(), formatDate(), formatDifference(), for
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PrismaService` connect `PrismaService` to `debug-notes.service.ts`, `Activity`, `MedicineTransactionsService`?**
-  _High betweenness centrality (0.060) - this node is a cross-community bridge._
+  _High betweenness centrality (0.059) - this node is a cross-community bridge._
 - **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `index.ts`?**
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **Why does `DebugNotesService` connect `DebugNotesService` to `PrismaService`, `DebugNotesController`, `debug-notes.service.ts`?**

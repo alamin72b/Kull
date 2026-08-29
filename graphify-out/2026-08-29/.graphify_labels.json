@@ -38,5 +38,7 @@
   "36": "QueryDebugNotesDto",
   "38": "MedicineTransactionsService",
   "39": ".update",
+  "45": "medicine-transactions/new/page.tsx",
+  "46": "medicine-transactions/page.tsx",
   "48": "medicine-transactions.api.ts"
 }
