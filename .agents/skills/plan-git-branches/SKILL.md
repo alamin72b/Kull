@@ -21,6 +21,16 @@ Given the user's description of upcoming work, recommend a `dev` integration bra
    git status --short --untracked-files=all
    ```
 
+   When a local `dev` branch exists and the current branch is not `dev`, also compare branch ancestry and commits before recommending a new task branch:
+
+   ```bash
+   git log --oneline --decorate dev..HEAD
+   git diff --stat dev...HEAD
+   git merge-base --is-ancestor HEAD dev
+   ```
+
+   Interpret the results as follows: an empty `dev..HEAD` log means there are no commits unique to the current branch; a non-empty log means the current branch contains work not integrated into `dev`; and a successful `merge-base --is-ancestor HEAD dev` means the current branch is already contained in `dev`. The symmetric `dev...HEAD` diff is a summary of the complete branch divergence, including committed changes that would otherwise be missed by `git status`.
+
    If an `origin` remote is configured and remote lookup is useful, check whether the remote `dev` branch exists:
 
    ```bash
@@ -37,6 +47,8 @@ Given the user's description of upcoming work, recommend a `dev` integration bra
    - If only remote `origin/dev` exists, recommend creating a local tracking branch from it.
    - If `dev` does not exist, recommend creating it from the identified mainline branch.
    - If the working tree is dirty, warn before any branch-switching command because uncommitted changes may carry over or block switching. Do not suggest discarding, stashing, resetting, or cleaning unless the user explicitly asks.
+   - If the current branch has commits not contained in `dev`, do not present ordinary `git switch dev` / `git switch -c ...` setup as if it were safe. Clearly state that the current work must first be integrated into `dev` through the user's normal commit/PR/merge workflow, or that the new task must intentionally branch from the current branch if it depends on it. Never invent or automatically run a merge command.
+   - If the current branch is already contained in `dev`, state that explicitly and continue with the normal task-branch setup.
 
 4. Convert the work description into a task branch:
 
@@ -53,12 +65,14 @@ Given the user's description of upcoming work, recommend a `dev` integration bra
 
 5. Generate commands only; do not execute them. Use the appropriate setup path:
 
-   - If local `dev` exists:
+   - If local `dev` exists and the current branch is clean and contains no commits outside `dev`:
 
      ```bash
      git switch dev
      git switch -c <type>/<slug>
      ```
+
+   - If the current branch has commits outside `dev`, provide an integration warning instead of suggesting that the new task branch be created from `dev` immediately. The setup commands for the new task branch should be deferred until the user integrates the current branch; do not include merge, commit, push, stash, or reset commands unless the user separately requests those commands.
 
    - If only `origin/dev` exists:
 
