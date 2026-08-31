@@ -1,9 +1,10 @@
 {
-  "1": "activity-dashboard.tsx",
+  "0": "activity-auth.api.ts",
+  "1": "index.ts",
   "2": "devDependencies",
   "3": "dependencies",
   "4": "contracts/package.json",
-  "5": "Activity",
+  "5": "ActivitiesService",
   "6": "tasks",
   "7": "compilerOptions",
   "8": "devDependencies",
@@ -13,7 +14,7 @@
   "12": "debug-notes.service.ts",
   "13": "exclude",
   "14": "What You Must Do When Invoked",
-  "15": "index.ts",
+  "15": "DebugNoteForm.tsx",
   "16": "compilerOptions",
   "17": "nest-cli.json",
   "18": "DebugNotesService",
@@ -37,9 +38,7 @@
   "36": "QueryDebugNotesDto",
   "38": "MedicineTransactionsService",
   "39": "DriveService",
-  "40": "drive.module.ts",
   "41": "CreateDebugNoteDto",
-  "44": "drive-upload/page.tsx",
-  "45": "drive-upload.api.ts",
+  "44": "drive-upload.api.ts",
   "48": "medicine-transactions.api.ts"
 }

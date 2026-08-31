@@ -2,6 +2,7 @@ import {
   ArrowUpRight,
   BookOpenText,
   Clock3,
+  CloudUpload,
   Pill,
   type LucideIcon,
 } from "lucide-react";
@@ -45,6 +46,15 @@ const tools: Tool[] = [
     label: "Price history",
     icon: Pill,
     tone: "violet",
+  },
+  {
+    name: "Drive Upload",
+    description:
+      "Upload a file to your Google Drive using a folder path that you verify before uploading.",
+    href: "/drive-upload",
+    label: "File upload",
+    icon: CloudUpload,
+    tone: "sage",
   },
 ];
 
