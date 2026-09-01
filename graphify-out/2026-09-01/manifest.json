@@ -10,7 +10,7 @@
     "semantic_hash": "b6c9c4b64b7092bea720263a47b574cf"
   },
   "apps/api/package.json": {
-    "mtime": 1788205786.6662931,
+    "mtime": 1788268395.5146205,
     "ast_hash": "9969b647a61148a07d0468c7fd7ffdd2",
     "semantic_hash": ""
   },
@@ -50,7 +50,7 @@
     "semantic_hash": "f6f8adf30bde2d242fae3e496b9af9a7"
   },
   "apps/api/src/app.module.ts": {
-    "mtime": 1788205786.68184,
+    "mtime": 1788268395.5156207,
     "ast_hash": "99568afcf7b8e7a5545fe264fb46120c",
     "semantic_hash": ""
   },
@@ -125,8 +125,8 @@
     "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
   "apps/web/next-env.d.ts": {
-    "mtime": 1787946371.148843,
-    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
+    "mtime": 1788271219.1331594,
+    "ast_hash": "2a74d3909800ca5467fa83b0ab4a4890",
     "semantic_hash": ""
   },
   "apps/web/next.config.ts": {
@@ -150,7 +150,7 @@
     "semantic_hash": "5647f771f1ea3a0d9a2a80813312195b"
   },
   "apps/web/src/app/page.tsx": {
-    "mtime": 1788205786.6837425,
+    "mtime": 1788268395.518981,
     "ast_hash": "4accc17e09e6f2e4ea7b89689dd7c6c4",
     "semantic_hash": ""
   },
@@ -170,7 +170,7 @@
     "semantic_hash": "c79215a1d20087327dfb962bb17457ec"
   },
   "apps/web/src/features/activities/components/activity-dashboard.tsx": {
-    "mtime": 1788251428.1234422,
+    "mtime": 1788268395.518981,
     "ast_hash": "7a8f36f9f984ddaab0dc3b8e8fcf7eb6",
     "semantic_hash": ""
   },
@@ -225,7 +225,7 @@
     "semantic_hash": "094ca607da590707d158cd9fb0becd2e"
   },
   "packages/contracts/src/index.ts": {
-    "mtime": 1788205786.742241,
+    "mtime": 1788268395.557403,
     "ast_hash": "92dbc7e6d8e18ca6cce70e098976f819",
     "semantic_hash": ""
   },
@@ -355,22 +355,22 @@
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.constants.ts": {
-    "mtime": 1788251428.121442,
+    "mtime": 1788268395.5156207,
     "ast_hash": "acfceb74924037e51580ef49df4bb64b",
     "semantic_hash": ""
   },
   "apps/api/src/auth/authenticated-request.ts": {
-    "mtime": 1788251428.1224422,
+    "mtime": 1788268395.5166206,
     "ast_hash": "744c63d98cd1bd6f21e4a0f257ee7983",
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.service.ts": {
-    "mtime": 1788251428.1224422,
+    "mtime": 1788268395.5166206,
     "ast_hash": "5942f527c0c6ed5222fe2ee67f26aaf6",
     "semantic_hash": ""
   },
   "apps/api/src/auth/activity-auth.guard.ts": {
-    "mtime": 1788251428.121442,
+    "mtime": 1788268395.5156207,
     "ast_hash": "004b95cfbda491216096aa61c3ed938b",
     "semantic_hash": ""
   },
@@ -380,17 +380,17 @@
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.controller.ts": {
-    "mtime": 1788251428.121442,
+    "mtime": 1788268395.5166206,
     "ast_hash": "76fa9eeec572c10ea4b7f55c5af7b7c3",
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.module.ts": {
-    "mtime": 1788251428.1224422,
+    "mtime": 1788268395.5166206,
     "ast_hash": "cf49e3034f97e1d4423f4bfd2abb86de",
     "semantic_hash": ""
   },
   "apps/web/src/app/activities/login/page.tsx": {
-    "mtime": 1788251428.1234422,
+    "mtime": 1788268395.518981,
     "ast_hash": "949c07be4d8980832bb1b5dd7869ce60",
     "semantic_hash": ""
   },
@@ -455,48 +455,58 @@
     "semantic_hash": ""
   },
   "apps/api/src/drive/drive.controller.ts": {
-    "mtime": 1788205786.68184,
+    "mtime": 1788268395.5176206,
     "ast_hash": "ce86ef58511b5d1a1f3cae633e54fba0",
     "semantic_hash": ""
   },
   "apps/api/src/drive/drive.module.ts": {
-    "mtime": 1788205786.6822288,
+    "mtime": 1788268395.5176206,
     "ast_hash": "2571e950704b48cda0a0884b11e4c331",
     "semantic_hash": ""
   },
   "apps/api/src/drive/drive.service.ts": {
-    "mtime": 1788263156.4581914,
+    "mtime": 1788268395.5176206,
     "ast_hash": "61a449e87cc6427f586f2a84e1d12e89",
     "semantic_hash": ""
   },
   "apps/api/src/drive/dto/check-drive-path.dto.ts": {
-    "mtime": 1788205786.6828558,
+    "mtime": 1788268395.5176206,
     "ast_hash": "6ca98995e1dfe8bc8d19835eeabe3707",
     "semantic_hash": ""
   },
   "apps/api/src/drive/dto/upload-to-drive.dto.ts": {
-    "mtime": 1788205786.6829772,
+    "mtime": 1788268395.518981,
     "ast_hash": "d22b3e4fd03595f0232e36ca105bd53e",
     "semantic_hash": ""
   },
   "apps/web/src/app/drive-upload/page.tsx": {
-    "mtime": 1788205786.6829772,
+    "mtime": 1788268395.518981,
     "ast_hash": "c29adb79adc0a7b306ae5915882c4265",
     "semantic_hash": ""
   },
   "apps/web/src/features/drive-upload/drive-upload.api.ts": {
-    "mtime": 1788205786.7105327,
+    "mtime": 1788268395.5196207,
     "ast_hash": "ca98928d2714a9e2f373cb4a29ea4730",
     "semantic_hash": ""
   },
   "packages/contracts/src/drive.ts": {
-    "mtime": 1788205786.742014,
+    "mtime": 1788268395.5572693,
     "ast_hash": "5754b2fe80297106e039d6ad0d6271b2",
     "semantic_hash": ""
   },
   "apps/web/src/features/auth/auth.api.ts": {
-    "mtime": 1788251428.124442,
+    "mtime": 1788268395.5196207,
     "ast_hash": "7082638c1fbf0b60731c2c4d116a2e28",
+    "semantic_hash": ""
+  },
+  "apps/web/src/app/privacy/page.tsx": {
+    "mtime": 1788271050.3992147,
+    "ast_hash": "ec715ba4c39bd2f781056ad81384db6c",
+    "semantic_hash": ""
+  },
+  "apps/web/src/app/terms/page.tsx": {
+    "mtime": 1788270445.2941124,
+    "ast_hash": "c9831c980d6f8242a3fccd462a2c35b7",
     "semantic_hash": ""
   }
 }

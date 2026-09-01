@@ -13,7 +13,7 @@ import {
 } from "./drive.service";
 
 @Module({
-  imports: [
+  imports: [p
     AuthModule,
     PrismaModule,
   ],
@@ -23,6 +23,9 @@ import {
   ],
 
   providers: [
+    DriveService,
+  ],
+  exports: [
     DriveService,
   ],
 })

@@ -125,8 +125,8 @@
     "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
   "apps/web/next-env.d.ts": {
-    "mtime": 1788271219.1331594,
-    "ast_hash": "2a74d3909800ca5467fa83b0ab4a4890",
+    "mtime": 1788271377.7881765,
+    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
     "semantic_hash": ""
   },
   "apps/web/next.config.ts": {
@@ -225,8 +225,8 @@
     "semantic_hash": "094ca607da590707d158cd9fb0becd2e"
   },
   "packages/contracts/src/index.ts": {
-    "mtime": 1788268395.557403,
-    "ast_hash": "92dbc7e6d8e18ca6cce70e098976f819",
+    "mtime": 1788277822.7852244,
+    "ast_hash": "a1729ea09be0d2c11f30e3d7ee0b4caa",
     "semantic_hash": ""
   },
   "packages/contracts/tsconfig.json": {
@@ -465,8 +465,8 @@
     "semantic_hash": ""
   },
   "apps/api/src/drive/drive.service.ts": {
-    "mtime": 1788268395.5176206,
-    "ast_hash": "61a449e87cc6427f586f2a84e1d12e89",
+    "mtime": 1788283661.3197432,
+    "ast_hash": "d55b3af754b51c29684da1d58e18f633",
     "semantic_hash": ""
   },
   "apps/api/src/drive/dto/check-drive-path.dto.ts": {
@@ -500,13 +500,68 @@
     "semantic_hash": ""
   },
   "apps/web/src/app/privacy/page.tsx": {
-    "mtime": 1788271050.3992147,
+    "mtime": 1788272707.1920016,
     "ast_hash": "ec715ba4c39bd2f781056ad81384db6c",
     "semantic_hash": ""
   },
   "apps/web/src/app/terms/page.tsx": {
-    "mtime": 1788270445.2941124,
+    "mtime": 1788272707.1920016,
     "ast_hash": "c9831c980d6f8242a3fccd462a2c35b7",
+    "semantic_hash": ""
+  },
+  "apps/api/src/important-documents/dto/check-root-folder.dto.ts": {
+    "mtime": 1788275769.851805,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/api/src/important-documents/dto/list-important-documents.dto.ts": {
+    "mtime": 1788275770.117874,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/api/src/important-documents/dto/update-important-document.dto.ts": {
+    "mtime": 1788275770.392945,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/api/src/important-documents/dto/upload-important-document.dto.ts": {
+    "mtime": 1788275770.6690164,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/api/src/important-documents/important-documents.controller.spec.ts": {
+    "mtime": 1788275770.8170547,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/api/src/important-documents/important-documents.controller.ts": {
+    "mtime": 1788275771.0831234,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/api/src/important-documents/important-documents.module.ts": {
+    "mtime": 1788275771.3481917,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/api/src/important-documents/important-documents.service.ts": {
+    "mtime": 1788275771.527238,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/web/src/app/important-documents/page.tsx": {
+    "mtime": 1788275771.7432938,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "apps/web/src/features/important-documents/important-documents.api.ts": {
+    "mtime": 1788275772.0183647,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "packages/contracts/src/important-documents.ts": {
+    "mtime": 1788277800.194568,
+    "ast_hash": "d42943e2f49592c001060c30ad704730",
     "semantic_hash": ""
   }
 }

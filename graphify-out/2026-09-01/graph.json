@@ -4,17 +4,30 @@
   "graph": {},
   "nodes": [
     {
-      "label": "Tool",
+      "label": "ActivityUser",
       "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
+      "source_file": "apps/api/src/auth/auth.service.ts",
       "source_location": "L13",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "apps_web_src_app_page_tool",
-      "community": 1,
-      "community_name": "activity-dashboard.tsx",
-      "norm_label": "tool"
+      "id": "apps_api_src_auth_auth_service_activityuser",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": "activityuser"
+    },
+    {
+      "label": "PrismaService",
+      "file_type": "code",
+      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_common_prisma_prisma_service_prismaservice",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": "prismaservice"
     },
     {
       "label": "ActivityCardProps",
@@ -325,60 +338,8 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_module_activitiesmodule",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "activitiesmodule"
-    },
-    {
-      "label": "AppModule",
-      "file_type": "code",
-      "source_file": "apps/api/src/app.module.ts",
-      "source_location": "L20",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_app_module_appmodule",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "appmodule"
-    },
-    {
-      "label": "ActivityAuthGuard",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/activity-auth.guard.ts",
-      "source_location": "L15",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_activity_auth_guard_activityauthguard",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "activityauthguard"
-    },
-    {
-      "label": "AuthController",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L29",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_authcontroller",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "authcontroller"
-    },
-    {
-      "label": "RequestWithSignedCookies",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L24",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_requestwithsignedcookies",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "requestwithsignedcookies"
     },
     {
       "label": "AuthModule",
@@ -390,34 +351,8 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_module_authmodule",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "authmodule"
-    },
-    {
-      "label": "ActivityUser",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L13",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_activityuser",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "activityuser"
-    },
-    {
-      "label": "AuthService",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L21",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "authservice"
     },
     {
       "label": "PrismaModule",
@@ -429,21 +364,21 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_module_prismamodule",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "prismamodule"
     },
     {
-      "label": "PrismaService",
+      "label": "DebugNotesModule",
       "file_type": "code",
-      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
-      "source_location": "L7",
+      "source_file": "apps/api/src/debug-notes/debug-notes.module.ts",
+      "source_location": "L9",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "apps_api_src_common_prisma_prisma_service_prismaservice",
+      "id": "apps_api_src_debug_notes_debug_notes_module_debugnotesmodule",
       "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "prismaservice"
+      "community_name": "app.module.ts",
+      "norm_label": "debugnotesmodule"
     },
     {
       "label": "DriveModule",
@@ -455,7 +390,7 @@
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_module_drivemodule",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "drivemodule"
     },
     {
@@ -468,7 +403,7 @@
       "_origin": "ast",
       "id": "apps_api_src_medicine_transactions_medicine_transactions_module_medicinetransactionsmodule",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "medicinetransactionsmodule"
     },
     {
@@ -485,19 +420,6 @@
       "norm_label": "debugnotescontroller"
     },
     {
-      "label": "DebugNotesModule",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.module.ts",
-      "source_location": "L9",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_module_debugnotesmodule",
-      "community": 35,
-      "community_name": "DebugNotesController",
-      "norm_label": "debugnotesmodule"
-    },
-    {
       "label": "QueryDebugNotesDto",
       "file_type": "code",
       "source_file": "apps/api/src/debug-notes/dto/query-debug-notes.dto.ts",
@@ -509,6 +431,32 @@
       "community": 36,
       "community_name": "QueryDebugNotesDto",
       "norm_label": "querydebugnotesdto"
+    },
+    {
+      "label": "ActivityAuthGuard",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/activity-auth.guard.ts",
+      "source_location": "L15",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_activity_auth_guard_activityauthguard",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "activityauthguard"
+    },
+    {
+      "label": "RequestWithSignedCookies",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L24",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_requestwithsignedcookies",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "requestwithsignedcookies"
     },
     {
       "label": "CreateMedicineTransactionDto",
@@ -576,6 +524,19 @@
       "norm_label": "medicinetransactionsservice"
     },
     {
+      "label": "MedicinePriceComparison",
+      "file_type": "code",
+      "source_file": "packages/contracts/src/medicine-transactions.ts",
+      "source_location": "L21",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "packages_contracts_src_medicine_transactions_medicinepricecomparison",
+      "community": 38,
+      "community_name": "MedicineTransactionsService",
+      "norm_label": "medicinepricecomparison"
+    },
+    {
       "label": "AuthenticatedRequest",
       "file_type": "code",
       "source_file": "apps/api/src/auth/authenticated-request.ts",
@@ -641,6 +602,19 @@
       "norm_label": "uploadtodrivedto"
     },
     {
+      "label": "AuthController",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L29",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_authcontroller",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": "authcontroller"
+    },
+    {
       "label": "CreateDebugNoteDto",
       "file_type": "code",
       "source_file": "apps/api/src/debug-notes/dto/create-debug-note.dto.ts",
@@ -652,6 +626,32 @@
       "community": 41,
       "community_name": "CreateDebugNoteDto",
       "norm_label": "createdebugnotedto"
+    },
+    {
+      "label": "AuthService",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L21",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": "authservice"
+    },
+    {
+      "label": "AppModule",
+      "file_type": "code",
+      "source_file": "apps/api/src/app.module.ts",
+      "source_location": "L20",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_app_module_appmodule",
+      "community": 43,
+      "community_name": "AppModule",
+      "norm_label": "appmodule"
     },
     {
       "label": "DrivePathCheckResult",
@@ -743,19 +743,6 @@
       "community": 48,
       "community_name": "medicine-transactions.api.ts",
       "norm_label": "createmedicinetransactioninput"
-    },
-    {
-      "label": "MedicinePriceComparison",
-      "file_type": "code",
-      "source_file": "packages/contracts/src/medicine-transactions.ts",
-      "source_location": "L21",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "packages_contracts_src_medicine_transactions_medicinepricecomparison",
-      "community": 48,
-      "community_name": "medicine-transactions.api.ts",
-      "norm_label": "medicinepricecomparison"
     },
     {
       "label": "MedicinePriceComparisonResult",
@@ -914,28 +901,113 @@
       "norm_label": "activity"
     },
     {
-      "label": ".create()",
+      "label": "Tool",
       "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.controller.ts",
-      "source_location": "L44",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L13",
       "_callable": true,
+      "_callable_class": true,
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_controller_debugnotescontroller_create",
-      "community": 0,
-      "community_name": ".update",
-      "norm_label": ".create()"
+      "id": "apps_web_src_app_page_tool",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "tool"
     },
     {
-      "label": ".update()",
+      "label": ".constructor()",
       "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.controller.ts",
-      "source_location": "L53",
+      "source_file": "apps/api/src/activities/activities.service.ts",
+      "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_controller_debugnotescontroller_update",
+      "id": "apps_api_src_activities_activities_service_activitiesservice_constructor",
       "community": 0,
-      "community_name": ".update",
-      "norm_label": ".update()"
+      "community_name": "PrismaService",
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L344",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_constructor",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_common_prisma_prisma_service_prismaservice_constructor",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".onModuleDestroy()",
+      "file_type": "code",
+      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_common_prisma_prisma_service_prismaservice_onmoduledestroy",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": ".onmoduledestroy()"
+    },
+    {
+      "label": ".onModuleInit()",
+      "file_type": "code",
+      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_common_prisma_prisma_service_prismaservice_onmoduleinit",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": ".onmoduleinit()"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
+      "source_location": "L43",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_constructor",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/drive.service.ts",
+      "source_location": "L583",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_drive_drive_service_driveservice_constructor",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/medicine-transactions/medicine-transactions.service.ts",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_medicine_transactions_medicine_transactions_service_medicinetransactionsservice_constructor",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": ".constructor()"
     },
     {
       "label": "LoginPage()",
@@ -960,30 +1032,6 @@
       "community": 1,
       "community_name": "activity-dashboard.tsx",
       "norm_label": "activitiespage()"
-    },
-    {
-      "label": "HomePage()",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L61",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_web_src_app_page_homepage",
-      "community": 1,
-      "community_name": "activity-dashboard.tsx",
-      "norm_label": "homepage()"
-    },
-    {
-      "label": "AppHeader()",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/layout/app-header.tsx",
-      "source_location": "L4",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_web_src_components_layout_app_header_appheader",
-      "community": 1,
-      "community_name": "activity-dashboard.tsx",
-      "norm_label": "appheader()"
     },
     {
       "label": "checkResponse()",
@@ -1862,318 +1910,6 @@
       "norm_label": ".update()"
     },
     {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "apps/api/src/activities/activities.service.ts",
-      "source_location": "L14",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_activities_activities_service_activitiesservice_constructor",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": ".canActivate()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/activity-auth.guard.ts",
-      "source_location": "L18",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_activity_auth_guard_activityauthguard_canactivate",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".canactivate()"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/activity-auth.guard.ts",
-      "source_location": "L16",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_activity_auth_guard_activityauthguard_constructor",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": "isProductionEnvironment()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.constants.ts",
-      "source_location": "L7",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_constants_isproductionenvironment",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "isproductionenvironment()"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L30",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_authcontroller_constructor",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": ".googleCallback()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L61",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_authcontroller_googlecallback",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".googlecallback()"
-    },
-    {
-      "label": ".googleLogin()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L33",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_authcontroller_googlelogin",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".googlelogin()"
-    },
-    {
-      "label": ".logout()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L118",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_authcontroller_logout",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".logout()"
-    },
-    {
-      "label": ".me()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L109",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_authcontroller_me",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".me()"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L344",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_constructor",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": ".createGoogleClient()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L29",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_creategoogleclient",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".creategoogleclient()"
-    },
-    {
-      "label": ".createNonce()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L70",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_createnonce",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".createnonce()"
-    },
-    {
-      "label": ".createState()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L57",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_createstate",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".createstate()"
-    },
-    {
-      "label": ".findOrCreateUser()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L180",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_findorcreateuser",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".findorcreateuser()"
-    },
-    {
-      "label": ".getCurrentUser()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L318",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_getcurrentuser",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".getcurrentuser()"
-    },
-    {
-      "label": ".getGoogleLoginUrl()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L81",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_getgoogleloginurl",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".getgoogleloginurl()"
-    },
-    {
-      "label": ".getGoogleTokens()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L110",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_getgoogletokens",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".getgoogletokens()"
-    },
-    {
-      "label": ".loginWithGoogle()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L284",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_loginwithgoogle",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".loginwithgoogle()"
-    },
-    {
-      "label": ".verifyGoogleToken()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L125",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_verifygoogletoken",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".verifygoogletoken()"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
-      "source_location": "L11",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_common_prisma_prisma_service_prismaservice_constructor",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": ".onModuleDestroy()",
-      "file_type": "code",
-      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
-      "source_location": "L22",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_common_prisma_prisma_service_prismaservice_onmoduledestroy",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".onmoduledestroy()"
-    },
-    {
-      "label": ".onModuleInit()",
-      "file_type": "code",
-      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
-      "source_location": "L18",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_common_prisma_prisma_service_prismaservice_onmoduleinit",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".onmoduleinit()"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
-      "source_location": "L43",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_service_debugnotesservice_constructor",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L583",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_drive_drive_service_driveservice_constructor",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": "bootstrap()",
-      "file_type": "code",
-      "source_file": "apps/api/src/main.ts",
-      "source_location": "L9",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_main_bootstrap",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "bootstrap()"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "apps/api/src/medicine-transactions/medicine-transactions.service.ts",
-      "source_location": "L17",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_medicine_transactions_medicine_transactions_service_medicinetransactionsservice_constructor",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": ".constructor()"
-    },
-    {
       "label": "DebugNotesLoading()",
       "file_type": "code",
       "source_file": "apps/web/src/app/debug-notes/loading.tsx",
@@ -2196,6 +1932,18 @@
       "community": 35,
       "community_name": "DebugNotesController",
       "norm_label": ".constructor()"
+    },
+    {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.controller.ts",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_controller_debugnotescontroller_create",
+      "community": 35,
+      "community_name": "DebugNotesController",
+      "norm_label": ".create()"
     },
     {
       "label": ".findOne()",
@@ -2234,6 +1982,18 @@
       "norm_label": ".remove()"
     },
     {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "apps/api/src/debug-notes/debug-notes.controller.ts",
+      "source_location": "L53",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_controller_debugnotescontroller_update",
+      "community": 35,
+      "community_name": "DebugNotesController",
+      "norm_label": ".update()"
+    },
+    {
       "label": ".findTags()",
       "file_type": "code",
       "source_file": "apps/api/src/debug-notes/debug-notes.service.ts",
@@ -2268,6 +2028,54 @@
       "community": 36,
       "community_name": "QueryDebugNotesDto",
       "norm_label": ".findall()"
+    },
+    {
+      "label": ".canActivate()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/activity-auth.guard.ts",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_activity_auth_guard_activityauthguard_canactivate",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": ".canactivate()"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/activity-auth.guard.ts",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_activity_auth_guard_activityauthguard_constructor",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "isProductionEnvironment()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.constants.ts",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_constants_isproductionenvironment",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "isproductionenvironment()"
+    },
+    {
+      "label": "bootstrap()",
+      "file_type": "code",
+      "source_file": "apps/api/src/main.ts",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_main_bootstrap",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "bootstrap()"
     },
     {
       "label": "cleanText()",
@@ -2736,6 +2544,174 @@
       "community": 39,
       "community_name": "DriveService",
       "norm_label": ".uploadfile()"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L30",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_authcontroller_constructor",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".googleCallback()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L61",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_authcontroller_googlecallback",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": ".googlecallback()"
+    },
+    {
+      "label": ".logout()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L118",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_authcontroller_logout",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": ".logout()"
+    },
+    {
+      "label": ".me()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L109",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_authcontroller_me",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": ".me()"
+    },
+    {
+      "label": ".getCurrentUser()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L318",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_getcurrentuser",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": ".getcurrentuser()"
+    },
+    {
+      "label": ".googleLogin()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_authcontroller_googlelogin",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".googlelogin()"
+    },
+    {
+      "label": ".createGoogleClient()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_creategoogleclient",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".creategoogleclient()"
+    },
+    {
+      "label": ".createNonce()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L70",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_createnonce",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".createnonce()"
+    },
+    {
+      "label": ".createState()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_createstate",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".createstate()"
+    },
+    {
+      "label": ".findOrCreateUser()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L180",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_findorcreateuser",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".findorcreateuser()"
+    },
+    {
+      "label": ".getGoogleLoginUrl()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L81",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_getgoogleloginurl",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".getgoogleloginurl()"
+    },
+    {
+      "label": ".getGoogleTokens()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L110",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_getgoogletokens",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".getgoogletokens()"
+    },
+    {
+      "label": ".loginWithGoogle()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L284",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_loginwithgoogle",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".loginwithgoogle()"
+    },
+    {
+      "label": ".verifyGoogleToken()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L125",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_verifygoogletoken",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".verifygoogletoken()"
     },
     {
       "label": "DriveUploadPage()",
@@ -3274,63 +3250,122 @@
       "_origin": "ast",
       "id": "apps_web_src_app_layout_rootlayout",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "rootlayout()"
     },
     {
-      "label": "Body",
+      "label": "HomePage()",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L61",
+      "_callable": true,
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_controller_ts_body",
-      "community": 0,
-      "community_name": ".update",
-      "norm_label": "body"
+      "id": "apps_web_src_app_page_homepage",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "homepage()"
     },
     {
-      "label": "Patch",
+      "label": "PrivacyPolicyPage()",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "apps/web/src/app/privacy/page.tsx",
+      "source_location": "L11",
+      "_callable": true,
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_controller_ts_patch",
-      "community": 0,
-      "community_name": ".update",
-      "norm_label": "patch"
+      "id": "apps_web_src_app_privacy_page_privacypolicypage",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "privacypolicypage()"
     },
     {
-      "label": "Post",
+      "label": "TermsOfServicePage()",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "apps/web/src/app/terms/page.tsx",
+      "source_location": "L11",
+      "_callable": true,
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_controller_ts_post",
-      "community": 0,
-      "community_name": ".update",
-      "norm_label": "post"
+      "id": "apps_web_src_app_terms_page_termsofservicepage",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "termsofservicepage()"
     },
     {
-      "label": "UseInterceptors",
+      "label": "AppHeader()",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "apps/web/src/components/layout/app-header.tsx",
+      "source_location": "L4",
+      "_callable": true,
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_controller_ts_useinterceptors",
-      "community": 0,
-      "community_name": ".update",
-      "norm_label": "useinterceptors"
+      "id": "apps_web_src_components_layout_app_header_appheader",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "appheader()"
     },
     {
-      "label": "UploadedFiles",
+      "label": "auth.service.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": "auth.service.ts"
+    },
+    {
+      "label": "prisma.service.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_common_prisma_prisma_service",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": "prisma.service.ts"
+    },
+    {
+      "label": "Injectable",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "uploadedfiles",
+      "id": "apps_api_src_common_prisma_prisma_service_ts_injectable",
       "community": 0,
-      "community_name": ".update",
-      "norm_label": "uploadedfiles"
+      "community_name": "PrismaService",
+      "norm_label": "injectable"
+    },
+    {
+      "label": "drive.service.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/drive.service.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_drive_service",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": "drive.service.ts"
+    },
+    {
+      "label": "DRIVE_SCOPES",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/drive.service.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_drive_service_drive_scopes",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": "drive_scopes"
+    },
+    {
+      "label": "IMPORTANT:",
+      "file_type": "rationale",
+      "source_file": "apps/api/src/drive/drive.service.ts",
+      "source_location": "L352",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_drive_service_rationale_352",
+      "community": 0,
+      "community_name": "PrismaService",
+      "norm_label": "important:"
     },
     {
       "label": "login/page.tsx",
@@ -3353,39 +3388,6 @@
       "community": 1,
       "community_name": "activity-dashboard.tsx",
       "norm_label": "activities/page.tsx"
-    },
-    {
-      "label": "app/page.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_app_page",
-      "community": 1,
-      "community_name": "activity-dashboard.tsx",
-      "norm_label": "app/page.tsx"
-    },
-    {
-      "label": "tools",
-      "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "apps_web_src_app_page_tools",
-      "community": 1,
-      "community_name": "activity-dashboard.tsx",
-      "norm_label": "tools"
-    },
-    {
-      "label": "app-header.tsx",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/layout/app-header.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_components_layout_app_header",
-      "community": 1,
-      "community_name": "activity-dashboard.tsx",
-      "norm_label": "app-header.tsx"
     },
     {
       "label": "activity-api.ts",
@@ -6354,7 +6356,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "activities.module.ts"
     },
     {
@@ -6365,7 +6367,7 @@
       "_origin": "ast",
       "id": "apps_api_src_activities_activities_module_ts_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "module"
     },
     {
@@ -6376,173 +6378,8 @@
       "_origin": "ast",
       "id": "apps_api_src_app_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "app.module.ts"
-    },
-    {
-      "label": "Module",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_app_module_ts_module",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "module"
-    },
-    {
-      "label": "activity-auth.guard.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/activity-auth.guard.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_activity_auth_guard",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "activity-auth.guard.ts"
-    },
-    {
-      "label": "Injectable",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_activity_auth_guard_ts_injectable",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "injectable"
-    },
-    {
-      "label": "auth.constants.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.constants.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_constants",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "auth.constants.ts"
-    },
-    {
-      "label": "GOOGLE_NONCE_COOKIE",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.constants.ts",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_constants_google_nonce_cookie",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "google_nonce_cookie"
-    },
-    {
-      "label": "GOOGLE_STATE_COOKIE",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.constants.ts",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_constants_google_state_cookie",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "google_state_cookie"
-    },
-    {
-      "label": "KULL_SESSION_COOKIE",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.constants.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_constants_kull_session_cookie",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "kull_session_cookie"
-    },
-    {
-      "label": "auth.controller.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "auth.controller.ts"
-    },
-    {
-      "label": "Controller",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_ts_controller",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "controller"
-    },
-    {
-      "label": "Get",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_ts_get",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "get"
-    },
-    {
-      "label": "Post",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_ts_post",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "post"
-    },
-    {
-      "label": "Query",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_ts_query",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "query"
-    },
-    {
-      "label": "Req",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_ts_req",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "req"
-    },
-    {
-      "label": "Res",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_ts_res",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "res"
-    },
-    {
-      "label": "UseGuards",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_ts_useguards",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "useguards"
     },
     {
       "label": "auth.module.ts",
@@ -6552,7 +6389,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "auth.module.ts"
     },
     {
@@ -6563,30 +6400,8 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_module_ts_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "module"
-    },
-    {
-      "label": "auth.service.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "auth.service.ts"
-    },
-    {
-      "label": "Injectable",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_ts_injectable",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "injectable"
     },
     {
       "label": "prisma.module.ts",
@@ -6596,7 +6411,7 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "prisma.module.ts"
     },
     {
@@ -6607,30 +6422,30 @@
       "_origin": "ast",
       "id": "apps_api_src_common_prisma_prisma_module_ts_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "module"
     },
     {
-      "label": "prisma.service.ts",
+      "label": "debug-notes.module.ts",
       "file_type": "code",
-      "source_file": "apps/api/src/common/prisma/prisma.service.ts",
+      "source_file": "apps/api/src/debug-notes/debug-notes.module.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "apps_api_src_common_prisma_prisma_service",
+      "id": "apps_api_src_debug_notes_debug_notes_module",
       "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "prisma.service.ts"
+      "community_name": "app.module.ts",
+      "norm_label": "debug-notes.module.ts"
     },
     {
-      "label": "Injectable",
+      "label": "Module",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "apps_api_src_common_prisma_prisma_service_ts_injectable",
+      "id": "apps_api_src_debug_notes_debug_notes_module_ts_module",
       "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "injectable"
+      "community_name": "app.module.ts",
+      "norm_label": "module"
     },
     {
       "label": "drive.module.ts",
@@ -6640,7 +6455,7 @@
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "drive.module.ts"
     },
     {
@@ -6651,41 +6466,8 @@
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_module_ts_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "module"
-    },
-    {
-      "label": "drive.service.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_drive_service",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "drive.service.ts"
-    },
-    {
-      "label": "DRIVE_SCOPES",
-      "file_type": "code",
-      "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_drive_service_drive_scopes",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "drive_scopes"
-    },
-    {
-      "label": "main.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/main.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_main",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "main.ts"
     },
     {
       "label": "medicine-transactions.module.ts",
@@ -6695,7 +6477,7 @@
       "_origin": "ast",
       "id": "apps_api_src_medicine_transactions_medicine_transactions_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "medicine-transactions.module.ts"
     },
     {
@@ -6706,19 +6488,8 @@
       "_origin": "ast",
       "id": "apps_api_src_medicine_transactions_medicine_transactions_module_ts_module",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "module"
-    },
-    {
-      "label": "app.e2e-spec.ts",
-      "file_type": "code",
-      "source_file": "apps/api/test/app.e2e-spec.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_test_app_e2e_spec",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "app.e2e-spec.ts"
     },
     {
       "label": "Global",
@@ -6728,19 +6499,8 @@
       "_origin": "ast",
       "id": "global",
       "community": 33,
-      "community_name": "PrismaService",
+      "community_name": "app.module.ts",
       "norm_label": "global"
-    },
-    {
-      "label": "IMPORTANT:",
-      "file_type": "rationale",
-      "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L352",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_drive_service_rationale_352",
-      "community": 33,
-      "community_name": "PrismaService",
-      "norm_label": "important:"
     },
     {
       "label": "loading.tsx",
@@ -6752,6 +6512,17 @@
       "community": 34,
       "community_name": "loading.tsx",
       "norm_label": "loading.tsx"
+    },
+    {
+      "label": "Body",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_controller_ts_body",
+      "community": 35,
+      "community_name": "DebugNotesController",
+      "norm_label": "body"
     },
     {
       "label": "Controller",
@@ -6809,26 +6580,48 @@
       "norm_label": "param"
     },
     {
-      "label": "debug-notes.module.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/debug-notes/debug-notes.module.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_module",
-      "community": 35,
-      "community_name": "DebugNotesController",
-      "norm_label": "debug-notes.module.ts"
-    },
-    {
-      "label": "Module",
+      "label": "Patch",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "apps_api_src_debug_notes_debug_notes_module_ts_module",
+      "id": "apps_api_src_debug_notes_debug_notes_controller_ts_patch",
       "community": 35,
       "community_name": "DebugNotesController",
-      "norm_label": "module"
+      "norm_label": "patch"
+    },
+    {
+      "label": "Post",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_controller_ts_post",
+      "community": 35,
+      "community_name": "DebugNotesController",
+      "norm_label": "post"
+    },
+    {
+      "label": "UseInterceptors",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_debug_notes_debug_notes_controller_ts_useinterceptors",
+      "community": 35,
+      "community_name": "DebugNotesController",
+      "norm_label": "useinterceptors"
+    },
+    {
+      "label": "UploadedFiles",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "uploadedfiles",
+      "community": 35,
+      "community_name": "DebugNotesController",
+      "norm_label": "uploadedfiles"
     },
     {
       "label": "Query",
@@ -6939,6 +6732,94 @@
       "community": 36,
       "community_name": "QueryDebugNotesDto",
       "norm_label": "min"
+    },
+    {
+      "label": "activity-auth.guard.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/activity-auth.guard.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_activity_auth_guard",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "activity-auth.guard.ts"
+    },
+    {
+      "label": "Injectable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_activity_auth_guard_ts_injectable",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "injectable"
+    },
+    {
+      "label": "auth.constants.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.constants.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_constants",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "auth.constants.ts"
+    },
+    {
+      "label": "GOOGLE_NONCE_COOKIE",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.constants.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_constants_google_nonce_cookie",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "google_nonce_cookie"
+    },
+    {
+      "label": "GOOGLE_STATE_COOKIE",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.constants.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_constants_google_state_cookie",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "google_state_cookie"
+    },
+    {
+      "label": "KULL_SESSION_COOKIE",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.constants.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_constants_kull_session_cookie",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "kull_session_cookie"
+    },
+    {
+      "label": "auth.controller.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "auth.controller.ts"
+    },
+    {
+      "label": "main.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/main.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_main",
+      "community": 37,
+      "community_name": "activity-auth.guard.ts",
+      "norm_label": "main.ts"
     },
     {
       "label": "create-medicine-transaction.dto.ts",
@@ -7579,6 +7460,83 @@
       "norm_label": "typescript"
     },
     {
+      "label": "Controller",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_ts_controller",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": "controller"
+    },
+    {
+      "label": "Get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_ts_get",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": "get"
+    },
+    {
+      "label": "Post",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_ts_post",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": "post"
+    },
+    {
+      "label": "Query",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_ts_query",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": "query"
+    },
+    {
+      "label": "Req",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_ts_req",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": "req"
+    },
+    {
+      "label": "Res",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_ts_res",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": "res"
+    },
+    {
+      "label": "UseGuards",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_ts_useguards",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": "useguards"
+    },
+    {
       "label": "IsEnum",
       "file_type": "code",
       "source_file": "",
@@ -7665,6 +7623,39 @@
       "community": 41,
       "community_name": "CreateDebugNoteDto",
       "norm_label": "isdatestring"
+    },
+    {
+      "label": "Injectable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_ts_injectable",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": "injectable"
+    },
+    {
+      "label": "Module",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_app_module_ts_module",
+      "community": 43,
+      "community_name": "AppModule",
+      "norm_label": "module"
+    },
+    {
+      "label": "app.e2e-spec.ts",
+      "file_type": "code",
+      "source_file": "apps/api/test/app.e2e-spec.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_test_app_e2e_spec",
+      "community": 43,
+      "community_name": "AppModule",
+      "norm_label": "app.e2e-spec.ts"
     },
     {
       "label": "drive-upload/page.tsx",
@@ -8037,7 +8028,7 @@
       "_origin": "ast",
       "id": "apps_web_next_config",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "next.config.ts"
     },
     {
@@ -8048,7 +8039,7 @@
       "_origin": "ast",
       "id": "apps_web_next_config_nextconfig",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "nextconfig"
     },
     {
@@ -8059,7 +8050,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_layout",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "layout.tsx"
     },
     {
@@ -8070,8 +8061,85 @@
       "_origin": "ast",
       "id": "apps_web_src_app_layout_metadata",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "metadata"
+    },
+    {
+      "label": "app/page.tsx",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_web_src_app_page",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "app/page.tsx"
+    },
+    {
+      "label": "tools",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/page.tsx",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "apps_web_src_app_page_tools",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "tools"
+    },
+    {
+      "label": "privacy/page.tsx",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/privacy/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_web_src_app_privacy_page",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "privacy/page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/privacy/page.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "apps_web_src_app_privacy_page_metadata",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "metadata"
+    },
+    {
+      "label": "terms/page.tsx",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/terms/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_web_src_app_terms_page",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "terms/page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "apps/web/src/app/terms/page.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "apps_web_src_app_terms_page_metadata",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "metadata"
+    },
+    {
+      "label": "app-header.tsx",
+      "file_type": "code",
+      "source_file": "apps/web/src/components/layout/app-header.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_web_src_components_layout_app_header",
+      "community": 6,
+      "community_name": "app/page.tsx",
+      "norm_label": "app-header.tsx"
     },
     {
       "label": "dependsOn",
@@ -8081,7 +8149,7 @@
       "_origin": "ast",
       "id": "turbo_build_dependson",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "dependson"
     },
     {
@@ -8092,7 +8160,7 @@
       "_origin": "ast",
       "id": "turbo_build_outputs",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "outputs"
     },
     {
@@ -8103,7 +8171,7 @@
       "_origin": "ast",
       "id": "turbo_dev_cache",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "cache"
     },
     {
@@ -8114,7 +8182,7 @@
       "_origin": "ast",
       "id": "turbo_dev_persistent",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "persistent"
     },
     {
@@ -8125,7 +8193,7 @@
       "_origin": "ast",
       "id": "turbo_json_turbo",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "turbo.json"
     },
     {
@@ -8136,7 +8204,7 @@
       "_origin": "ast",
       "id": "turbo_lint_dependson",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "dependson"
     },
     {
@@ -8147,7 +8215,7 @@
       "_origin": "ast",
       "id": "turbo_schema",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "$schema"
     },
     {
@@ -8158,7 +8226,7 @@
       "_origin": "ast",
       "id": "turbo_tasks",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "tasks"
     },
     {
@@ -8169,7 +8237,7 @@
       "_origin": "ast",
       "id": "turbo_tasks_build",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "build"
     },
     {
@@ -8180,7 +8248,7 @@
       "_origin": "ast",
       "id": "turbo_tasks_dev",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "dev"
     },
     {
@@ -8191,7 +8259,7 @@
       "_origin": "ast",
       "id": "turbo_tasks_lint",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "lint"
     },
     {
@@ -8202,7 +8270,7 @@
       "_origin": "ast",
       "id": "turbo_tasks_typecheck",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "typecheck"
     },
     {
@@ -8213,7 +8281,7 @@
       "_origin": "ast",
       "id": "turbo_typecheck_dependson",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "dependson"
     },
     {
@@ -8224,7 +8292,7 @@
       "_origin": "ast",
       "id": "ref_build",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "^build"
     },
     {
@@ -8235,7 +8303,7 @@
       "_origin": "ast",
       "id": "ref_lint",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "^lint"
     },
     {
@@ -8246,7 +8314,7 @@
       "_origin": "ast",
       "id": "ref_next",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": ".next/**"
     },
     {
@@ -8257,7 +8325,7 @@
       "_origin": "ast",
       "id": "ref_next_cache",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "!.next/cache/**"
     },
     {
@@ -8268,7 +8336,7 @@
       "_origin": "ast",
       "id": "ref_typecheck",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "^typecheck"
     },
     {
@@ -8279,7 +8347,7 @@
       "_origin": "ast",
       "id": "turbo_json_ref_dist",
       "community": 6,
-      "community_name": "tasks",
+      "community_name": "app/page.tsx",
       "norm_label": "dist/**"
     },
     {
@@ -15327,6 +15395,30 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/privacy/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_privacy_page",
+      "target": "apps_web_src_components_layout_app_header_appheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/terms/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_terms_page",
+      "target": "apps_web_src_components_layout_app_header_appheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "apps/web/src/features/activities/api/activity-api.ts",
       "source_location": "L1",
       "weight": 1.0,
@@ -17264,6 +17356,54 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_page",
+      "target": "apps_web_src_components_layout_app_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/privacy/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_privacy_page",
+      "target": "ref_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/privacy/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_privacy_page",
+      "target": "apps_web_src_components_layout_app_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/terms/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_terms_page",
+      "target": "ref_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/terms/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_terms_page",
       "target": "apps_web_src_components_layout_app_header",
       "confidence_score": 1.0
     },
@@ -20309,6 +20449,50 @@
       "_origin": "ast",
       "source": "apps_web_src_app_page",
       "target": "apps_web_src_app_page_homepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/privacy/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_privacy_page",
+      "target": "apps_web_src_app_privacy_page_privacypolicypage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/privacy/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_privacy_page",
+      "target": "apps_web_src_app_privacy_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/terms/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_terms_page",
+      "target": "apps_web_src_app_terms_page_termsofservicepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/terms/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_terms_page",
+      "target": "apps_web_src_app_terms_page_metadata",
       "confidence_score": 1.0
     },
     {
@@ -24213,5 +24397,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3a0781a7c9b13254debc43d6ed1f7c21e39dfeb8"
+  "built_at_commit": "e381f5ab9a85c0c9265eb52001dd7f678097cc88"
 }

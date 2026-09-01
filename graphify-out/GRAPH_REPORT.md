@@ -1,16 +1,16 @@
 # Graph Report - Kull  (2026-09-01)
 
 ## Corpus Check
-- 111 files · ~31,393 words
+- 122 files · ~31,516 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 805 nodes · 1310 edges · 46 communities (36 shown, 10 thin omitted)
+- 823 nodes · 1319 edges · 69 communities (47 shown, 22 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e381f5ab`
+- Built from commit: `f961030c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -57,13 +57,26 @@
 - AuthService
 - AppModule
 - drive-upload.api.ts
+- api/package.json
+- bcryptjs
+- class-transformer
 - medicine-transactions.api.ts
+- class-validator
+- cookie-parser
+- dotenv
+- googleapis
+- multer
+- @nestjs/common
+- @nestjs/core
+- @nestjs/mapped-types
+- reflect-metadata
+- rxjs
 
 ## God Nodes (most connected - your core abstractions)
 1. `DebugNotesService` - 24 edges
-2. `compilerOptions` - 22 edges
-3. `Activity` - 22 edges
-4. `DriveService` - 21 edges
+2. `DriveService` - 22 edges
+3. `compilerOptions` - 22 edges
+4. `Activity` - 22 edges
 5. `ActivitiesService` - 18 edges
 6. `PrismaService` - 18 edges
 7. `MedicineTransactionsService` - 17 edges
@@ -86,11 +99,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (46 total, 10 thin omitted)
+## Communities (69 total, 22 thin omitted)
 
 ### Community 0 - "PrismaService"
 Cohesion: 0.14
-Nodes (5): ActivityUser, PrismaService, Injectable, DRIVE_SCOPES, IMPORTANT:
+Nodes (6): ActivityUser, PrismaService, Injectable, DRIVE_SCOPES, FolderResolution, IMPORTANT:
 
 ### Community 1 - "activity-dashboard.tsx"
 Cohesion: 0.10
@@ -101,8 +114,8 @@ Cohesion: 0.04
 Nodes (49): devDependencies, eslint, eslint-config-prettier, @eslint/eslintrc, @eslint/js, eslint-plugin-prettier, globals, @nestjs/cli (+41 more)
 
 ### Community 3 - "dependencies"
-Cohesion: 0.05
-Nodes (37): dependencies, bcryptjs, class-transformer, class-validator, cookie-parser, dotenv, googleapis, @kull/contracts (+29 more)
+Cohesion: 0.15
+Nodes (13): dependencies, @kull/contracts, @nestjs/config, @nestjs/platform-express, pg, @prisma/adapter-pg, @prisma/client, @kull/contracts (+5 more)
 
 ### Community 4 - "contracts/package.json"
 Cohesion: 0.17
@@ -133,8 +146,8 @@ Cohesion: 0.07
 Nodes (28): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+20 more)
 
 ### Community 11 - "scripts"
-Cohesion: 0.11
-Nodes (17): description, license, name, private, scripts, build, dev, lint (+9 more)
+Cohesion: 0.17
+Nodes (12): scripts, build, dev, lint, prisma:generate, prisma:migrate, prisma:studio, start (+4 more)
 
 ### Community 12 - "debug-notes.service.ts"
 Cohesion: 0.14
@@ -149,8 +162,8 @@ Cohesion: 0.08
 Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
 
 ### Community 15 - "index.ts"
-Cohesion: 0.08
-Nodes (42): EditDebugNotePage(), DebugNotePage(), formatDate(), DebugNotesPage(), first(), paginationUrl(), SearchParameters, SeverityBadge() (+34 more)
+Cohesion: 0.07
+Nodes (47): EditDebugNotePage(), DebugNotePage(), formatDate(), DebugNotesPage(), first(), paginationUrl(), SearchParameters, SeverityBadge() (+39 more)
 
 ### Community 16 - "compilerOptions"
 Cohesion: 0.20
@@ -198,7 +211,7 @@ Nodes (8): ActivityAuthGuard, Injectable, GOOGLE_NONCE_COOKIE, GOOGLE_STATE_COOK
 
 ### Community 38 - "MedicineTransactionsService"
 Cohesion: 0.08
-Nodes (25): CreateMedicineTransactionDto, MedicineTransactionItemDto, IsString, Matches, MaxLength, MinLength, Transform, Type (+17 more)
+Nodes (24): CreateMedicineTransactionDto, MedicineTransactionItemDto, IsString, Matches, MaxLength, MinLength, Transform, Type (+16 more)
 
 ### Community 39 - "DriveService"
 Cohesion: 0.08
@@ -216,29 +229,33 @@ Nodes (9): CreateDebugNoteDto, IsEnum, IsIn, IsOptional, IsString, MaxLength, Mi
 Cohesion: 0.33
 Nodes (11): DriveUploadPage(), checkDrivePath(), checkResponse(), connectGoogleDrive(), getDriveStatus(), getErrorMessage(), uploadToDrive(), DrivePathCheckResult (+3 more)
 
+### Community 45 - "api/package.json"
+Cohesion: 0.33
+Nodes (5): description, license, name, private, version
+
 ### Community 48 - "medicine-transactions.api.ts"
-Cohesion: 0.13
-Nodes (28): EditMedicineTransactionPage(), formatDate(), formatDifference(), formatMoney(), getResultClass(), getResultText(), MedicineTransactionPage(), NewMedicineTransactionPage() (+20 more)
+Cohesion: 0.12
+Nodes (29): EditMedicineTransactionPage(), formatDate(), formatDifference(), formatMoney(), getResultClass(), getResultText(), MedicineTransactionPage(), NewMedicineTransactionPage() (+21 more)
 
 ## Knowledge Gaps
-- **239 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+234 more)
+- **245 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+240 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PrismaService` connect `PrismaService` to `app.module.ts`, `activity-auth.guard.ts`, `Activity`, `MedicineTransactionsService`, `debug-notes.service.ts`?**
+- **Why does `PrismaService` connect `PrismaService` to `app.module.ts`, `activity-auth.guard.ts`, `Activity`, `MedicineTransactionsService`, `AuthService`, `debug-notes.service.ts`?**
   _High betweenness centrality (0.070) - this node is a cross-community bridge._
 - **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `index.ts`?**
-  _High betweenness centrality (0.044) - this node is a cross-community bridge._
+  _High betweenness centrality (0.043) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
-  _239 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _245 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `PrismaService` be split into smaller, more focused modules?**
   _Cohesion score 0.14166666666666666 - nodes in this community are weakly interconnected._
 - **Should `activity-dashboard.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.09797979797979799 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
-- **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
+- **Should `Activity` be split into smaller, more focused modules?**
+  _Cohesion score 0.09620721554116558 - nodes in this community are weakly interconnected._

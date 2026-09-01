@@ -2,9 +2,7 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma/prisma.service';
 
-import { google } from 'googleapis';
-
-
+import { google, type drive_v3 } from 'googleapis';
 
 import { Readable } from 'node:stream';
 
@@ -14,6 +12,11 @@ const DRIVE_SCOPES = [
   'https://www.googleapis.com/auth/drive.file',
   'https://www.googleapis.com/auth/drive.metadata.readonly',
 ];
+export interface FolderResolution {
+  folderId: string | null;
+  folderPath: string;
+  createdFolders: string[];
+}
 
 @Injectable()
 export class DriveService {
@@ -82,7 +85,9 @@ export class DriveService {
    * This is where the user's own
    * refresh token is used.
    */
-  private async createDriveClient(userId: string) {
+  async getDriveClient(
+    userId: string,
+  ): Promise<drive_v3.Drive> {
     const user = await this.getUser(userId);
 
     if (!user.googleRefreshToken) {
@@ -91,20 +96,20 @@ export class DriveService {
       );
     }
 
-    const googleClient = this.createGoogleClient();
+    const client = this.createGoogleClient();
 
     /*
      * VERY IMPORTANT:
      *
      * This token belongs to this user.
      */
-    googleClient.setCredentials({
+    client.setCredentials({
       refresh_token: user.googleRefreshToken,
     });
 
     const drive = google.drive({
       version: 'v3',
-      auth: googleClient,
+      auth: client,
     });
 
     return drive;
@@ -125,7 +130,7 @@ export class DriveService {
    *
    * Projects/Kull/Reports
    */
-  private cleanFolderPath(folderPath: string): string {
+  cleanFolderPath(folderPath: string): string {
     let path = folderPath.trim();
 
     /*
@@ -226,12 +231,10 @@ export class DriveService {
    * inside the given parent folder.
    */
   private async findFolder(
-    userId: string,
+    drive: drive_v3.Drive,
     parentId: string,
     folderName: string,
   ) {
-    const drive = await this.createDriveClient(userId);
-
     const safeName = this.escapeDriveName(folderName);
 
     const response = await drive.files.list({
@@ -279,12 +282,10 @@ export class DriveService {
    * Creates one folder.
    */
   private async createFolder(
-    userId: string,
+    drive: drive_v3.Drive,
     parentId: string,
     folderName: string,
   ) {
-    const drive = await this.createDriveClient(userId);
-
     const response = await drive.files.create({
       requestBody: {
         name: folderName,
@@ -312,34 +313,62 @@ export class DriveService {
     userId: string,
     folderPath: string,
   ): Promise<string> {
-    const parts = this.getFolderParts(folderPath);
+    const result = await this.resolveFolderPath(
+      userId,
+      folderPath,
+      true,
+    );
 
-    /*
-     * "root" means the user's
-     * My Drive root folder.
-     */
+    return result.folderId!;
+  }
+
+  async resolveFolderPath(
+    userId: string,
+    folderPath: string,
+    createMissing: boolean,
+  ): Promise<FolderResolution> {
+    const cleanPath = this.cleanFolderPath(folderPath);
+    const parts = cleanPath.split('/');
+    const drive = await this.getDriveClient(userId);
+    const createdFolders: string[] = [];
+
     let parentId = 'root';
 
     for (const part of parts) {
-      const existingFolder = await this.findFolder(userId, parentId, part);
+      const existingFolder = await this.findFolder(
+        drive,
+        parentId,
+        part,
+      );
 
-      if (existingFolder) {
+      if (existingFolder?.id) {
         parentId = existingFolder.id!;
-
         continue;
       }
 
-      /*
-       * Folder does not exist.
-       *
-       * Create it.
-       */
-      const newFolder = await this.createFolder(userId, parentId, part);
+      if (!createMissing) {
+        return {
+          folderId: null,
+          folderPath: cleanPath,
+          createdFolders,
+        };
+      }
+
+      const newFolder = await this.createFolder(
+        drive,
+        parentId,
+        part,
+      );
 
       parentId = newFolder.id!;
+      createdFolders.push(part);
     }
 
-    return parentId;
+    return {
+      folderId: parentId,
+      folderPath: cleanPath,
+      createdFolders,
+    };
   }
 
   /*
@@ -357,6 +386,7 @@ export class DriveService {
     const cleanPath = this.cleanFolderPath(folderPath);
 
     const parts = this.getFolderParts(cleanPath);
+    const drive = await this.getDriveClient(userId);
 
     let parentId = 'root';
 
@@ -365,7 +395,11 @@ export class DriveService {
     for (let index = 0; index < parts.length; index++) {
       const part = parts[index];
 
-      const folder = await this.findFolder(userId, parentId, part);
+      const folder = await this.findFolder(
+        drive,
+        parentId,
+        part,
+      );
 
       /*
        * Folder exists.
@@ -542,7 +576,7 @@ export class DriveService {
      */
     const folderId = await this.getOrCreateFolderPath(userId, folderPath);
 
-    const drive = await this.createDriveClient(userId);
+    const drive = await this.getDriveClient(userId);
 
     /*
      * Upload the file.
@@ -560,9 +594,6 @@ export class DriveService {
 
         body: Readable.from(file.buffer),
       },
-
- 
-
 
       fields: 'id, name, mimeType, size, webViewLink',
     });
