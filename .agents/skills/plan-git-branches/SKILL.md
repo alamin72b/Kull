@@ -21,6 +21,16 @@ Given the user's description of upcoming work, recommend a `dev` integration bra
    git status --short --untracked-files=all
    ```
 
+   When a local `dev` branch exists and the current branch is not `dev`, also compare branch ancestry and commits before recommending a new task branch:
+
+   ```bash
+   git log --oneline --decorate dev..HEAD
+   git diff --stat dev...HEAD
+   git merge-base --is-ancestor HEAD dev
+   ```
+
+   Interpret the results as follows: an empty `dev..HEAD` log means there are no commits unique to the current branch; a non-empty log means the current branch contains work not integrated into `dev`; and a successful `merge-base --is-ancestor HEAD dev` means the current branch is already contained in `dev`. The symmetric `dev...HEAD` diff is a summary of the complete branch divergence, including committed changes that would otherwise be missed by `git status`.
+
    If an `origin` remote is configured and remote lookup is useful, check whether the remote `dev` branch exists:
 
    ```bash
@@ -37,6 +47,18 @@ Given the user's description of upcoming work, recommend a `dev` integration bra
    - If only remote `origin/dev` exists, recommend creating a local tracking branch from it.
    - If `dev` does not exist, recommend creating it from the identified mainline branch.
    - If the working tree is dirty, warn before any branch-switching command because uncommitted changes may carry over or block switching. Do not suggest discarding, stashing, resetting, or cleaning unless the user explicitly asks.
+   - Inspect the dirty diff and classify each changed path before proposing branch commands. Treat required repository-baseline changes—such as `.gitignore`, shared configuration, migration metadata, skill instructions, or other files needed to keep the repository consistent—as prerequisite work when they are on `dev`.
+   - If prerequisite work is uncommitted on `dev`, provide a scoped commit-and-push sequence for those exact files before creating the new task branch. Explain that creating the task branch before publishing the prerequisite can leave `dev` incomplete or cause later branches to diverge from the intended root. Never use `git add .` when unrelated changes are present; list exact paths.
+   - Keep unrelated, generated, cache, or uncertain changes out of the prerequisite commit and explicitly identify them for separate handling. Do not recommend deleting them or silently include them.
+   - If the current branch has commits not contained in `dev`, treat those commits as work that must be integrated first. Provide the explicit merge command sequence before any new task-branch command:
+
+     ```bash
+     git switch dev
+     git merge <current-branch>
+     ```
+
+     Then provide the task-branch command from the updated `dev` branch. Do not execute these commands. If the tree is dirty, clearly state that uncommitted changes must be handled before this sequence can safely run; do not invent stash, reset, clean, or discard commands.
+   - If the current branch is already contained in `dev`, state that explicitly and continue with the normal task-branch setup.
 
 4. Convert the work description into a task branch:
 
@@ -53,12 +75,33 @@ Given the user's description of upcoming work, recommend a `dev` integration bra
 
 5. Generate commands only; do not execute them. Use the appropriate setup path:
 
-   - If local `dev` exists:
+   - If local `dev` exists and the current branch is clean and contains no commits outside `dev`:
 
      ```bash
      git switch dev
      git switch -c <type>/<slug>
      ```
+
+   - If the current branch is `dev` and it has required uncommitted baseline changes, provide this sequence first, using only the exact prerequisite paths:
+
+     ```bash
+     git add <prerequisite-file-1> <prerequisite-file-2>
+     git commit -m "<conventional prerequisite message>"
+     git push origin dev
+     git switch -c <type>/<slug>
+     ```
+
+     State that the task branch command is valid only after the commit and push succeed. If the prerequisite change is already committed but `dev` is ahead of `origin/dev`, provide `git push origin dev` before the task-branch command.
+
+   - If the current branch has commits outside `dev`, provide the integration commands first, followed by the deferred task-branch command:
+
+     ```bash
+     git switch dev
+     git merge <current-branch>
+     git switch -c <type>/<slug>
+     ```
+
+     Label the task-branch command as valid only after the merge succeeds. Do not include commit, push, stash, reset, or clean commands in the integration sequence unless the user separately requests them.
 
    - If only `origin/dev` exists:
 
@@ -130,6 +173,10 @@ $ <command>
 ## Branch setup commands
 <conditional commands for the detected repository state>
 
+If the current branch contains commits not in `dev`, this section must show the integration/merge commands first and the new task-branch command second.
+
+If `dev` has required uncommitted baseline changes, this section must show the scoped add, commit, and push commands before the new task-branch command.
+
 ## Push command
 git push -u origin <type>/<slug>
 
@@ -148,6 +195,8 @@ gh pr create ...
 - Never run `git switch`, `git checkout`, `git branch`, `git push`, `gh pr create`, or another state-changing command as part of this skill.
 - Never overwrite, delete, rename, or force-update an existing branch.
 - Never assume `dev` is the GitHub default branch; treat it as the intended integration and PR base branch only.
+- Always use `dev` as the root for new task branches. If the current branch contains commits outside `dev`, always provide the command to merge that current branch into `dev` before providing the command to create the new task branch.
+- Before creating a task branch from a dirty `dev`, always classify the diff. Required baseline changes must be committed and pushed to `dev` first with exact file paths; unrelated or generated changes must not be included.
 - Never suggest working directly on `main` or `dev` when a task branch is appropriate.
 - Never include secrets, credentials, or tokens in branch names, PR titles, descriptions, or displayed output.
 - If the work description contains multiple unrelated tasks, recommend separate task branches and PRs rather than one broad branch.

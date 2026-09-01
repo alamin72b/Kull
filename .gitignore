@@ -19,6 +19,9 @@ apps/api/src/generated/prisma/
 .claude/
 .windsurf/
 
+# Feature implementation documents
+skill implementation docs/
+
 /src/generated/prisma
 
 

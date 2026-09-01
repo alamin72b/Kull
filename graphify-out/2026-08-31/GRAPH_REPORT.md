@@ -1,21 +1,20 @@
-# Graph Report - Kull  (2026-09-01)
+# Graph Report - Kull  (2026-08-31)
 
 ## Corpus Check
-- 109 files · ~29,970 words
+- 109 files · ~28,090 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 799 nodes · 1300 edges · 42 communities (34 shown, 8 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.8)
+- 789 nodes · 1271 edges · 43 communities (35 shown, 8 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3a0781a7`
+- Built from commit: `a9128fa2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- .update
 - activity-dashboard.tsx
 - devDependencies
 - dependencies
@@ -46,26 +45,25 @@
 - AGENTS.md
 - extraction-spec.md
 - README.md
-- PrismaService
+- app.module.ts
 - DebugNotesController
 - QueryDebugNotesDto
 - MedicineTransactionsService
 - DriveService
 - CreateDebugNoteDto
-- drive-upload.api.ts
 - medicine-transactions.api.ts
 
 ## God Nodes (most connected - your core abstractions)
 1. `DebugNotesService` - 24 edges
 2. `compilerOptions` - 22 edges
 3. `Activity` - 22 edges
-4. `DriveService` - 21 edges
+4. `DriveService` - 20 edges
 5. `ActivitiesService` - 18 edges
 6. `PrismaService` - 18 edges
 7. `MedicineTransactionsService` - 17 edges
 8. `compilerOptions` - 16 edges
-9. `AuthService` - 15 edges
-10. `CreateDebugNoteDto` - 14 edges
+9. `CreateDebugNoteDto` - 14 edges
+10. `QueryDebugNotesDto` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `ActivityCardProps` --references--> `Activity`  [EXTRACTED]
@@ -82,15 +80,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (42 total, 8 thin omitted)
-
-### Community 0 - ".update"
-Cohesion: 0.38
-Nodes (5): Body, Patch, Post, UseInterceptors, UploadedFiles
+## Communities (43 total, 8 thin omitted)
 
 ### Community 1 - "activity-dashboard.tsx"
 Cohesion: 0.08
-Nodes (34): Tool, tools, AppHeader(), checkResponse(), createActivity(), deleteActivity(), getActivities(), getApiUrl() (+26 more)
+Nodes (41): ActivityLoginPage(), Tool, tools, AppHeader(), checkResponse(), createActivity(), deleteActivity(), getActivities() (+33 more)
 
 ### Community 2 - "devDependencies"
 Cohesion: 0.04
@@ -105,8 +99,8 @@ Cohesion: 0.17
 Nodes (11): devDependencies, typescript, exports, ./debug-note, typescript, name, private, scripts (+3 more)
 
 ### Community 5 - "Activity"
-Cohesion: 0.10
-Nodes (24): ActivitiesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+16 more)
+Cohesion: 0.09
+Nodes (23): ActivitiesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+15 more)
 
 ### Community 6 - "tasks"
 Cohesion: 0.08
@@ -145,8 +139,8 @@ Cohesion: 0.08
 Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
 
 ### Community 15 - "index.ts"
-Cohesion: 0.08
-Nodes (42): EditDebugNotePage(), DebugNotePage(), formatDate(), DebugNotesPage(), first(), paginationUrl(), SearchParameters, SeverityBadge() (+34 more)
+Cohesion: 0.07
+Nodes (46): EditDebugNotePage(), DebugNotePage(), formatDate(), DebugNotesPage(), first(), paginationUrl(), SearchParameters, SeverityBadge() (+38 more)
 
 ### Community 16 - "compilerOptions"
 Cohesion: 0.20
@@ -176,13 +170,13 @@ Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify refer
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
-### Community 33 - "PrismaService"
-Cohesion: 0.05
-Nodes (36): ActivitiesModule, Module, AppModule, Module, ActivityAuthGuard, Injectable, GOOGLE_NONCE_COOKIE, GOOGLE_STATE_COOKIE (+28 more)
+### Community 33 - "app.module.ts"
+Cohesion: 0.08
+Nodes (29): ActivitiesModule, Module, AppModule, Module, ACTIVITY_SESSION_COOKIE, isProductionEnvironment(), AuthController, Body (+21 more)
 
 ### Community 35 - "DebugNotesController"
-Cohesion: 0.16
-Nodes (8): DebugNotesController, Controller, Delete, Get, HttpCode, Param, DebugNotesModule, Module
+Cohesion: 0.15
+Nodes (11): DebugNotesController, Body, Controller, Delete, Get, HttpCode, Param, Patch (+3 more)
 
 ### Community 36 - "QueryDebugNotesDto"
 Cohesion: 0.17
@@ -190,42 +184,38 @@ Nodes (11): Query, QueryDebugNotesDto, IsEnum, IsOptional, IsString, MaxLength, 
 
 ### Community 38 - "MedicineTransactionsService"
 Cohesion: 0.08
-Nodes (24): CreateMedicineTransactionDto, MedicineTransactionItemDto, IsString, Matches, MaxLength, MinLength, Transform, Type (+16 more)
+Nodes (25): CurrentUserId, CreateMedicineTransactionDto, MedicineTransactionItemDto, IsString, Matches, MaxLength, MinLength, Transform (+17 more)
 
 ### Community 39 - "DriveService"
-Cohesion: 0.08
-Nodes (23): AuthenticatedRequest, DriveController, Body, Controller, Get, Post, Query, Req (+15 more)
+Cohesion: 0.06
+Nodes (28): ActivityAuthGuard, Injectable, AuthenticatedRequest, PrismaService, Injectable, DriveController, Body, Controller (+20 more)
 
 ### Community 41 - "CreateDebugNoteDto"
 Cohesion: 0.22
 Nodes (9): CreateDebugNoteDto, IsEnum, IsIn, IsOptional, IsString, MaxLength, MinLength, Transform (+1 more)
-
-### Community 44 - "drive-upload.api.ts"
-Cohesion: 0.33
-Nodes (11): DriveUploadPage(), checkDrivePath(), checkResponse(), connectGoogleDrive(), getDriveStatus(), getErrorMessage(), uploadToDrive(), DrivePathCheckResult (+3 more)
 
 ### Community 48 - "medicine-transactions.api.ts"
 Cohesion: 0.12
 Nodes (29): EditMedicineTransactionPage(), formatDate(), formatDifference(), formatMoney(), getResultClass(), getResultText(), MedicineTransactionPage(), NewMedicineTransactionPage() (+21 more)
 
 ## Knowledge Gaps
-- **237 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+232 more)
+- **238 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+233 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PrismaService` connect `PrismaService` to `debug-notes.service.ts`, `Activity`, `MedicineTransactionsService`?**
-  _High betweenness centrality (0.065) - this node is a cross-community bridge._
+- **Why does `PrismaService` connect `DriveService` to `app.module.ts`, `debug-notes.service.ts`, `Activity`, `MedicineTransactionsService`?**
+  _High betweenness centrality (0.070) - this node is a cross-community bridge._
 - **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `index.ts`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
-- **Why does `DebugNotesService` connect `DebugNotesService` to `PrismaService`, `DebugNotesController`, `debug-notes.service.ts`, `QueryDebugNotesDto`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `DebugNotesService` connect `DebugNotesService` to `app.module.ts`, `DebugNotesController`, `QueryDebugNotesDto`, `DriveService`, `debug-notes.service.ts`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
-  _237 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _238 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `activity-dashboard.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.08235294117647059 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07644110275689223 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**

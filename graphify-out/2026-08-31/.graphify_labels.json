@@ -1,5 +1,4 @@
 {
-  "0": ".update",
   "1": "activity-dashboard.tsx",
   "2": "devDependencies",
   "3": "dependencies",
@@ -32,13 +31,15 @@
   "30": "AGENTS.md",
   "31": "extraction-spec.md",
   "32": "README.md",
-  "33": "PrismaService",
+  "33": "app.module.ts",
   "34": "loading.tsx",
   "35": "DebugNotesController",
   "36": "QueryDebugNotesDto",
   "38": "MedicineTransactionsService",
   "39": "DriveService",
+  "40": "drive.module.ts",
   "41": "CreateDebugNoteDto",
-  "44": "drive-upload.api.ts",
+  "44": "drive-upload/page.tsx",
+  "45": "drive-upload.api.ts",
   "48": "medicine-transactions.api.ts"
 }

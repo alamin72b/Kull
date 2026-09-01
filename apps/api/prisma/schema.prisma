@@ -107,11 +107,18 @@ model DebugScreenshot {
 
 model User {
   id           String     @id @default(uuid()) @db.Uuid
-  username     String     @unique @db.VarChar(30)
-  passwordHash String     @db.VarChar(100)
+  username     String?     @unique @db.VarChar(30)
+  passwordHash String?     @db.VarChar(100)
+
+  googleId     String?     @unique @db.VarChar(255)
+  email        String?  @unique @db.VarChar(255)
+  name         String?  @db.VarChar(150)
+  picture      String?  @db.Text
   activities   Activity[]
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
+
+  googleRefreshToken String? @db.Text
 
   medicineTransactions MedicineTransaction[]
 }
