@@ -48,6 +48,30 @@
   line-height: 1.72;
 }
 
+.backendApi {
+  display: flex;
+  max-width: 610px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.backendApi span {
+  color: var(--brand);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.backendApi code {
+  overflow-wrap: anywhere;
+  color: var(--text);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
 .workspacePanel {
   position: relative;
   display: flex;

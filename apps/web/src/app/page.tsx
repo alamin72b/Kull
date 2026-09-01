@@ -48,6 +48,10 @@ const tools: Tool[] = [
   },
 ];
 
+const backendApiUrl =
+  process.env.NEXT_PUBLIC_API_URL ??
+  "Not configured";
+
 export default function HomePage() {
   return (
     <>
@@ -67,6 +71,14 @@ export default function HomePage() {
             <p className={styles.intro}>
               Keep everyday work organized without turning your
               workspace into another complicated system.
+            </p>
+
+            <p
+              aria-label="Backend API URL"
+              className={styles.backendApi}
+            >
+              <span>Backend API</span>
+              <code>{backendApiUrl}</code>
             </p>
           </div>
 
