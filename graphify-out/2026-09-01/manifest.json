@@ -365,13 +365,13 @@
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.service.ts": {
-    "mtime": 1788245874.4795978,
-    "ast_hash": "5942f527c0c6ed5222fe2ee67f26aaf6",
+    "mtime": 1788244786.1510909,
+    "ast_hash": "274d0601f39db3e2290cff8a257cbd52",
     "semantic_hash": ""
   },
   "apps/api/src/auth/activity-auth.guard.ts": {
-    "mtime": 1788245710.9859326,
-    "ast_hash": "004b95cfbda491216096aa61c3ed938b",
+    "mtime": 1788245609.3428009,
+    "ast_hash": "c35758982bb84fb509edbc08cc3b5e24",
     "semantic_hash": ""
   },
   "apps/api/src/auth/current-user-id.decorator.ts": {
@@ -380,8 +380,8 @@
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.controller.ts": {
-    "mtime": 1788245711.0689318,
-    "ast_hash": "76fa9eeec572c10ea4b7f55c5af7b7c3",
+    "mtime": 1788245609.5717988,
+    "ast_hash": "b439136e7c8e35788fade77bbe45a741",
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.module.ts": {

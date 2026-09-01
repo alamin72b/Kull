@@ -4,6 +4,8 @@ export type AuthenticatedRequest = Omit<Request, "signedCookies"> & {
   signedCookies?: Record<string, unknown>;
   activityUser: {
     id: string;
-    username: string;
+    email: string;
+    name: string | null;
+    picture: string | null;
   };
 };

@@ -4,8 +4,11 @@ import {
   Injectable,
   UnauthorizedException,
 } from '@nestjs/common';
+
 import { PrismaService } from '../common/prisma/prisma.service';
-import { ACTIVITY_SESSION_COOKIE } from './auth.constants';
+
+import { KULL_SESSION_COOKIE } from './auth.constants';
+
 import type { AuthenticatedRequest } from './authenticated-request';
 
 @Injectable()
@@ -15,25 +18,52 @@ export class ActivityAuthGuard implements CanActivate {
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest<AuthenticatedRequest>();
 
-    const userId = request.signedCookies?.[ACTIVITY_SESSION_COOKIE];
+    /*
+     * Get the signed Kull session cookie.
+     */
+    const userId = request.signedCookies?.[KULL_SESSION_COOKIE];
 
+    /*
+     * User is not logged in.
+     */
     if (!userId || typeof userId !== 'string') {
-      throw new UnauthorizedException('Log in to access your activities.');
+      throw new UnauthorizedException('Please log in first.');
     }
 
+    /*
+     * Find the Kull user.
+     */
     const user = await this.prisma.user.findUnique({
-      where: { id: userId },
+      where: {
+        id: userId,
+      },
+
       select: {
         id: true,
-        username: true,
+        email: true,
+        name: true,
+        picture: true,
       },
     });
 
-    if (!user) {
+    /*
+     * The session points to a user
+     * that doesn't exist anymore.
+     */
+    if (!user || !user.email) {
       throw new UnauthorizedException('Your login session is invalid.');
     }
 
-    request.activityUser = user;
+    /*
+     * Put the user on the request.
+     *
+     * Controllers can access it
+     * through @CurrentUserId().
+     */
+    request.activityUser = {
+      ...user,
+      email: user.email,
+    };
 
     return true;
   }

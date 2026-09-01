@@ -1,102 +1,44 @@
 'use client';
 
 import Link from 'next/link';
-import { FormEvent, useState } from 'react';
-import { AppHeader } from '@/components/layout/app-header';
-import { login, register } from '@/features/auth/activity-auth.api';
-import styles from '@/features/activities/components/activities.module.css';
 
-export default function ActivityLoginPage() {
-  const [isRegistering, setIsRegistering] = useState(false);
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
+import { loginWithGoogle } from '../../../features/auth/auth.api';
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setError('');
-    setIsSubmitting(true);
-
-    try {
-      const credentials = { username, password };
-      if (isRegistering) {
-        await register(credentials);
-      } else {
-        await login(credentials);
-      }
-
-      window.location.assign('/activities');
-    } catch (caughtError) {
-      setError(
-        caughtError instanceof Error
-          ? caughtError.message
-          : 'Authentication failed.',
-      );
-      setIsSubmitting(false);
-    }
-  }
-
+export default function LoginPage() {
   return (
-    <>
-      <AppHeader />
-      <main className={styles.main}>
-        <Link className={styles.backLink} href="/activities">
-          ← Back to activities
-        </Link>
+    <main
+      style={{
+        width: 'min(420px, calc(100% - 32px))',
+        margin: '100px auto',
+        textAlign: 'center',
+      }}
+    >
+      <Link href="/">← Kull</Link>
 
-        <section className={styles.formCard} style={{ maxWidth: 520, margin: '48px auto 0' }}>
-          <div className={styles.formHeading}>
-            <div>
-              <p>ACTIVITY ACCESS</p>
-              <h1>{isRegistering ? 'Create your account' : 'Log in to activities'}</h1>
-            </div>
-          </div>
+      <h1>Welcome to Kull</h1>
 
-          <form className={styles.form} onSubmit={handleSubmit}>
-            <label className={styles.fullField}>
-              Username
-              <input
-                autoComplete="username"
-                minLength={3}
-                onChange={(event) => setUsername(event.target.value)}
-                required
-                value={username}
-              />
-            </label>
+      <p style={{ color: '#667085', lineHeight: 1.6 }}>
+        Sign in with your Google account to use your private Kull tools.
+      </p>
 
-            <label className={styles.fullField}>
-              Password
-              <input
-                autoComplete={isRegistering ? 'new-password' : 'current-password'}
-                minLength={6}
-                onChange={(event) => setPassword(event.target.value)}
-                required
-                type="password"
-                value={password}
-              />
-            </label>
-
-            {error && <p className={styles.formError}>{error}</p>}
-
-            <div className={styles.formActions}>
-              <button className={styles.primaryButton} disabled={isSubmitting} type="submit">
-                {isSubmitting ? 'Please wait…' : isRegistering ? 'Create account' : 'Log in'}
-              </button>
-              <button
-                className={styles.secondaryButton}
-                onClick={() => {
-                  setError('');
-                  setIsRegistering((current) => !current);
-                }}
-                type="button"
-              >
-                {isRegistering ? 'I already have an account' : 'Create a new account'}
-              </button>
-            </div>
-          </form>
-        </section>
-      </main>
-    </>
+      <button
+        type="button"
+        onClick={loginWithGoogle}
+        style={{
+          width: '100%',
+          minHeight: '48px',
+          marginTop: '25px',
+          border: '1px solid #d0d5dd',
+          borderRadius: '8px',
+          background: 'white',
+          color: '#344054',
+          fontSize: '1rem',
+          fontWeight: 700,
+          cursor: 'pointer',
+        }}
+      >
+        Continue with Google
+      </button>
+    </main>
   );
 }
