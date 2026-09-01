@@ -1,11 +1,13 @@
-import { Module } from "@nestjs/common";
-import { ConfigModule } from "@nestjs/config";
-import { ActivitiesModule } from "./activities/activities.module";
-import { AuthModule } from "./auth/auth.module";
-import { PrismaModule } from "./common/prisma/prisma.module";
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { ActivitiesModule } from './activities/activities.module';
+import { AuthModule } from './auth/auth.module';
+import { PrismaModule } from './common/prisma/prisma.module';
 import { DebugNotesModule } from './debug-notes/debug-notes.module';
-import { MedicineTransactionsModule } from "./medicine-transactions/medicine-transactions.module";
-import { DriveModule } from "./drive/drive.module";
+import { MedicineTransactionsModule } from './medicine-transactions/medicine-transactions.module';
+import { DriveModule } from './drive/drive.module';
+import { ImportantDocumentsModule } from './important-documents/important-documents.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
@@ -15,6 +17,7 @@ import { DriveModule } from "./drive/drive.module";
     DebugNotesModule,
     MedicineTransactionsModule,
     DriveModule,
+    ImportantDocumentsModule,
   ],
 })
 export class AppModule {}
