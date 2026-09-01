@@ -1,21 +1,21 @@
-# Graph Report - Kull  (2026-09-01)
+# Graph Report - Kull  (2026-08-29)
 
 ## Corpus Check
-- 101 files · ~30,038 words
+- 100 files · ~26,185 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 744 nodes · 1179 edges · 42 communities (34 shown, 8 thin omitted)
+- 730 nodes · 1166 edges · 40 communities (32 shown, 8 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c6b68f0d`
+- Built from commit: `18369c22`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- Complete File Contents
+- activity-auth.api.ts
 - activity-dashboard.tsx
 - devDependencies
 - dependencies
@@ -49,10 +49,8 @@
 - PrismaService
 - DebugNotesController
 - QueryDebugNotesDto
-- activity-api.ts
 - MedicineTransactionsService
 - .update
-- CreateDebugNoteDto
 - medicine-transactions.api.ts
 
 ## God Nodes (most connected - your core abstractions)
@@ -82,15 +80,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (42 total, 8 thin omitted)
+## Communities (40 total, 8 thin omitted)
 
-### Community 0 - "Complete File Contents"
-Cohesion: 0.14
-Nodes (13): `apps/api/src/drive/drive.controller.ts`, `apps/api/src/drive/drive.service.ts`, `apps/api/src/drive/dto/check-drive-path.dto.ts`, `apps/api/src/drive/dto/upload-to-drive.dto.ts`, `apps/web/src/app/drive-upload/page.tsx`, `apps/web/src/features/drive-upload/drive-upload.api.ts`, `apps/web/src/features/drive-upload/drive-upload.module.css`, Complete File Contents (+5 more)
+### Community 0 - "activity-auth.api.ts"
+Cohesion: 0.21
+Nodes (12): ActivityLoginPage(), Tool, tools, AppHeader(), checkResponse(), Credentials, getApiUrl(), getErrorMessage() (+4 more)
 
 ### Community 1 - "activity-dashboard.tsx"
-Cohesion: 0.09
-Nodes (31): ActivityLoginPage(), Tool, tools, AppHeader(), ActivityCard(), ActivityCardProps, ActivityDashboard(), ActivityDateNavigation() (+23 more)
+Cohesion: 0.11
+Nodes (29): checkResponse(), createActivity(), deleteActivity(), getActivities(), getApiUrl(), getErrorMessage(), request(), updateActivity() (+21 more)
 
 ### Community 2 - "devDependencies"
 Cohesion: 0.04
@@ -133,8 +131,8 @@ Cohesion: 0.11
 Nodes (17): description, license, name, private, scripts, build, dev, lint (+9 more)
 
 ### Community 12 - "debug-notes.service.ts"
-Cohesion: 0.14
-Nodes (12): DEBUG_NOTE_UPLOAD_DIRECTORY, debugNoteUploadOptions, extensionByMimeType, debugNoteInclude, DebugNoteWithRelations, ParsedTag, TransformValue, TransformValue (+4 more)
+Cohesion: 0.12
+Nodes (16): DEBUG_NOTE_UPLOAD_DIRECTORY, debugNoteUploadOptions, extensionByMimeType, debugNoteInclude, DebugNoteWithRelations, ParsedTag, CreateDebugNoteDto, TransformValue (+8 more)
 
 ### Community 13 - "exclude"
 Cohesion: 0.25
@@ -178,38 +176,30 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 
 ### Community 33 - "PrismaService"
 Cohesion: 0.06
-Nodes (32): ActivitiesModule, Module, AppModule, Module, ActivityAuthGuard, Injectable, ACTIVITY_SESSION_COOKIE, isProductionEnvironment() (+24 more)
+Nodes (34): ActivitiesModule, Module, AppModule, Module, ActivityAuthGuard, Injectable, ACTIVITY_SESSION_COOKIE, isProductionEnvironment() (+26 more)
 
 ### Community 35 - "DebugNotesController"
-Cohesion: 0.16
-Nodes (8): DebugNotesController, Controller, Delete, Get, HttpCode, Param, DebugNotesModule, Module
+Cohesion: 0.19
+Nodes (7): DebugNotesController, Controller, Delete, Get, HttpCode, Param, Query
 
 ### Community 36 - "QueryDebugNotesDto"
-Cohesion: 0.17
-Nodes (11): Query, QueryDebugNotesDto, IsEnum, IsOptional, IsString, MaxLength, Transform, Type (+3 more)
-
-### Community 37 - "activity-api.ts"
-Cohesion: 0.41
-Nodes (10): checkResponse(), createActivity(), deleteActivity(), getActivities(), getApiUrl(), getErrorMessage(), request(), updateActivity() (+2 more)
+Cohesion: 0.15
+Nodes (11): QueryDebugNotesDto, TransformValue, IsEnum, IsOptional, IsString, MaxLength, Transform, Type (+3 more)
 
 ### Community 38 - "MedicineTransactionsService"
 Cohesion: 0.08
 Nodes (24): CreateMedicineTransactionDto, MedicineTransactionItemDto, IsString, Matches, MaxLength, MinLength, Transform, Type (+16 more)
 
 ### Community 39 - ".update"
-Cohesion: 0.38
-Nodes (5): Body, Patch, Post, UploadedFiles, UseInterceptors
-
-### Community 40 - "CreateDebugNoteDto"
 Cohesion: 0.22
-Nodes (9): CreateDebugNoteDto, IsEnum, IsOptional, IsString, MaxLength, MinLength, Transform, IsDateString (+1 more)
+Nodes (9): Body, Patch, Post, IsOptional, IsString, MaxLength, UpdateDebugNoteDto, UploadedFiles (+1 more)
 
 ### Community 48 - "medicine-transactions.api.ts"
 Cohesion: 0.12
 Nodes (29): EditMedicineTransactionPage(), formatDate(), formatDifference(), formatMoney(), getResultClass(), getResultText(), MedicineTransactionPage(), NewMedicineTransactionPage() (+21 more)
 
 ## Knowledge Gaps
-- **244 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+239 more)
+- **233 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+228 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -217,16 +207,16 @@ Nodes (29): EditMedicineTransactionPage(), formatDate(), formatDifference(), for
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PrismaService` connect `PrismaService` to `debug-notes.service.ts`, `Activity`, `MedicineTransactionsService`?**
-  _High betweenness centrality (0.057) - this node is a cross-community bridge._
-- **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `activity-api.ts`, `index.ts`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
-- **Why does `DebugNotesService` connect `DebugNotesService` to `PrismaService`, `DebugNotesController`, `debug-notes.service.ts`, `QueryDebugNotesDto`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.060) - this node is a cross-community bridge._
+- **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `index.ts`?**
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `DebugNotesService` connect `DebugNotesService` to `PrismaService`, `DebugNotesController`, `debug-notes.service.ts`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
-  _244 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Complete File Contents` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
+  _233 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `activity-dashboard.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1141025641025641 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
+- **Should `dependencies` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

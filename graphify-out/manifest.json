@@ -10,7 +10,7 @@
     "semantic_hash": "b6c9c4b64b7092bea720263a47b574cf"
   },
   "apps/api/package.json": {
-    "mtime": 1788267130.9203355,
+    "mtime": 1787050484.921304,
     "ast_hash": "c46cc4d3669ab66a122efea701cca00e",
     "semantic_hash": ""
   },
@@ -50,7 +50,7 @@
     "semantic_hash": "f6f8adf30bde2d242fae3e496b9af9a7"
   },
   "apps/api/src/app.module.ts": {
-    "mtime": 1788267132.2943852,
+    "mtime": 1787942521.6712995,
     "ast_hash": "2cb80773daf51ef8b0251f0735154b39",
     "semantic_hash": ""
   },
@@ -125,8 +125,8 @@
     "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
   "apps/web/next-env.d.ts": {
-    "mtime": 1787946371.148843,
-    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
+    "mtime": 1787946197.6266034,
+    "ast_hash": "2a74d3909800ca5467fa83b0ab4a4890",
     "semantic_hash": ""
   },
   "apps/web/next.config.ts": {
@@ -150,8 +150,8 @@
     "semantic_hash": "5647f771f1ea3a0d9a2a80813312195b"
   },
   "apps/web/src/app/page.tsx": {
-    "mtime": 1788267240.3039858,
-    "ast_hash": "aff35bb2f38e2aa9a9a68f1dfea01b99",
+    "mtime": 1787946105.1144311,
+    "ast_hash": "e33873b8e9e6401284101c4a9264fb7a",
     "semantic_hash": ""
   },
   "apps/web/src/components/layout/app-header.tsx": {
@@ -160,7 +160,7 @@
     "semantic_hash": "1ac3ef6ab9ae45f6248b4ae0762c0fe5"
   },
   "apps/web/src/features/activities/api/activity-api.ts": {
-    "mtime": 1788006717.4376364,
+    "mtime": 1787944288.8199441,
     "ast_hash": "e72db33e0d7471414df1953de603095e",
     "semantic_hash": ""
   },
@@ -170,7 +170,7 @@
     "semantic_hash": "c79215a1d20087327dfb962bb17457ec"
   },
   "apps/web/src/features/activities/components/activity-dashboard.tsx": {
-    "mtime": 1788267133.5794313,
+    "mtime": 1787051087.4157653,
     "ast_hash": "d151b48758da8cf06a788d8d1551aee8",
     "semantic_hash": ""
   },
@@ -225,7 +225,7 @@
     "semantic_hash": "094ca607da590707d158cd9fb0becd2e"
   },
   "packages/contracts/src/index.ts": {
-    "mtime": 1788267136.4865353,
+    "mtime": 1787940678.8044186,
     "ast_hash": "2ccdb3c8a2f4bfa28de97e893f6a40cd",
     "semantic_hash": ""
   },
@@ -305,7 +305,7 @@
     "semantic_hash": ""
   },
   "apps/web/src/features/debug-notes/debug-notes.api.ts": {
-    "mtime": 1788006717.4383192,
+    "mtime": 1787944289.0949605,
     "ast_hash": "2a17cf8517a04f11a88d85976e3ee923",
     "semantic_hash": ""
   },
@@ -355,27 +355,27 @@
     "semantic_hash": ""
   },
   "apps/api/src/auth/dto/activity-auth.dto.ts": {
-    "mtime": 1788267133.182417,
+    "mtime": 1787050484.9226978,
     "ast_hash": "c7aa169b4790f78ca00b5a3e79f94728",
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.constants.ts": {
-    "mtime": 1788267132.7804027,
+    "mtime": 1787050484.9226978,
     "ast_hash": "7b8f1e553746d732a4f330a48b1c2b33",
     "semantic_hash": ""
   },
   "apps/api/src/auth/authenticated-request.ts": {
-    "mtime": 1788267132.9897459,
+    "mtime": 1787050484.9226978,
     "ast_hash": "ad081a070fc68b3b05197560c605de83",
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.service.ts": {
-    "mtime": 1788267132.9895651,
+    "mtime": 1787050484.9226978,
     "ast_hash": "5f91031f539251dadd41fc05b6da78bf",
     "semantic_hash": ""
   },
   "apps/api/src/auth/activity-auth.guard.ts": {
-    "mtime": 1788267132.5323937,
+    "mtime": 1787050484.9224892,
     "ast_hash": "b9912ad444eb267d40d66739882a2b51",
     "semantic_hash": ""
   },
@@ -385,88 +385,83 @@
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.controller.ts": {
-    "mtime": 1788267132.98741,
+    "mtime": 1787050484.9226978,
     "ast_hash": "ec446ea736b5f01f35c749cfb7b06266",
     "semantic_hash": ""
   },
   "apps/api/src/auth/auth.module.ts": {
-    "mtime": 1788267132.9892714,
+    "mtime": 1787050484.9226978,
     "ast_hash": "20e37856e1daaddb931be64aaf45294b",
     "semantic_hash": ""
   },
   "apps/web/src/app/activities/login/page.tsx": {
-    "mtime": 1788267133.1839232,
+    "mtime": 1787050484.9239092,
     "ast_hash": "12d5a6612d0832227310ef4b62dac609",
     "semantic_hash": ""
   },
   "apps/web/src/features/auth/activity-auth.api.ts": {
-    "mtime": 1788267133.581435,
+    "mtime": 1787944289.372977,
     "ast_hash": "a6f75e5abdcf3ea4e6692b43eda1dfda",
     "semantic_hash": ""
   },
   "apps/api/src/medicine-transactions/dto/create-medicine-transaction.dto.ts": {
-    "mtime": 1788006717.4353101,
+    "mtime": 1787221261.8256674,
     "ast_hash": "ce39ed14ec8dea1f686a9a69b9546e5b",
     "semantic_hash": ""
   },
   "apps/api/src/medicine-transactions/dto/update-medicine-transaction.dto.ts": {
-    "mtime": 1788006717.4355097,
+    "mtime": 1787222691.231395,
     "ast_hash": "abe1efd1a9724449c538921442e7dc02",
     "semantic_hash": ""
   },
   "apps/api/src/medicine-transactions/medicine-transactions.controller.ts": {
-    "mtime": 1788006717.4357178,
+    "mtime": 1787942445.5193765,
     "ast_hash": "63e6402bbc28dbc79274f21b4f30109b",
     "semantic_hash": ""
   },
   "apps/api/src/medicine-transactions/medicine-transactions.module.ts": {
-    "mtime": 1788006717.435841,
+    "mtime": 1787942482.8666995,
     "ast_hash": "1eda4fdf5b4502971c85e5070ff51fa3",
     "semantic_hash": ""
   },
   "apps/api/src/medicine-transactions/medicine-transactions.service.ts": {
-    "mtime": 1788006717.4361293,
+    "mtime": 1787940558.622845,
     "ast_hash": "0285f392d7666fabc511c0f41ad81c76",
     "semantic_hash": ""
   },
   "apps/web/src/app/medicine-transactions/[id]/edit/page.tsx": {
-    "mtime": 1788006717.4363832,
+    "mtime": 1787946047.3904004,
     "ast_hash": "51920c072ace6ae4623cd2220d46a965",
     "semantic_hash": ""
   },
   "apps/web/src/app/medicine-transactions/[id]/page.tsx": {
-    "mtime": 1788006717.4367685,
+    "mtime": 1787946047.1901958,
     "ast_hash": "13206b248de1e8b9748ce84c6423f33b",
     "semantic_hash": ""
   },
   "apps/web/src/app/medicine-transactions/new/page.tsx": {
-    "mtime": 1788006717.4367685,
+    "mtime": 1787946283.4968188,
     "ast_hash": "655ef07a42ad085f0f42bc76856f260f",
     "semantic_hash": ""
   },
   "apps/web/src/app/medicine-transactions/page.tsx": {
-    "mtime": 1788006717.437161,
+    "mtime": 1787946283.2189677,
     "ast_hash": "b613051b9d562d3a4e2c966e0e88c0b9",
     "semantic_hash": ""
   },
   "apps/web/src/features/medicine-transactions/medicine-transaction-form.tsx": {
-    "mtime": 1788006717.4383192,
+    "mtime": 1787945916.1655364,
     "ast_hash": "0816e3972eaa82da35c0d8eaf204c676",
     "semantic_hash": ""
   },
   "apps/web/src/features/medicine-transactions/medicine-transactions.api.ts": {
-    "mtime": 1788006717.4386654,
+    "mtime": 1787945786.786112,
     "ast_hash": "f262ed4fa547e51949870c2f1e407ad3",
     "semantic_hash": ""
   },
   "packages/contracts/src/medicine-transactions.ts": {
-    "mtime": 1788006717.471824,
+    "mtime": 1787940593.989547,
     "ast_hash": "e6c848412d67aa7341669bf592f6518f",
-    "semantic_hash": ""
-  },
-  "skill implementation docs/drive-upload-full-implementation.md": {
-    "mtime": 1788263162.4943132,
-    "ast_hash": "36531c50c77575b1d95797c821496063",
     "semantic_hash": ""
   }
 }
