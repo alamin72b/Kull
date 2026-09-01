@@ -14,7 +14,7 @@
   "12": "debug-notes.service.ts",
   "13": "exclude",
   "14": "What You Must Do When Invoked",
-  "15": "DebugNoteForm.tsx",
+  "15": "index.ts",
   "16": "compilerOptions",
   "17": "nest-cli.json",
   "18": "DebugNotesService",
@@ -40,5 +40,5 @@
   "39": "DriveService",
   "41": "CreateDebugNoteDto",
   "44": "drive-upload.api.ts",
-  "48": "index.ts"
+  "48": "medicine-transactions.api.ts"
 }

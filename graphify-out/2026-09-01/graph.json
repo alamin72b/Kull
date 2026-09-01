@@ -156,7 +156,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_page_searchparameters",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "searchparameters"
     },
     {
@@ -169,7 +169,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform_formstate",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "formstate"
     },
     {
@@ -182,7 +182,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform_newscreenshot",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "newscreenshot"
     },
     {
@@ -195,7 +195,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform_textfieldprops",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "textfieldprops"
     },
     {
@@ -208,7 +208,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_debugnotesapierror",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotesapierror"
     },
     {
@@ -221,7 +221,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debugnote",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnote"
     },
     {
@@ -234,7 +234,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debugnoteseverity",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnoteseverity"
     },
     {
@@ -247,7 +247,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debugnotesquery",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotesquery"
     },
     {
@@ -260,7 +260,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debugnotesresponse",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotesresponse"
     },
     {
@@ -273,8 +273,21 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debugnotestatus",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotestatus"
+    },
+    {
+      "label": "DebugScreenshot",
+      "file_type": "code",
+      "source_file": "packages/contracts/src/debug-note.ts",
+      "source_location": "L38",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "packages_contracts_src_debug_note_debugscreenshot",
+      "community": 15,
+      "community_name": "index.ts",
+      "norm_label": "debugscreenshot"
     },
     {
       "label": "DebugTag",
@@ -286,7 +299,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debugtag",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugtag"
     },
     {
@@ -592,7 +605,7 @@
       "label": "DriveService",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L14",
+      "source_location": "L19",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
@@ -702,7 +715,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transaction_form_editablemedicine",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "editablemedicine"
     },
     {
@@ -715,21 +728,8 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transaction_form_medicinetransactionformprops",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinetransactionformprops"
-    },
-    {
-      "label": "DebugScreenshot",
-      "file_type": "code",
-      "source_file": "packages/contracts/src/debug-note.ts",
-      "source_location": "L38",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "packages_contracts_src_debug_note_debugscreenshot",
-      "community": 48,
-      "community_name": "index.ts",
-      "norm_label": "debugscreenshot"
     },
     {
       "label": "CreateMedicineTransactionInput",
@@ -741,7 +741,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions_createmedicinetransactioninput",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "createmedicinetransactioninput"
     },
     {
@@ -754,7 +754,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions_medicinepricecomparison",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinepricecomparison"
     },
     {
@@ -767,7 +767,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions_medicinepricecomparisonresult",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinepricecomparisonresult"
     },
     {
@@ -780,7 +780,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions_medicinetransactiondetail",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinetransactiondetail"
     },
     {
@@ -793,7 +793,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions_medicinetransactionmedicine",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinetransactionmedicine"
     },
     {
@@ -806,7 +806,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions_medicinetransactionmedicineinput",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinetransactionmedicineinput"
     },
     {
@@ -819,7 +819,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions_medicinetransactionsummary",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinetransactionsummary"
     },
     {
@@ -832,7 +832,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions_updatemedicinetransactioninput",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "updatemedicinetransactioninput"
     },
     {
@@ -1342,7 +1342,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_edit_page_editdebugnotepage",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "editdebugnotepage()"
     },
     {
@@ -1354,7 +1354,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_page_debugnotepage",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotepage()"
     },
     {
@@ -1366,7 +1366,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_page_documentsection",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "documentsection()"
     },
     {
@@ -1378,7 +1378,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_page_formatdate",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "formatdate()"
     },
     {
@@ -1390,7 +1390,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_page_textblock",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "textblock()"
     },
     {
@@ -1402,7 +1402,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_new_page_newdebugnotepage",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "newdebugnotepage()"
     },
     {
@@ -1414,7 +1414,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_page_debugnotespage",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotespage()"
     },
     {
@@ -1426,7 +1426,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_page_first",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "first()"
     },
     {
@@ -1438,7 +1438,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_page_paginationurl",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "paginationurl()"
     },
     {
@@ -1450,7 +1450,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotebadges_severitybadge",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "severitybadge()"
     },
     {
@@ -1462,7 +1462,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotebadges_statusbadge",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "statusbadge()"
     },
     {
@@ -1474,7 +1474,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotecard_debugnotecard",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotecard()"
     },
     {
@@ -1486,7 +1486,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotecard_formatdate",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "formatdate()"
     },
     {
@@ -1498,7 +1498,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotecard_shorten",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "shorten()"
     },
     {
@@ -1510,7 +1510,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform_createinitialstate",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "createinitialstate()"
     },
     {
@@ -1522,7 +1522,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform_debugnoteform",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnoteform()"
     },
     {
@@ -1534,7 +1534,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform_parsetags",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "parsetags()"
     },
     {
@@ -1546,7 +1546,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform_textareafield",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "textareafield()"
     },
     {
@@ -1558,7 +1558,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform_todatetimelocal",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "todatetimelocal()"
     },
     {
@@ -1570,7 +1570,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_deletedebugnotebutton_deletedebugnotebutton",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "deletedebugnotebutton()"
     },
     {
@@ -1582,7 +1582,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_checkresponse",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "checkresponse()"
     },
     {
@@ -1594,7 +1594,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_debugnotesapierror_constructor",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": ".constructor()"
     },
     {
@@ -1606,7 +1606,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_debugnotesrequest",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotesrequest()"
     },
     {
@@ -1618,7 +1618,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_getdebugnote",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "getdebugnote()"
     },
     {
@@ -1630,7 +1630,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_getdebugnotes",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "getdebugnotes()"
     },
     {
@@ -1642,7 +1642,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_getdebugtags",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "getdebugtags()"
     },
     {
@@ -1654,7 +1654,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_geterrormessage",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "geterrormessage()"
     },
     {
@@ -1666,7 +1666,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_getscreenshoturl",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "getscreenshoturl()"
     },
     {
@@ -1949,7 +1949,7 @@
       "label": ".logout()",
       "file_type": "code",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L115",
+      "source_location": "L118",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_authcontroller_logout",
@@ -1961,7 +1961,7 @@
       "label": ".me()",
       "file_type": "code",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L106",
+      "source_location": "L109",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_authcontroller_me",
@@ -2141,7 +2141,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L578",
+      "source_location": "L583",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_constructor",
@@ -2561,7 +2561,7 @@
       "label": ".checkFolderPath()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L351",
+      "source_location": "L356",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_checkfolderpath",
@@ -2573,7 +2573,7 @@
       "label": ".cleanFolderPath()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L123",
+      "source_location": "L128",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_cleanfolderpath",
@@ -2585,7 +2585,7 @@
       "label": ".createDriveClient()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L80",
+      "source_location": "L85",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_createdriveclient",
@@ -2597,7 +2597,7 @@
       "label": ".createFolder()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L276",
+      "source_location": "L281",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_createfolder",
@@ -2609,7 +2609,7 @@
       "label": ".createGoogleClient()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L28",
+      "source_location": "L33",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_creategoogleclient",
@@ -2621,7 +2621,7 @@
       "label": ".escapeDriveName()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L211",
+      "source_location": "L216",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_escapedrivename",
@@ -2633,7 +2633,7 @@
       "label": ".findFolder()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L223",
+      "source_location": "L228",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_findfolder",
@@ -2645,7 +2645,7 @@
       "label": ".getFolderParts()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L197",
+      "source_location": "L202",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_getfolderparts",
@@ -2657,7 +2657,7 @@
       "label": ".getGoogleAuthorizationUrl()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L467",
+      "source_location": "L472",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_getgoogleauthorizationurl",
@@ -2669,7 +2669,7 @@
       "label": ".getOrCreateFolderPath()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L306",
+      "source_location": "L311",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_getorcreatefolderpath",
@@ -2681,7 +2681,7 @@
       "label": ".getRefreshTokenFromCode()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L424",
+      "source_location": "L429",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_getrefreshtokenfromcode",
@@ -2693,7 +2693,7 @@
       "label": ".getStatus()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L489",
+      "source_location": "L494",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_getstatus",
@@ -2705,7 +2705,7 @@
       "label": ".getUser()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L55",
+      "source_location": "L60",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_getuser",
@@ -2717,7 +2717,7 @@
       "label": ".saveRefreshToken()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L448",
+      "source_location": "L453",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_saverefreshtoken",
@@ -2729,7 +2729,7 @@
       "label": ".uploadFile()",
       "file_type": "code",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L504",
+      "source_location": "L509",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_drive_drive_service_driveservice_uploadfile",
@@ -2830,7 +2830,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_edit_page_editmedicinetransactionpage",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "editmedicinetransactionpage()"
     },
     {
@@ -2842,7 +2842,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_page_formatdate",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "formatdate()"
     },
     {
@@ -2854,7 +2854,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_page_formatdifference",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "formatdifference()"
     },
     {
@@ -2866,7 +2866,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_page_formatmoney",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "formatmoney()"
     },
     {
@@ -2878,7 +2878,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_page_getresultclass",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "getresultclass()"
     },
     {
@@ -2890,7 +2890,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_page_getresulttext",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "getresulttext()"
     },
     {
@@ -2902,7 +2902,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_page_medicinetransactionpage",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinetransactionpage()"
     },
     {
@@ -2914,7 +2914,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_new_page_newmedicinetransactionpage",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "newmedicinetransactionpage()"
     },
     {
@@ -2926,7 +2926,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_page_formatdate",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "formatdate()"
     },
     {
@@ -2938,7 +2938,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_page_medicinetransactionspage",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinetransactionspage()"
     },
     {
@@ -2950,7 +2950,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transaction_form_createemptymedicine",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "createemptymedicine()"
     },
     {
@@ -2962,7 +2962,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transaction_form_medicinetransactionform",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicinetransactionform()"
     },
     {
@@ -2974,7 +2974,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api_checkresponse",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "checkresponse()"
     },
     {
@@ -2986,7 +2986,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api_createmedicinetransaction",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "createmedicinetransaction()"
     },
     {
@@ -2998,7 +2998,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api_deletemedicinetransaction",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "deletemedicinetransaction()"
     },
     {
@@ -3010,7 +3010,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api_geterrormessage",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "geterrormessage()"
     },
     {
@@ -3022,7 +3022,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api_getmedicinetransaction",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "getmedicinetransaction()"
     },
     {
@@ -3034,7 +3034,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api_getmedicinetransactions",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "getmedicinetransactions()"
     },
     {
@@ -3046,7 +3046,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api_updatemedicinetransaction",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "updatemedicinetransaction()"
     },
     {
@@ -4528,7 +4528,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_edit_page",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug-notes/[id]/edit/page.tsx"
     },
     {
@@ -4539,7 +4539,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_id_page",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug-notes/[id]/page.tsx"
     },
     {
@@ -4550,7 +4550,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_new_page",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug-notes/new/page.tsx"
     },
     {
@@ -4561,7 +4561,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_debug_notes_page",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug-notes/page.tsx"
     },
     {
@@ -4572,7 +4572,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotebadges",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotebadges.tsx"
     },
     {
@@ -4583,7 +4583,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotebadges_severityclassnames",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "severityclassnames"
     },
     {
@@ -4594,7 +4594,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotebadges_statusclassnames",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "statusclassnames"
     },
     {
@@ -4605,7 +4605,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnotecard",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnotecard.tsx"
     },
     {
@@ -4616,7 +4616,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_debugnoteform",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debugnoteform.tsx"
     },
     {
@@ -4627,7 +4627,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_components_deletedebugnotebutton",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "deletedebugnotebutton.tsx"
     },
     {
@@ -4638,7 +4638,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug-notes.api.ts"
     },
     {
@@ -4649,7 +4649,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_debug_notes_debug_notes_api_api_url",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "api_url"
     },
     {
@@ -4660,7 +4660,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug-note.ts"
     },
     {
@@ -4671,7 +4671,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debug_note_severities",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug_note_severities"
     },
     {
@@ -4682,7 +4682,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debug_note_severity_labels",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug_note_severity_labels"
     },
     {
@@ -4693,7 +4693,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debug_note_status_labels",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug_note_status_labels"
     },
     {
@@ -4704,8 +4704,19 @@
       "_origin": "ast",
       "id": "packages_contracts_src_debug_note_debug_note_statuses",
       "community": 15,
-      "community_name": "DebugNoteForm.tsx",
+      "community_name": "index.ts",
       "norm_label": "debug_note_statuses"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "packages/contracts/src/index.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "packages_contracts_src_index",
+      "community": 15,
+      "community_name": "index.ts",
+      "norm_label": "index.ts"
     },
     {
       "label": "contracts/tsconfig.json",
@@ -6655,6 +6666,17 @@
       "norm_label": "drive.service.ts"
     },
     {
+      "label": "DRIVE_SCOPES",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/drive.service.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_drive_service_drive_scopes",
+      "community": 33,
+      "community_name": "PrismaService",
+      "norm_label": "drive_scopes"
+    },
+    {
       "label": "main.ts",
       "file_type": "code",
       "source_file": "apps/api/src/main.ts",
@@ -6713,9 +6735,9 @@
       "label": "IMPORTANT:",
       "file_type": "rationale",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L347",
+      "source_location": "L352",
       "_origin": "ast",
-      "id": "apps_api_src_drive_drive_service_rationale_347",
+      "id": "apps_api_src_drive_drive_service_rationale_352",
       "community": 33,
       "community_name": "PrismaService",
       "norm_label": "important:"
@@ -7685,7 +7707,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_edit_page",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicine-transactions/[id]/edit/page.tsx"
     },
     {
@@ -7696,7 +7718,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_id_page",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicine-transactions/[id]/page.tsx"
     },
     {
@@ -7707,7 +7729,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_new_page",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicine-transactions/new/page.tsx"
     },
     {
@@ -7718,7 +7740,7 @@
       "_origin": "ast",
       "id": "apps_web_src_app_medicine_transactions_page",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicine-transactions/page.tsx"
     },
     {
@@ -7729,7 +7751,7 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transaction_form",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicine-transaction-form.tsx"
     },
     {
@@ -7740,19 +7762,8 @@
       "_origin": "ast",
       "id": "apps_web_src_features_medicine_transactions_medicine_transactions_api",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicine-transactions.api.ts"
-    },
-    {
-      "label": "index.ts",
-      "file_type": "code",
-      "source_file": "packages/contracts/src/index.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "packages_contracts_src_index",
-      "community": 48,
-      "community_name": "index.ts",
-      "norm_label": "index.ts"
     },
     {
       "label": "medicine-transactions.ts",
@@ -7762,7 +7773,7 @@
       "_origin": "ast",
       "id": "packages_contracts_src_medicine_transactions",
       "community": 48,
-      "community_name": "index.ts",
+      "community_name": "medicine-transactions.api.ts",
       "norm_label": "medicine-transactions.ts"
     },
     {
@@ -9342,7 +9353,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L88",
+      "source_location": "L91",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_auth_auth_controller_authcontroller_googlecallback",
@@ -9773,7 +9784,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L352",
+      "source_location": "L357",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_checkfolderpath",
@@ -9785,7 +9796,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L354",
+      "source_location": "L359",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_checkfolderpath",
@@ -9797,7 +9808,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L363",
+      "source_location": "L368",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_checkfolderpath",
@@ -9809,7 +9820,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L81",
+      "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_createdriveclient",
@@ -9821,7 +9832,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L89",
+      "source_location": "L94",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_createdriveclient",
@@ -9833,7 +9844,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L281",
+      "source_location": "L286",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_createfolder",
@@ -9845,7 +9856,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L228",
+      "source_location": "L233",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_findfolder",
@@ -9857,7 +9868,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L230",
+      "source_location": "L235",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_findfolder",
@@ -9869,7 +9880,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L198",
+      "source_location": "L203",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_getfolderparts",
@@ -9881,7 +9892,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L468",
+      "source_location": "L473",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_getgoogleauthorizationurl",
@@ -9893,7 +9904,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L310",
+      "source_location": "L315",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_getorcreatefolderpath",
@@ -9905,7 +9916,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L319",
+      "source_location": "L324",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_getorcreatefolderpath",
@@ -9917,7 +9928,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L332",
+      "source_location": "L337",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_getorcreatefolderpath",
@@ -9929,7 +9940,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L425",
+      "source_location": "L430",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_getrefreshtokenfromcode",
@@ -9941,7 +9952,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L490",
+      "source_location": "L495",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_getstatus",
@@ -9953,7 +9964,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L538",
+      "source_location": "L543",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_uploadfile",
@@ -9965,7 +9976,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L540",
+      "source_location": "L545",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_uploadfile",
@@ -9977,7 +9988,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L574",
+      "source_location": "L579",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_uploadfile",
@@ -11440,7 +11451,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L114",
+      "source_location": "L117",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11452,7 +11463,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L115",
+      "source_location": "L118",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11464,7 +11475,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L104",
+      "source_location": "L107",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11476,7 +11487,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L105",
+      "source_location": "L108",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11488,7 +11499,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L106",
+      "source_location": "L109",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -12268,7 +12279,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L13",
+      "source_location": "L18",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -14429,7 +14440,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L3",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service",
@@ -16721,7 +16732,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L3",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service",
@@ -17897,7 +17908,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L578",
+      "source_location": "L583",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice_constructor",
@@ -19325,11 +19336,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L14",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service",
       "target": "apps_api_src_drive_drive_service_driveservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/drive/drive.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_drive_drive_service",
+      "target": "apps_api_src_drive_drive_service_drive_scopes",
       "confidence_score": 1.0
     },
     {
@@ -22900,7 +22922,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L106",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_auth_auth_controller_authcontroller",
@@ -22911,7 +22933,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L115",
+      "source_location": "L118",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_auth_auth_controller_authcontroller",
@@ -23450,7 +23472,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L123",
+      "source_location": "L128",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23461,7 +23483,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L197",
+      "source_location": "L202",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23472,7 +23494,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L211",
+      "source_location": "L216",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23483,7 +23505,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L223",
+      "source_location": "L228",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23494,7 +23516,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L276",
+      "source_location": "L281",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23505,18 +23527,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L28",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_drive_drive_service_driveservice",
-      "target": "apps_api_src_drive_drive_service_driveservice_creategoogleclient",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L306",
+      "source_location": "L311",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23527,7 +23538,18 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L351",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_drive_drive_service_driveservice",
+      "target": "apps_api_src_drive_drive_service_driveservice_creategoogleclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/drive/drive.service.ts",
+      "source_location": "L356",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23538,7 +23560,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L424",
+      "source_location": "L429",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23549,7 +23571,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L448",
+      "source_location": "L453",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23560,7 +23582,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L467",
+      "source_location": "L472",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23571,7 +23593,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L489",
+      "source_location": "L494",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23582,7 +23604,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L504",
+      "source_location": "L509",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23593,18 +23615,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L55",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_api_src_drive_drive_service_driveservice",
-      "target": "apps_api_src_drive_drive_service_driveservice_getuser",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L578",
+      "source_location": "L583",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23615,7 +23626,18 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L80",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_api_src_drive_drive_service_driveservice",
+      "target": "apps_api_src_drive_drive_service_driveservice_getuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/api/src/drive/drive.service.ts",
+      "source_location": "L85",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_drive_drive_service_driveservice",
@@ -23835,10 +23857,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/src/drive/drive.service.ts",
-      "source_location": "L347",
+      "source_location": "L352",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "apps_api_src_drive_drive_service_rationale_347",
+      "source": "apps_api_src_drive_drive_service_rationale_352",
       "target": "apps_api_src_drive_drive_service",
       "confidence_score": 1.0
     },
@@ -23931,7 +23953,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L83",
+      "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_auth_auth_controller_authcontroller_googlecallback",
@@ -23979,7 +24001,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L111",
+      "source_location": "L114",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_api_src_auth_auth_controller_authcontroller_me",
@@ -24191,5 +24213,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9154c1ff81db8dc37c14a780466efe7649530ad0"
+  "built_at_commit": "3a0781a7c9b13254debc43d6ed1f7c21e39dfeb8"
 }

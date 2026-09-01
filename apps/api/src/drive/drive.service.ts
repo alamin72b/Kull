@@ -10,6 +10,11 @@ import { Readable } from 'node:stream';
 
 import type { Express } from 'express';
 
+const DRIVE_SCOPES = [
+  'https://www.googleapis.com/auth/drive.file',
+  'https://www.googleapis.com/auth/drive.metadata.readonly',
+];
+
 @Injectable()
 export class DriveService {
   /*
@@ -26,11 +31,11 @@ export class DriveService {
    * Creates the Google OAuth client.
    */
   private createGoogleClient() {
-    const clientId = process.env.DRIVE_CLIENT_ID;
+    const clientId = process.env.GOOGLE_CLIENT_ID;
 
-    const clientSecret = process.env.DRIVE_CLIENT_SECRET;
+    const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
 
-    const redirectUri = process.env.DRIVE_REDIRECT_URI;
+    const redirectUri = process.env.GOOGLE_DRIVE_REDIRECT_URI;
 
     if (!clientId || !clientSecret || !redirectUri) {
       throw new BadRequestException('Google Drive settings are missing.');
@@ -472,7 +477,7 @@ export class DriveService {
 
       prompt: 'consent',
 
-      scope: ['https://www.googleapis.com/auth/drive'],
+      scope: DRIVE_SCOPES,
 
       state,
     });
