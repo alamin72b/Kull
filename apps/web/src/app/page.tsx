@@ -3,6 +3,9 @@ import {
   BookOpenText,
   Clock3,
   CloudUpload,
+  // BEGIN CHANGED: add the Important Documents tool icon
+  FileArchive,
+  // END CHANGED: add the Important Documents tool icon
   Pill,
   type LucideIcon,
 } from "lucide-react";
@@ -56,6 +59,17 @@ const tools: Tool[] = [
     icon: CloudUpload,
     tone: "sage",
   },
+  // BEGIN CHANGED: add the Important Documents home-page tool
+  {
+    name: "Important Documents",
+    description:
+      "Keep important Google Drive documents organised, searchable, and easy to clean up.",
+    href: "/important-documents",
+    label: "Document vault",
+    icon: FileArchive,
+    tone: "sage",
+  },
+  // END CHANGED: add the Important Documents home-page tool
 ];
 
 export default function HomePage() {

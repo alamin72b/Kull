@@ -349,6 +349,7 @@ export class ImportantDocumentsService {
       documentId,
     );
     const currentParentId = managed.file.parents?.[0];
+    const currentParentIds = managed.file.parents ?? [];
 
     if (!currentParentId) {
       throw new BadRequestException(
@@ -402,7 +403,7 @@ export class ImportantDocumentsService {
       }
 
       addParents = target.folderId!;
-      removeParents = managed.file.parents.join(',');
+      removeParents = currentParentIds.join(',');
       update.appProperties = {
         ...(managed.file.appProperties ?? {}),
         [FOLDER_PATH_KEY]: targetPath,
