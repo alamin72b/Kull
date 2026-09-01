@@ -5,7 +5,7 @@ import { ArrowLeft, Plus } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { AppHeader } from "@/components/layout/app-header";
-import { logout } from "@/features/auth/activity-auth.api";
+import { logout } from "@/features/auth/auth.api";
 import { useActivities } from "../hooks/use-activities";
 import { getToday } from "../utils/date";
 import { ActivityDateNavigation } from "./activity-date-navigation";
