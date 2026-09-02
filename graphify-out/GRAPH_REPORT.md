@@ -1,16 +1,16 @@
 # Graph Report - Kull  (2026-09-02)
 
 ## Corpus Check
-- 122 files · ~34,410 words
+- 122 files · ~34,825 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 893 nodes · 1511 edges · 62 communities (41 shown, 21 thin omitted)
+- 893 nodes · 1513 edges · 62 communities (41 shown, 21 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 41 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `46473b02`
+- Built from commit: `34a96586`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -52,10 +52,10 @@
 - activity-auth.guard.ts
 - MedicineTransactionsService
 - DriveService
-- AuthService
+- AuthController
 - CreateDebugNoteDto
-- drive.controller.ts
-- AppModule
+- AuthService
+- isProductionEnvironment
 - important-documents/page.tsx
 - api/package.json
 - .update
@@ -68,7 +68,7 @@
 - multer
 - @nestjs/common
 - @nestjs/core
-- @nestjs/mapped-types
+- bcryptjs
 - reflect-metadata
 - rxjs
 - important-documents.controller.ts
@@ -117,7 +117,7 @@ Nodes (49): devDependencies, eslint, eslint-config-prettier, @eslint/eslintrc, @
 
 ### Community 3 - "dependencies"
 Cohesion: 0.15
-Nodes (13): dependencies, bcryptjs, @kull/contracts, @nestjs/platform-express, pg, @prisma/adapter-pg, @prisma/client, @kull/contracts (+5 more)
+Nodes (13): dependencies, @kull/contracts, @nestjs/mapped-types, @nestjs/platform-express, pg, @prisma/adapter-pg, @prisma/client, @kull/contracts (+5 more)
 
 ### Community 4 - "contracts/package.json"
 Cohesion: 0.17
@@ -208,28 +208,28 @@ Cohesion: 0.17
 Nodes (11): Query, QueryDebugNotesDto, IsEnum, IsInt, IsOptional, IsString, Max, MaxLength (+3 more)
 
 ### Community 37 - "activity-auth.guard.ts"
-Cohesion: 0.24
-Nodes (8): ActivityAuthGuard, Injectable, GOOGLE_NONCE_COOKIE, GOOGLE_STATE_COOKIE, isProductionEnvironment(), KULL_SESSION_COOKIE, RequestWithSignedCookies, bootstrap()
+Cohesion: 0.29
+Nodes (6): ActivityAuthGuard, Injectable, GOOGLE_NONCE_COOKIE, GOOGLE_STATE_COOKIE, KULL_SESSION_COOKIE, RequestWithSignedCookies
 
 ### Community 38 - "MedicineTransactionsService"
 Cohesion: 0.08
 Nodes (25): CreateMedicineTransactionDto, MedicineTransactionItemDto, IsString, Matches, MaxLength, MinLength, Transform, Type (+17 more)
 
 ### Community 39 - "DriveService"
-Cohesion: 0.09
-Nodes (15): DriveController, Body, Controller, Get, Post, Query, Req, Res (+7 more)
+Cohesion: 0.07
+Nodes (24): DriveController, Body, Controller, Get, Post, Query, Req, Res (+16 more)
 
-### Community 40 - "AuthService"
-Cohesion: 0.14
-Nodes (10): AuthController, Controller, Get, Post, Query, Req, Res, UseGuards (+2 more)
+### Community 40 - "AuthController"
+Cohesion: 0.19
+Nodes (8): AuthController, Controller, Get, Post, Query, Req, Res, UseGuards
 
 ### Community 41 - "CreateDebugNoteDto"
 Cohesion: 0.22
 Nodes (9): CreateDebugNoteDto, IsEnum, IsIn, IsOptional, IsString, MaxLength, MinLength, Transform (+1 more)
 
-### Community 42 - "drive.controller.ts"
-Cohesion: 0.20
-Nodes (9): CheckDrivePathDto, IsString, MaxLength, MinLength, IsIn, IsString, MaxLength, MinLength (+1 more)
+### Community 43 - "isProductionEnvironment"
+Cohesion: 0.40
+Nodes (4): AppModule, Module, isProductionEnvironment(), bootstrap()
 
 ### Community 44 - "important-documents/page.tsx"
 Cohesion: 0.16
@@ -262,7 +262,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `PrismaService` connect `PrismaService` to `app.module.ts`, `activity-auth.guard.ts`, `Activity`, `DriveService`, `MedicineTransactionsService`, `debug-notes.service.ts`?**
   _High betweenness centrality (0.061) - this node is a cross-community bridge._
 - **Why does `Activity` connect `Activity` to `activity-dashboard.tsx`, `index.ts`?**
-  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
   _240 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `PrismaService` be split into smaller, more focused modules?**

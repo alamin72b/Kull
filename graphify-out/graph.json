@@ -589,6 +589,32 @@
       "norm_label": "driveservice"
     },
     {
+      "label": "CheckDrivePathDto",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/dto/check-drive-path.dto.ts",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_check_drive_path_dto_checkdrivepathdto",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "checkdrivepathdto"
+    },
+    {
+      "label": "UploadToDriveDto",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/dto/upload-to-drive.dto.ts",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_upload_to_drive_dto_uploadtodrivedto",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "uploadtodrivedto"
+    },
+    {
       "label": "ImportantDocumentsService",
       "file_type": "code",
       "source_file": "apps/api/src/important-documents/important-documents.service.ts",
@@ -611,21 +637,8 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_authcontroller",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": "authcontroller"
-    },
-    {
-      "label": "AuthService",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L21",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice",
-      "community": 40,
-      "community_name": "AuthService",
-      "norm_label": "authservice"
     },
     {
       "label": "CreateDebugNoteDto",
@@ -641,30 +654,17 @@
       "norm_label": "createdebugnotedto"
     },
     {
-      "label": "CheckDrivePathDto",
+      "label": "AuthService",
       "file_type": "code",
-      "source_file": "apps/api/src/drive/dto/check-drive-path.dto.ts",
-      "source_location": "L7",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L21",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "apps_api_src_drive_dto_check_drive_path_dto_checkdrivepathdto",
+      "id": "apps_api_src_auth_auth_service_authservice",
       "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "checkdrivepathdto"
-    },
-    {
-      "label": "UploadToDriveDto",
-      "file_type": "code",
-      "source_file": "apps/api/src/drive/dto/upload-to-drive.dto.ts",
-      "source_location": "L8",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_upload_to_drive_dto_uploadtodrivedto",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "uploadtodrivedto"
+      "community_name": "AuthService",
+      "norm_label": "authservice"
     },
     {
       "label": "AppModule",
@@ -676,7 +676,7 @@
       "_origin": "ast",
       "id": "apps_api_src_app_module_appmodule",
       "community": 43,
-      "community_name": "AppModule",
+      "community_name": "isProductionEnvironment",
       "norm_label": "appmodule"
     },
     {
@@ -2187,30 +2187,6 @@
       "norm_label": ".constructor()"
     },
     {
-      "label": "isProductionEnvironment()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.constants.ts",
-      "source_location": "L7",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_constants_isproductionenvironment",
-      "community": 37,
-      "community_name": "activity-auth.guard.ts",
-      "norm_label": "isproductionenvironment()"
-    },
-    {
-      "label": "bootstrap()",
-      "file_type": "code",
-      "source_file": "apps/api/src/main.ts",
-      "source_location": "L9",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_main_bootstrap",
-      "community": 37,
-      "community_name": "activity-auth.guard.ts",
-      "norm_label": "bootstrap()"
-    },
-    {
       "label": "cleanText()",
       "file_type": "code",
       "source_file": "apps/api/src/medicine-transactions/dto/create-medicine-transaction.dto.ts",
@@ -2867,7 +2843,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_authcontroller_constructor",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": ".constructor()"
     },
     {
@@ -2879,20 +2855,8 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_authcontroller_googlecallback",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": ".googlecallback()"
-    },
-    {
-      "label": ".googleLogin()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.controller.ts",
-      "source_location": "L33",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_controller_authcontroller_googlelogin",
-      "community": 40,
-      "community_name": "AuthService",
-      "norm_label": ".googlelogin()"
     },
     {
       "label": ".logout()",
@@ -2903,7 +2867,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_authcontroller_logout",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": ".logout()"
     },
     {
@@ -2915,8 +2879,32 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_authcontroller_me",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": ".me()"
+    },
+    {
+      "label": ".getCurrentUser()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.service.ts",
+      "source_location": "L318",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_service_authservice_getcurrentuser",
+      "community": 40,
+      "community_name": "AuthController",
+      "norm_label": ".getcurrentuser()"
+    },
+    {
+      "label": ".googleLogin()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.controller.ts",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_controller_authcontroller_googlelogin",
+      "community": 42,
+      "community_name": "AuthService",
+      "norm_label": ".googlelogin()"
     },
     {
       "label": ".createGoogleClient()",
@@ -2926,7 +2914,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_service_authservice_creategoogleclient",
-      "community": 40,
+      "community": 42,
       "community_name": "AuthService",
       "norm_label": ".creategoogleclient()"
     },
@@ -2938,7 +2926,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_service_authservice_createnonce",
-      "community": 40,
+      "community": 42,
       "community_name": "AuthService",
       "norm_label": ".createnonce()"
     },
@@ -2950,7 +2938,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_service_authservice_createstate",
-      "community": 40,
+      "community": 42,
       "community_name": "AuthService",
       "norm_label": ".createstate()"
     },
@@ -2962,21 +2950,9 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_service_authservice_findorcreateuser",
-      "community": 40,
+      "community": 42,
       "community_name": "AuthService",
       "norm_label": ".findorcreateuser()"
-    },
-    {
-      "label": ".getCurrentUser()",
-      "file_type": "code",
-      "source_file": "apps/api/src/auth/auth.service.ts",
-      "source_location": "L318",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_authservice_getcurrentuser",
-      "community": 40,
-      "community_name": "AuthService",
-      "norm_label": ".getcurrentuser()"
     },
     {
       "label": ".getGoogleLoginUrl()",
@@ -2986,7 +2962,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_service_authservice_getgoogleloginurl",
-      "community": 40,
+      "community": 42,
       "community_name": "AuthService",
       "norm_label": ".getgoogleloginurl()"
     },
@@ -2998,7 +2974,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_service_authservice_getgoogletokens",
-      "community": 40,
+      "community": 42,
       "community_name": "AuthService",
       "norm_label": ".getgoogletokens()"
     },
@@ -3010,7 +2986,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_service_authservice_loginwithgoogle",
-      "community": 40,
+      "community": 42,
       "community_name": "AuthService",
       "norm_label": ".loginwithgoogle()"
     },
@@ -3022,9 +2998,33 @@
       "_callable": true,
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_service_authservice_verifygoogletoken",
-      "community": 40,
+      "community": 42,
       "community_name": "AuthService",
       "norm_label": ".verifygoogletoken()"
+    },
+    {
+      "label": "isProductionEnvironment()",
+      "file_type": "code",
+      "source_file": "apps/api/src/auth/auth.constants.ts",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_auth_auth_constants_isproductionenvironment",
+      "community": 43,
+      "community_name": "isProductionEnvironment",
+      "norm_label": "isproductionenvironment()"
+    },
+    {
+      "label": "bootstrap()",
+      "file_type": "code",
+      "source_file": "apps/api/src/main.ts",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_api_src_main_bootstrap",
+      "community": 43,
+      "community_name": "isProductionEnvironment",
+      "norm_label": "bootstrap()"
     },
     {
       "label": "DriveUploadPage()",
@@ -3042,7 +3042,7 @@
       "label": "displayDate()",
       "file_type": "code",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L31",
+      "source_location": "L47",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_web_src_app_important_documents_page_displaydate",
@@ -3054,7 +3054,7 @@
       "label": "displaySize()",
       "file_type": "code",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L36",
+      "source_location": "L57",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_web_src_app_important_documents_page_displaysize",
@@ -3066,7 +3066,7 @@
       "label": "ImportantDocumentsPage()",
       "file_type": "code",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L43",
+      "source_location": "L71",
       "_callable": true,
       "_origin": "ast",
       "id": "apps_web_src_app_important_documents_page_importantdocumentspage",
@@ -6350,17 +6350,6 @@
       "norm_label": "dependencies"
     },
     {
-      "label": "bcryptjs",
-      "file_type": "code",
-      "source_file": "apps/api/package.json",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "apps_api_package_dependencies_bcryptjs",
-      "community": 3,
-      "community_name": "dependencies",
-      "norm_label": "bcryptjs"
-    },
-    {
       "label": "@kull/contracts",
       "file_type": "code",
       "source_file": "apps/api/package.json",
@@ -6370,6 +6359,17 @@
       "community": 3,
       "community_name": "dependencies",
       "norm_label": "@kull/contracts"
+    },
+    {
+      "label": "@nestjs/mapped-types",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "apps_api_package_dependencies_nestjs_mapped_types",
+      "community": 3,
+      "community_name": "dependencies",
+      "norm_label": "@nestjs/mapped-types"
     },
     {
       "label": "@nestjs/platform-express",
@@ -6427,15 +6427,15 @@
       "norm_label": "@kull/contracts"
     },
     {
-      "label": "bcryptjs",
+      "label": "@nestjs/mapped-types",
       "file_type": "concept",
       "source_file": "apps/api/package.json",
-      "source_location": "L29",
+      "source_location": "L25",
       "_origin": "ast",
-      "id": "bcryptjs",
+      "id": "nestjs_mapped_types",
       "community": 3,
       "community_name": "dependencies",
-      "norm_label": "bcryptjs"
+      "norm_label": "@nestjs/mapped-types"
     },
     {
       "label": "@nestjs/platform-express",
@@ -6977,17 +6977,6 @@
       "norm_label": "auth.controller.ts"
     },
     {
-      "label": "main.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/main.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_main",
-      "community": 37,
-      "community_name": "activity-auth.guard.ts",
-      "norm_label": "main.ts"
-    },
-    {
       "label": "create-medicine-transaction.dto.ts",
       "file_type": "code",
       "source_file": "apps/api/src/medicine-transactions/dto/create-medicine-transaction.dto.ts",
@@ -7241,6 +7230,17 @@
       "norm_label": "validatenested"
     },
     {
+      "label": "drive.controller.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/drive.controller.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_drive_controller",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "drive.controller.ts"
+    },
+    {
       "label": "Body",
       "file_type": "code",
       "source_file": "",
@@ -7360,6 +7360,105 @@
       "community": 39,
       "community_name": "DriveService",
       "norm_label": "injectable"
+    },
+    {
+      "label": "check-drive-path.dto.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/dto/check-drive-path.dto.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_check_drive_path_dto",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "check-drive-path.dto.ts"
+    },
+    {
+      "label": "IsString",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_check_drive_path_dto_ts_isstring",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "isstring"
+    },
+    {
+      "label": "MaxLength",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_check_drive_path_dto_ts_maxlength",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "maxlength"
+    },
+    {
+      "label": "MinLength",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_check_drive_path_dto_ts_minlength",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "minlength"
+    },
+    {
+      "label": "upload-to-drive.dto.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/drive/dto/upload-to-drive.dto.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_upload_to_drive_dto",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "upload-to-drive.dto.ts"
+    },
+    {
+      "label": "IsIn",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_upload_to_drive_dto_ts_isin",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "isin"
+    },
+    {
+      "label": "IsString",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_upload_to_drive_dto_ts_isstring",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "isstring"
+    },
+    {
+      "label": "MaxLength",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_upload_to_drive_dto_ts_maxlength",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "maxlength"
+    },
+    {
+      "label": "MinLength",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_src_drive_dto_upload_to_drive_dto_ts_minlength",
+      "community": 39,
+      "community_name": "DriveService",
+      "norm_label": "minlength"
     },
     {
       "label": "Injectable",
@@ -7512,7 +7611,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_ts_controller",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": "controller"
     },
     {
@@ -7523,7 +7622,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_ts_get",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": "get"
     },
     {
@@ -7534,7 +7633,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_ts_post",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": "post"
     },
     {
@@ -7545,7 +7644,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_ts_query",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": "query"
     },
     {
@@ -7556,7 +7655,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_ts_req",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": "req"
     },
     {
@@ -7567,7 +7666,7 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_ts_res",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": "res"
     },
     {
@@ -7578,19 +7677,8 @@
       "_origin": "ast",
       "id": "apps_api_src_auth_auth_controller_ts_useguards",
       "community": 40,
-      "community_name": "AuthService",
+      "community_name": "AuthController",
       "norm_label": "useguards"
-    },
-    {
-      "label": "Injectable",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_auth_auth_service_ts_injectable",
-      "community": 40,
-      "community_name": "AuthService",
-      "norm_label": "injectable"
     },
     {
       "label": "IsEnum",
@@ -7681,114 +7769,15 @@
       "norm_label": "isdatestring"
     },
     {
-      "label": "drive.controller.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/drive/drive.controller.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_drive_controller",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "drive.controller.ts"
-    },
-    {
-      "label": "check-drive-path.dto.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/drive/dto/check-drive-path.dto.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_check_drive_path_dto",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "check-drive-path.dto.ts"
-    },
-    {
-      "label": "IsString",
+      "label": "Injectable",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "apps_api_src_drive_dto_check_drive_path_dto_ts_isstring",
+      "id": "apps_api_src_auth_auth_service_ts_injectable",
       "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "isstring"
-    },
-    {
-      "label": "MaxLength",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_check_drive_path_dto_ts_maxlength",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "maxlength"
-    },
-    {
-      "label": "MinLength",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_check_drive_path_dto_ts_minlength",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "minlength"
-    },
-    {
-      "label": "upload-to-drive.dto.ts",
-      "file_type": "code",
-      "source_file": "apps/api/src/drive/dto/upload-to-drive.dto.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_upload_to_drive_dto",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "upload-to-drive.dto.ts"
-    },
-    {
-      "label": "IsIn",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_upload_to_drive_dto_ts_isin",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "isin"
-    },
-    {
-      "label": "IsString",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_upload_to_drive_dto_ts_isstring",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "isstring"
-    },
-    {
-      "label": "MaxLength",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_upload_to_drive_dto_ts_maxlength",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "maxlength"
-    },
-    {
-      "label": "MinLength",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_src_drive_dto_upload_to_drive_dto_ts_minlength",
-      "community": 42,
-      "community_name": "drive.controller.ts",
-      "norm_label": "minlength"
+      "community_name": "AuthService",
+      "norm_label": "injectable"
     },
     {
       "label": "Module",
@@ -7798,8 +7787,19 @@
       "_origin": "ast",
       "id": "apps_api_src_app_module_ts_module",
       "community": 43,
-      "community_name": "AppModule",
+      "community_name": "isProductionEnvironment",
       "norm_label": "module"
+    },
+    {
+      "label": "main.ts",
+      "file_type": "code",
+      "source_file": "apps/api/src/main.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_src_main",
+      "community": 43,
+      "community_name": "isProductionEnvironment",
+      "norm_label": "main.ts"
     },
     {
       "label": "app.e2e-spec.ts",
@@ -7809,7 +7809,7 @@
       "_origin": "ast",
       "id": "apps_api_test_app_e2e_spec",
       "community": 43,
-      "community_name": "AppModule",
+      "community_name": "isProductionEnvironment",
       "norm_label": "app.e2e-spec.ts"
     },
     {
@@ -8517,26 +8517,26 @@
       "norm_label": "@nestjs/core"
     },
     {
-      "label": "@nestjs/mapped-types",
+      "label": "bcryptjs",
       "file_type": "code",
       "source_file": "apps/api/package.json",
-      "source_location": "L25",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "apps_api_package_dependencies_nestjs_mapped_types",
+      "id": "apps_api_package_dependencies_bcryptjs",
       "community": 56,
-      "community_name": "@nestjs/mapped-types",
-      "norm_label": "@nestjs/mapped-types"
+      "community_name": "bcryptjs",
+      "norm_label": "bcryptjs"
     },
     {
-      "label": "@nestjs/mapped-types",
+      "label": "bcryptjs",
       "file_type": "concept",
       "source_file": "apps/api/package.json",
-      "source_location": "L25",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "nestjs_mapped_types",
+      "id": "bcryptjs",
       "community": 56,
-      "community_name": "@nestjs/mapped-types",
-      "norm_label": "@nestjs/mapped-types"
+      "community_name": "bcryptjs",
+      "norm_label": "bcryptjs"
     },
     {
       "label": "reflect-metadata",
@@ -11609,7 +11609,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L100",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
+      "target": "apps_web_src_features_important_documents_important_documents_api_getimportantdocuments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L152",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
@@ -11621,7 +11633,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L133",
+      "source_location": "L210",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
@@ -11633,7 +11645,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L151",
+      "source_location": "L241",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
@@ -11645,7 +11657,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L168",
+      "source_location": "L274",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
@@ -11656,19 +11668,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L214",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
-      "target": "apps_web_src_app_important_documents_page_displaydate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L214",
+      "source_location": "L425",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
@@ -11679,13 +11679,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L65",
+      "source_location": "L587",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
-      "target": "apps_web_src_features_drive_upload_drive_upload_api_getdrivestatus"
+      "target": "apps_web_src_app_important_documents_page_displaydate",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -11693,11 +11693,11 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L84",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page_importantdocumentspage",
-      "target": "apps_web_src_features_important_documents_important_documents_api_getimportantdocuments"
+      "target": "apps_web_src_features_drive_upload_drive_upload_api_getdrivestatus"
     },
     {
       "relation": "calls",
@@ -14716,7 +14716,7 @@
       "context": "export",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L43",
+      "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page",
@@ -17404,90 +17404,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_important_documents_page",
-      "target": "apps_web_src_features_drive_upload_drive_upload_api_connectgoogledrive",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_important_documents_page",
-      "target": "apps_web_src_features_drive_upload_drive_upload_api_getdrivestatus",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_important_documents_page",
-      "target": "apps_web_src_features_important_documents_important_documents_api_deleteimportantdocument",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_important_documents_page",
-      "target": "apps_web_src_features_important_documents_important_documents_api_getimportantdocuments",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_important_documents_page",
-      "target": "apps_web_src_features_important_documents_important_documents_api_prepareimportantdocumentsroot",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_important_documents_page",
-      "target": "apps_web_src_features_important_documents_important_documents_api_updateimportantdocument",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "apps_web_src_app_important_documents_page",
-      "target": "apps_web_src_features_important_documents_important_documents_api_uploadimportantdocument",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/important-documents/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
@@ -17529,6 +17445,102 @@
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page",
       "target": "packages_contracts_src_important_documents_sortdirection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_components_layout_app_header_appheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_features_drive_upload_drive_upload_api_connectgoogledrive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_features_drive_upload_drive_upload_api_getdrivestatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_features_important_documents_important_documents_api_deleteimportantdocument",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_features_important_documents_important_documents_api_getimportantdocuments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_features_important_documents_important_documents_api_prepareimportantdocumentsroot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_features_important_documents_important_documents_api_updateimportantdocument",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_features_important_documents_important_documents_api_uploadimportantdocument",
       "confidence_score": 1.0
     },
     {
@@ -19768,7 +19780,19 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L16",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "apps_web_src_app_important_documents_page",
+      "target": "apps_web_src_components_layout_app_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/web/src/app/important-documents/page.tsx",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page",
@@ -19780,7 +19804,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L20",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page",
@@ -23142,7 +23166,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L31",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page",
@@ -23153,7 +23177,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L36",
+      "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page",
@@ -23164,7 +23188,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/web/src/app/important-documents/page.tsx",
-      "source_location": "L43",
+      "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast",
       "source": "apps_web_src_app_important_documents_page",
@@ -27790,5 +27814,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "46473b02b09c6b24ba9f63e18720e5b3520803a1"
+  "built_at_commit": "34a965866ccb55846312db4472e009ecb6eb507c"
 }
